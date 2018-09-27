@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.problemList {
+    border: 1px solid #E5E5E5;
+    border-bottom: none;
+    width: 898px;
+}
+.problemList li {
+    border-bottom: 1px solid #E5E5E5;
+}
+.problemList li a {
+    display: block;
+    padding-left: 33px;
+    font: 14px/41px 'Microsoft YaHei';
+}
+.problemList li a:hover {
+    color: inherit;
+    background: #F5FAFF;
+}
+.proList h3 {
+    border-bottom: 1px solid #E5E5E5;
+    padding-left: 17px;
+    font: 700 14px/45px 'Microsoft YaHei';
+    background: #F8F8F8;
+}
+.msgListWrap {
+    width: 970px;
+    padding: 0 0 0 36px;
+}
+.msgListWrap.pl0{
+    padding-left: 0;
+}
+.msgListWrap ul {
+    padding-top: 5px;
+}
+.msgListWrap li {
+    overflow: hidden;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 19px 0 14px;
+    vertical-align: bottom;
+    *zoom: 1;
+}
+.sourceIcon {
+    position: relative;
+    float: left;
+    width: 46px;
+    height: 46px;
+    margin-right: 20px;
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/site_icon.png);
+}
+.sourceIcon img {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+}
+.sourceIcon.csIco {
+    background-position: 0 0;
+}
+.sourceIcon.yqIco {
+    background-position: -47px 0;
+}
+.sourceIcon.qdIco {
+    background-position: -94px 0;
+}
+.sourceIcon cite {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    width: 15px;
+    height: 15px;
+    font: 12px/15px Arial;
+    text-align: center;
+    color: #FFF;
+    background-position: 0 -24px;
+}
+.msgText {
+    float: left;
+    width: 904px;
+}
+.msgText p {
+    overflow: hidden;
+    font: 14px/1.8 'Microsoft YaHei';
+    word-wrap: break-word;
+}
+.msgText span {
+    color: #333;
+}
+.msgText .btn {
+    margin-top: 3px;
+}
+.msgText .btn em {
+    font: 12px/1.8 Arial;
+    color: #999;
+}
+.msgText .btn a {
+    float: right;
+    font: 12px/1.8 'Microsoft YaHei';
+}
+.msgText .btn span {
+    float: right;
+    margin-top: 4px;
+    margin-right: 14px;
+    font-family: Simsun;
+    line-height: 1;
+    color: #E6E6E6;
+}
+.msgText .btn .reply {
+    margin-right: 14px;
+    color: #45C268;
+}
+.msgText .btn .reply:hover {
+    text-decoration: underline;
+}
+.msgText i {
+    margin: 0 12px;
+    font: 14px/1.8 Simsun;
+    color: #D6D5D6;
+}
+.msgText cite {
+    color: #AAA;
+}
+.reply-content {
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #5A5A5A;
+}
+.reply-content .default {
+    overflow: hidden;
+    width: 680px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.reply-content .system {
+    width: 780px;
+}
+.msgCtrl {
+    width: 970px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font: 12px/1.8 'Microsoft YaHei';
+}
+.msgCtrl a {
+    margin-right: 14px;
+    color: #575757;
+}
+.msgCtrl a.flag {
+    color: #45C268;
+}
+.msgCtrl a:hover {
+    color: #4EA8FF;
+}
+.msgCtrl a.flag:hover {
+    text-decoration: underline;
+    color: #45C268;
+}
+.msgCtrl span {
+    margin-right: 14px;
+    color: #E6E6E6;
+}
+.replyMsgWrap {
+    width: 730px;
+    margin-left: 120px;
+    padding: 55px 0 0 0;
+}
+.replyMsgWrap textarea {
+    display: block;
+    overflow-y: hidden;
+    border: 1px solid #DDD;
+    width: 720px;
+    height: 94px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    line-height: 1.8;
+    background: #FAFAFA;
+}
+.replyText {
+    position: relative;
+}
+.replyText p em {
+    font: 12px/1 "Microsoft YaHei";
+    color: #999;
+}
+.replyText a.button {
+    position: absolute;
+    right: 0;
+    width: 180px;
+    height: 35px;
+    font: 14px/35px 'Microsoft YaHei';
+}
+.replyMsgWrap .msgListWrap {
+    width: 730px;
+    padding-top: 40px;
+}
+.replyMsgWrap .msgListWrap li {
+    border-bottom: 1px dashed #E6E6E6;
+}
+.replyMsgWrap .msgText {
+    width: 664px;
+}
+.msgText p em {
+    float: right;
+    font: 12px/25px Arial;
+    color: #999;
+}
+/* 收，发件箱 */
+.inBoxListWrap {
+    border: 1px solid #E6E6E6;
+    border-bottom: none;
+    width: 969px;
+    margin: 0 auto;
+    margin-top: 33px;
+}
+.inBoxListWrap.noMsg {
+    border: none;
+    padding-top: 120px;
+    text-align: center;
+}
+.inBoxListWrap.noMsg span {
+    padding-left: 20px;
+}
+.msgListBox li {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #E6E6E6;
+    *zoom: 1;
+}
+.msgListBox li .link {
+    display: block;
+    padding: 0 13px 0 19px;
+    font: 14px/41px 'Microsoft YaHei';
+    color: #333;
+}
+.msgListBox li .link.visited {
+    color: #999;
+}
+.msgListBox li .link span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 2px 18px 0 0;
+    cursor: pointer;
+    vertical-align: middle;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/sprite.png) no-repeat -38px -7px;
+}
+.msgListBox li .link span.on {
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/sprite.png) no-repeat -38px 0;
+}
+.minLogo {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 2px 6px 0 0;
+    vertical-align: middle;
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/site_minilogo.png);
+}
+.msgListBox li .line {
+    margin: 0 15px;
+    font-family: Simsun;
+    color: #E6E6E6;
+}
+.msgListBox li .link b {
+    display: inline-block;
+    overflow: hidden;
+    width: 770px;
+    font-weight: 400;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.msgListBox li .link .time {
+    float: right;
+    font-size: 12px;
+    color: #999;
+}
+.msgListBox li .link:hover {
+    background: #F6FBFF;
+}
+.msgListBox li.act {
+    border-bottom: 1px solid #D7EDFF;
+    background: #E1F2FF;
+}
+.msgListBox li.act .link {
+    color: #8BAECE;
+}
+.msgListBox li.act .link:hover {
+    background: #E1F2FF;
+}
+.msgListBox li.act .line {
+    color: #8BAECE;
+}
+.msgListBox li.act .time {
+    display: none;
+}
+.detailMsgBox {
+    position: relative;
+    display: none;
+    padding: 0 14px 0 40px;
+}
+.detailMsgBox .del {
+    position: absolute;
+    top: -38px;
+    right: 14px;
+    width: 17px;
+    height: 15px;
+    background-position: -169px 0;
+}
+.detailMsgBox p {
+    margin: .8em 0;
+    font: 14px/1.8 'Microsoft YaHei';
+    color: #376590;
+}
+.minLogo.cs {
+    background-position: 0 0;
+}
+.minLogo.yq {
+    background-position: 0 -17px;
+}
+.minLogo.yw {
+    background-position: 0 -34px;
+}
+.minLogo.qd {
+    background-position: 0 -51px;
+}
+/* 会话标题 */
+.dialog-head {
+    position: relative;
+    border-bottom: 1px solid #E6E6E6;
+    height: 58px;
+}
+.dialog-head a {
+    position: absolute;
+    top: 23px;
+    font: 12px/1.8 "Microsoft YaHei";
+}
+.dialog-head .back {
+    left: 27px;
+    color: #575757;
+}
+.dialog-head .back i {
+    margin-right: 12px;
+    font-family: Simsun;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #AAA;
+}
+.dialog-head h3 {
+    margin-top: 22px;
+    font: 14px/1.8 "Microsoft YaHei";
+    text-align: center;
+}
+.dialog-head h3 em {
+    font: 12px/1.8 "Microsoft YaHei";
+    color: #999;
+}
+.dialog-head .del {
+    right: 38px;
+}
+.dialog-head .del span {
+    width: 17px;
+    height: 15px;
+    margin: -3px 8px 0 0;
+    background-position: -195px -229px;
+}
+.dialog-head .newAsk {
+    position: absolute;
+    top:18px;
+    right: 34px;
+    border-radius: 3px;
+    width: 88px;
+    height: 28px;
+    font: 14px/28px 'Microsoft YaHei';
+}
+/* 年份选择 */
+.filter-box {
+    padding: 16px 0 0 20px;
+    font: 14px/30px 'Microsoft YaHei';
+}
+.filter-box em {
+    float: left;
+    margin-right: 10px;
+}
+.filter-box .combo-select {
+    float: left;
+    border-radius: 3px;
+    width: 110px;
+    margin-right: 10px;
+}
+.filter-box .combo-input{
+    *width: 100px;
+}
+.filter-box .option-item {
+    font-size: 12px;
+}
+.filter-box input {
+    *padding-left: 10px;
+}
+.filter-box .button {
+    position: static;
+    float: left;
+    width: 78px;
+    height: 28px;
+    font: 14px/28px 'Microsoft YaHei';
+}

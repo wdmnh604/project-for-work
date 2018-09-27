@@ -1,0 +1,4166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" href="../../../css/mp/build/ui.css"/>
+<link rel="stylesheet" href="../../../css/mp/build/common.css"/>
+
+    <title>文章分析</title>
+    <link rel="stylesheet" href="../../../css/mp/build/article_ana.css" rel="stylesheet" type="text/css"/>
+    <!-- @author author | @designer designer | @pm pm -->
+</head>
+<body>
+<div class="container">
+
+	<!-- 顶部header begin -->
+	<!-- 顶部header begin -->
+	<div class="header">
+		<div class="hd-wrap clearfix">
+			
+			<!-- logo -->
+			<h1 class="logo"><a href="./" class="logo-a">作家自媒体</a></h1>
+			
+			<!-- 右侧作家信息begin -->
+			<div class="header-right">
+				<a href="javascript:" id="hdAuthor" class="header-author-box">
+					<p class="header-author">
+						<!--<i class="icon icon-ring"></i>-->夕阳剑客<i class="icon icon-dropdown"></i>
+					</p>					
+				</a>
+			</div>
+			<!-- 右侧作家信息end -->
+		</div>
+	</div>
+
+	<!-- 作家信息下拉begin -->
+	<div id="hdDrop" class="header-drop">
+		<div class="header-drop-box">
+			<p class="header-drop-pic">
+				<i class="header-drop-circle"></i>
+				<img src="../../../img/mp/p1/temp/photo01.jpg" class="header-avatar" alt="夕阳剑客" />
+			</p>
+			<p class="header-drop-name">夕阳剑客</p>
+		</div>
+		<a href="" class="header-logout"><i class="icon icon-signout"></i>退出登录</a>
+	</div>
+	<!-- 作家信息下拉end -->	<!-- 顶部header end -->
+
+	<!-- 内容区 -->
+	<div class="main-wrap">
+		
+		<!-- 左侧导航区begin -->
+		<div class="sidebar">
+			<p class="sidebar-ttl">功能</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="send_function.html" class="sidebar-a"><i class="icon-nav icon-nav-posts"></i>群发功能</a></li>
+				<li class="sidebar-li "><a href="message_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-message"></i>留言管理</a></li>
+				<li class="sidebar-li "><a href="vote_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-vote"></i>投票管理</a></li>
+				<li class="sidebar-li "><a href="user_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-users"></i>用户管理</a></li>
+			</ul>
+			
+			<!-- 分隔线 -->
+			<div class="sidebar-line"></div>
+			<p class="sidebar-ttl">分析</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="user_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-analysis"></i>用户分析</a></li>
+				<li class="sidebar-li active"><a href="article_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-charts"></i>文章分析</a></li>
+			</ul>
+		</div>		<!-- 左侧导航区end -->
+		
+		<!-- 右侧内容区begin -->
+		<div class="main-conts">
+			<div class="main-hd-fixed">
+				<!-- 页面tab切换begin -->
+				<div id="tabView" class="ui_tab_tabs">
+					<a href="javascript:;" class="ui_tab_tab checked" data-rel="articleSend">文章群发</a>
+					<a href="javascript:;" class="ui_tab_tab" data-rel="articleStat">文章统计</a>                    
+				</div>
+				<!-- 页面tab切换end -->
+			
+			</div>
+				
+			<!-- 页面内容 -->
+			<div class="ui_tab_contents artana_contents">
+				
+				<!-- 文章群发begin -->
+				<div id="articleSend" class="ui_tab_content checked">
+				
+					<!-- 文章发布排序 -->
+					<div class="select_hd">
+						
+						<!-- 搜索文章标题 -->
+						<span class="ui_input ui_search_input">
+							<input type="search" placeholder="搜索文章标题" >
+							<a href="javascript:" class="ui_icon_search">搜索文章标题</a>
+						</span>
+						
+						<!-- 发布时间选择 -->
+						<select style="width:240px;">
+							<option selected>2016.06.1 - 2016.06.15</option>
+							<option>2016.06.15 - 2016.06.30</option>
+						</select>
+						
+						<!-- 按发布时间排序 -->
+						<select style="width: 192px;">
+							<option selected>按发布时间排序</option>
+							<option>时间由早到晚</option>
+							<option>时间由早到早</option>
+						</select>
+					</div>
+					<div class="ana_pages">
+						
+						<!-- 一篇文章begin -->
+						<div class="article_box">
+							<div class="article_ttl">
+								<p class="post_date">发布日期：2016年7月15日</p>
+								<p class="title">跟吃相关的工作，特别美好</p>
+							</div>
+							<div class="article_ana clearfix">
+							
+								<!-- 文章分析tab -->
+								<div id="articleTab" class="ui_tab_tabs">
+									<p class="liner">
+										<a href="javascript:;" class="ui_tab_tab tab_ttl checked" data-rel="articleTo"><span class="ttl">送达人数</span><em class="num">529</em></a>
+										<a href="javascript:;" class="ui_tab_tab tab_ttl" data-rel="articleShare"><span class="ttl">分享转发数</span><em class="num">92</em></a>
+									</p>
+									<p>									
+										<a href="javascript:;" class="ui_tab_tab tab_ttl" data-rel="articleRead"><span class="ttl">文章页阅读数</span><em class="num">446</em></a>
+										<a href="javascript:;" class="tab_ttl"><span class="ttl">更多数据统计</span><em class="soon">即将推出</em></a>
+									</p>
+								</div>
+								
+								<!-- 文章分析内容 -->
+								<div class="ui_tab_contents">
+									
+									<!-- 送达人数 -->
+									<div id="articleTo" class="ui_tab_content checked">
+										<p class="title">近一周分享达人数</p>
+										<div class="chart-horizontal">
+											<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+											<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+											<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+										</div>
+										<div class="chart-vertical day7">
+											<div class="data_v">
+												<span class="column">87</span><span class="day">0906</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">87</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											
+											<!-- ul_blank为空白区域 -->
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">50</span><span class="day">0907</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">50</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">67</span><span class="day">0908</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">67</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">47</span><span class="day">0909</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">47</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">97</span><span class="day">0910</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">97</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">110</span><span class="day">0911</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">110</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">87</span><span class="day">0912</span>
+											
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">87</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+										</div>
+								
+									</div>
+									
+									<!-- 分享转发数 -->
+									<div id="articleShare" class="ui_tab_content">
+										<p class="title">近一周分享转发数</p>
+										<div class="chart-horizontal">
+											<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+											<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+											<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+										</div>
+										<div class="chart-vertical day7">
+											<div class="data_v">
+												<span class="column">87</span><span class="day">0906</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">87</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											
+											<!-- ul_blank为空白区域 -->
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">50</span><span class="day">0907</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">50</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">67</span><span class="day">0908</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">67</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">47</span><span class="day">0909</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">47</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">97</span><span class="day">0910</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">97</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">110</span><span class="day">0911</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">110</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">87</span><span class="day">0912</span>
+											
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关���</dt>
+														<dd class="num">87</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+										</div>
+									</div>
+									
+									<!-- 文章页阅读数 -->
+									<div id="articleRead" class="ui_tab_content">
+										<p class="title">近一周文章阅读数</p>
+										<div class="chart-horizontal">
+											<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+											<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+											<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+										</div>
+										<div class="chart-vertical day7">
+											<div class="data_v">
+												<span class="column">87</span><span class="day">0906</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">87</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											
+											<!-- ul_blank为空白区域 -->
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">50</span><span class="day">0907</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">50</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">67</span><span class="day">0908</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">67</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">47</span><span class="day">0909</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">47</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">97</span><span class="day">0910</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">97</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">110</span><span class="day">0911</span>
+												
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">110</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+											<div class="ul_blank">&nbsp;</div>
+											<div class="data_v">
+												<span class="column">87</span><span class="day">0912</span>
+											
+												<!-- 鼠标hover数据begin -->
+												<div class="data_tips ui_tips_x ui_tips_center">
+													<i class="ui_tips"></i>
+													<dl class="tips_box">
+														<dt class="ttl">新增关注</dt>
+														<dd class="num">87</dd>
+														<dt class="ttl">取消关注</dt>
+														<dd class="num">24</dd>
+														<dt class="ttl">净增关注</dt>
+														<dd class="num">63</dd>
+														<dt class="ttl">累计关注</dt>
+														<dd class="num">1277</dd>
+													</dl>
+												</div>
+												<!-- 鼠标hover数据end -->
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+						<!-- 一篇文章end -->
+						
+					</div>
+				</div>
+				<!-- 文章群发end -->
+				
+				<!-- 文章统计begin -->
+				<div id="articleStat" class="ui_tab_content ana_pages">
+					<!-- 昨日关键数据begin -->
+					<div class="ui_tab_key">
+						<div class="ui_tab_left">昨日关键数据</div>
+						<div id="tabViewList" class="ui_tab_tabs ui_tab_right">
+							<a href="javascript:;" class="ui_tab_tab checked" data-rel="dataQidian">起点读书</a>
+							<a href="javascript:;" class="ui_tab_tab" data-rel="dataQQ">QQ阅读</a>
+							<a href="javascript:;" class="ui_tab_tab" data-rel="allData">全部</a>
+						</div>	
+					</div>
+					<div class="ui_tab_contents">
+						<div id="dataQidian" class="ui_tab_content checked">
+						
+							<!-- 第一块数据 -->
+							<div class="key_content">
+								<div class="key_data">
+									<p class="s_ttl">新增关注</p>
+									<p class="data">57</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">取消关注</p>
+									<p class="data">57</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">净增关注</p>
+									<p class="data">-1</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">累计关注</p>
+									<p class="data">2K</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+							</div>
+							<!-- 第一块数据end -->
+							
+							<!-- 第二块图表数据begin -->
+							<div class="ui_tab_graph clearfix">
+								<div id="followQidian" class="ui_tab_tabs ui_tab_left">
+									<a href="javascript:;" class="ui_tab_tab checked" data-rel="addData">新增关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="cancelData">取消关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="">净增关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="">累计关注</a>
+								</div>
+								<div id="dayQidian" class="ui_tab_tabs ui_tab_right">
+									<a href="javascript:;" class="ui_tab_tab checked" data-rel="day7_qidian">7日</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="day14_qidian">14日</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="day30_qidian">30日</a>
+								</div>
+							</div>
+							
+							<div class="ui_tab_contents ui_contents_graph">
+								<div id="day7_qidian" class="ui_tab_content checked">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day7">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+								<div id="day14_qidian" class="ui_tab_content" style="display: ">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day14">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column today">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+								<div id="day30_qidian" class="ui_tab_content" style="display: ">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day30">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column today">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+							
+							</div>
+							
+							<!-- 表格形式数据begin -->
+							<div class="table_x ana_table"><!-- 外框投影，若有第一列为复选框，添加类名table_checkbox -->
+								<div class="table_size"><!-- 尺寸控制，主要是高度 -->
+									<!-- 列表 -->
+									<table class="ui_table">
+										<thead>
+											<tr>
+												<th width="154">时间</th>
+												<th width="204">新增关注</th>
+												<th width="208">取消关注</th>
+												<th width="182">净增关注</th>
+												<th width="">累计关注</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+										</tbody>
+									</table>
+								 </div>
+								 <!-- 底部分页 -->
+								 <div class="table_page_x"></div>
+							</div>   
+							<!-- 表格形式数据end -->	
+						</div>
+						<div id="dataQQ" class="ui_tab_content">
+							
+							<!-- 第一块数据 -->
+							<div class="key_content">
+								<div class="key_data">
+									<p class="s_ttl">新增关注</p>
+									<p class="data">67</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">取消关注</p>
+									<p class="data">97</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">净增关注</p>
+									<p class="data">-3</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">累计关注</p>
+									<p class="data">2K</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+							</div>
+							<!-- 第一块数据end -->
+							
+							<!-- 第二块图表数据begin -->
+							<div class="ui_tab_graph clearfix">
+								<div id="followQQ" class="ui_tab_tabs ui_tab_left">
+									<a href="javascript:;" class="ui_tab_tab checked" data-rel="addData">新增关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="cancelData">取消关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="">净增关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="">累计关注</a>
+								</div>
+								<div id="dayQQ" class="ui_tab_tabs ui_tab_right">
+									<a href="javascript:;" class="ui_tab_tab checked" data-rel="day7_QQ">7日</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="day14_QQ">14日</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="day30_QQ">30日</a>
+								</div>
+							</div>
+							
+							<div class="ui_tab_contents ui_contents_graph">
+								<div id="day7_QQ" class="ui_tab_content checked">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day7">
+										<div class="data_v">
+											<span class="column">117</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">117</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">59</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">59</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">127</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">127</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">116</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">116</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+								<div id="day14_QQ" class="ui_tab_content" style="display: ">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day14">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠���hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column today">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+								<div id="day30_QQ" class="ui_tab_content" style="display: ">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day30">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column today">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+							
+							</div>
+							
+							<!-- 表格形式数据begin -->
+							<div class="table_x ana_table"><!-- 外框投影，若有第一列为复选框，添加类名table_checkbox -->
+								<div class="table_size"><!-- 尺寸控制，主要是高度 -->
+									<!-- 列表 -->
+									<table class="ui_table">
+										<thead>
+											<tr>
+												<th width="154">时间</th>
+												<th width="204">新增关注</th>
+												<th width="208">取消关注</th>
+												<th width="182">净增关注</th>
+												<th width="">累计关注</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+										</tbody>
+									</table>
+								 </div>
+								 <!-- 底部分页 -->
+								 <div class="table_page_x"></div>
+							</div>   
+							<!-- 表格形式数据end -->	
+						
+						</div>
+						<div id="allData" class="ui_tab_content">
+						<!-- 第一块数据 -->
+							<div class="key_content">
+								<div class="key_data">
+									<p class="s_ttl">新增关注</p>
+									<p class="data">57</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">取消关注</p>
+									<p class="data">107</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">净增关注</p>
+									<p class="data">-5</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+								<div class="key_data">
+									<p class="s_ttl">累计关注</p>
+									<p class="data">5K</p>
+									<ul class="trend">
+										<li><span class="up">2<i class="ico-up"></i></span>昨日</li>
+										<li><span class="down">12<i class="ico-down"></i></span>上周</li>
+										<li><span class="up">2<i class="ico-up"></i></span>上月</li>
+									</ul>
+								</div>
+							</div>
+							<!-- 第一块数据end -->
+							
+							<!-- 第二块图表数据begin -->
+							<div class="ui_tab_graph clearfix">
+								<div id="followAll" class="ui_tab_tabs ui_tab_left">
+									<a href="javascript:;" class="ui_tab_tab checked" data-rel="addData">新增关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="cancelData">取消关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="">净增关注</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="">累计关注</a>
+								</div>
+								<div id="dayAll" class="ui_tab_tabs ui_tab_right">
+									<a href="javascript:;" class="ui_tab_tab checked" data-rel="day7_All">7日</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="day14_All">14日</a>
+									<a href="javascript:;" class="ui_tab_tab" data-rel="day30_All">30日</a>
+								</div>
+							</div>
+							
+							<div class="ui_tab_contents ui_contents_graph">
+								<div id="day7_All" class="ui_tab_content checked">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day7">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+								<div id="day14_All" class="ui_tab_content" style="display: ">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day14">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column today">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+								<div id="day30_All" class="ui_tab_content" style="display: ">
+									<div class="chart-horizontal">
+										<div class="data_h"><span class="num">150</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">100</span><i class="line"></i></div>
+										<div class="data_h"><span class="num">50</span><i class="line"></i></div>
+									</div>
+									<div class="chart-vertical day30">
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column today">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0906</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										
+										<!-- ul_blank为空白区域 -->
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">50</span><span class="day">0907</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">50</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">67</span><span class="day">0908</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">67</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">47</span><span class="day">0909</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">47</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">97</span><span class="day">0910</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">97</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">110</span><span class="day">0911</span>
+											
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">110</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">87</span><span class="day">0912</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">87</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">120</span><span class="day">0913</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">120</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">150</span><span class="day">0914</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">150</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">100</span><span class="day">0915</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">100</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">60</span><span class="day">0916</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">60</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">30</span><span class="day">0917</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">30</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										
+										<!-- 当天柱状图为绿色 -->
+										<div class="data_v">
+											<span class="column">130</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips"></i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">130</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+										<div class="ul_blank">&nbsp;</div>
+										<div class="data_v">
+											<span class="column">210</span><span class="day">0918</span>
+										
+											<!-- 鼠标hover数据begin -->
+											<div class="data_tips ui_tips_x ui_tips_center">
+												<i class="ui_tips">20</i>
+												<dl class="tips_box">
+													<dt class="ttl">新增关注</dt>
+													<dd class="num">210</dd>
+													<dt class="ttl">取消关注</dt>
+													<dd class="num">24</dd>
+													<dt class="ttl">净增关注</dt>
+													<dd class="num">63</dd>
+													<dt class="ttl">累计关注</dt>
+													<dd class="num">1277</dd>
+												</dl>
+											</div>
+											<!-- 鼠标hover数据end -->
+										</div>
+									</div>
+								
+								</div>
+							
+							</div>
+							
+							<!-- 表格形式数据begin -->
+							<div class="table_x ana_table"><!-- 外框投影，若有第一列为复选框，添加类名table_checkbox -->
+								<div class="table_size"><!-- 尺寸控制，主要是高度 -->
+									<!-- 列表 -->
+									<table class="ui_table">
+										<thead>
+											<tr>
+												<th width="154">时间</th>
+												<th width="204">新增关注</th>
+												<th width="208">取消关注</th>
+												<th width="182">净增关注</th>
+												<th width="">累计关注</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+											<tr>
+												<td>2016.07.06</td>
+												<td>57</td>
+												<td>58</td>
+												<td>-1</td>
+												<td>2048</td>
+											</tr>
+										</tbody>
+									</table>
+								 </div>
+								 <!-- 底部分页 -->
+								 <div class="table_page_x"></div>
+							</div>   
+							<!-- 表格形式数据end -->	
+						
+						</div>
+					</div>
+					<!-- 数据end -->
+					
+				</div>
+			</div>
+			
+		</div>
+		<!-- 右侧内容区end -->
+		
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer">
+	<div class="ft-box">
+		<!-- 联系客服弹出begin -->
+		<div id="contact-bubble" class="footer-bubble">
+			<em><i></i></em>
+			<ul>
+				<li><a target="_blank" href="http://kf.qidian.com/Default.aspx">联系起点客服</a></li>
+				<li><a target="_blank" href="http://kf.qq.com/product/chuangshi.html">联系创世客服</a></li>
+			</ul>
+		</div>
+		<!-- 联系客服弹出end -->
+		<!-- 链接 -->
+		<ul class="ft-link">
+			<li><a href="">帮助中心</a></li>
+			<li><a id="contact" href="">联系客服</a></li>
+			<li><a href="">诚聘英才</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">客服中心</a></li>
+			<li><a href="">版权声明</a></li>
+			<li>Copyright © 2015-2016 yuewen.com All Rights Reserved.</li>
+		</ul>
+	</div>
+</div>
+
+<script src="../../../js/mp/build/plugin/sea.js"></script>
+<script src="../../../js/mp/build/plugin/jquery.min.js"></script></div>
+<script>
+seajs.config({
+	base: '../../../js/mp/build/'
+}).use(['article_ana']);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/**
+ * $author rainszhang
+ */
+
+@import "variables";
+@import "mixins";
+
+//
+// Autocomplete
+// --------------------------------------------------
+.lbf-autocomplete {
+    &-suggestions {
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border: 1px solid #d9d9d9 \9;
+        *border: 1px solid #d9d9d9;
+
+        @include border-radius($border-radius-base);
+        @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+
+        background-color: #fff;
+        outline: none;
+
+        strong {
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    &-suggestion {
+        padding: 4px 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 14px;
+    }
+
+    &-no-suggestion {
+        padding: 4px 6px;
+    }
+
+    &-selected {
+        background: #f0f0f0;
+    }
+
+    &-group {
+        padding: 4px 6px;
+
+        strong {
+            display: block;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    /* 循环输出 */
+    &-group-a,
+    &-group-b,
+    &-group-c,
+    &-group-d {
+
+    }
+}

@@ -1,0 +1,144 @@
+.lbf-crop{
+    position: relative;
+    overflow: hidden;
+
+    width: 530px;
+    height: 302px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.lbf-crop .lbf-crop-area {
+    position: relative;
+    overflow: hidden;
+    border:1px solid #eee;
+
+    width: 500px;
+    height: 300px;
+    cursor: move;
+}
+.lbf-crop .lbf-crop-area img{
+    position: absolute;
+    top: 0;
+    left: 0;
+	display:none;
+}
+.lbf-crop .lbf-crop-cropBox{
+    position:absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    border:1px solid #fff;
+
+    width:360px;
+    height:270px;
+	background:url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/blank.gif);
+}
+.lbf-crop .lbf-crop-top,
+.lbf-crop .lbf-crop-right,
+.lbf-crop .lbf-crop-bottom,
+.lbf-crop .lbf-crop-left{
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    opacity: .6;
+    background-color: #000;
+
+    filter:alpha(opacity=60);
+}
+.lbf-crop-zoombar{
+	position: absolute;
+	z-index: 2;
+	right: 3px;
+	bottom: 7px;
+	border-radius: 2px;
+	width: 4px;
+	height: 100px;
+	background-color: #eee;
+}
+.lbf-crop-zoombar .lbf-crop-handler{
+	position:absolute;
+	top: 50%;
+	left: -3px;
+	border: 1px solid #ddd;
+	border-radius:3px;
+
+	width: 8px;
+	height: 8px;
+	margin-top: -5px;
+	cursor: pointer;
+	background-color: #fff;
+}
+.lbf-crop-zoombar .lbf-crop-zoomTip{
+	position:absolute;
+	top:-3px;
+	left:-46px;
+	display:none;
+	border:1px solid #eee;
+	border-radius:3px;
+	height:12px;
+	padding:0 5px;
+	font-family:arial;
+	font-size:10px;
+	line-height:12px;
+	white-space:nowrap;
+	color:#888;
+	background-color:#fff;
+}
+
+.lbf-winCrop .lbf-panel-foot{
+	position:relative;
+}
+.lbf-winCrop .lbf-button{margin-left:15px;}
+.lbf-winCrop .lbf-crop-msgTip{
+	position:absolute;
+	top:14px;
+	left:20px;
+	display:block;
+	height:30px;
+	line-height:30px;
+}
+.lbf-winCrop .lbf-cropArea-loading{
+	overflow:hidden;
+
+	width:100px;
+	height:100px;
+	background:url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/loading.gif) no-repeat center center;
+}
+.lbf-winCrop .lbf-crop-loading{
+	padding-left:16px;
+	background:url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/loading.gif) no-repeat 0 center;
+}
+.lbf-winCrop .lbf-crop-resize{
+	position:absolute;
+	bottom:14px;
+	left:154px;
+	font-size:12px;
+	color:#666;
+}
+.lbf-winCrop .lbf-crop-resize input{
+	border:1px solid #ccc;
+	border-radius:3px;
+	width:40px;
+	margin-right:3px;
+	padding:2px;
+	font-family:arial;
+	font-size:12px;
+	vertical-align:middle;
+	color:#666;
+}
+
+.lbf-loading{
+	display:none;
+	overflow:hidden;
+	height:18px;
+	margin:0 -22px 0 6px;
+
+	padding-left:16px;
+	line-height:18px;
+	vertical-align:middle;
+	background: url(//combo.b.qq.com/lbf/0.7.2.1/ui/theme/bootstrap/images/FileUploader/loading.gif) no-repeat center center;
+
+	_position:relative;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" href="../../../css/mp/build/ui.css"/>
+<link rel="stylesheet" href="../../../css/mp/build/common.css"/>
+
+    <title>投票管理</title>
+    <link rel="stylesheet" href="../../../css/mp/build/vote_create.css" rel="stylesheet" type="text/css"/>
+    <!-- @author author | @designer designer | @pm pm -->
+</head>
+<body>
+<div class="container">
+
+	<!-- 顶部header begin -->
+	<!-- 顶部header begin -->
+	<div class="header">
+		<div class="hd-wrap clearfix">
+			
+			<!-- logo -->
+			<h1 class="logo"><a href="./" class="logo-a">作家自媒体</a></h1>
+			
+			<!-- 右侧作家信息begin -->
+			<div class="header-right">
+				<a href="javascript:" id="hdAuthor" class="header-author-box">
+					<p class="header-author">
+						<!--<i class="icon icon-ring"></i>-->夕阳剑客<i class="icon icon-dropdown"></i>
+					</p>					
+				</a>
+			</div>
+			<!-- 右侧作家信息end -->
+		</div>
+	</div>
+
+	<!-- 作家信息下拉begin -->
+	<div id="hdDrop" class="header-drop">
+		<div class="header-drop-box">
+			<p class="header-drop-pic">
+				<i class="header-drop-circle"></i>
+				<img src="../../../img/mp/p1/temp/photo01.jpg" class="header-avatar" alt="夕阳剑客" />
+			</p>
+			<p class="header-drop-name">夕阳剑客</p>
+		</div>
+		<a href="" class="header-logout"><i class="icon icon-signout"></i>退出登录</a>
+	</div>
+	<!-- 作家信息下拉end -->	<!-- 顶部header end -->
+
+	<!-- 内容区 -->
+	<div class="main-wrap">
+		
+		<!-- 左侧导航区begin -->
+		<div class="sidebar">
+			<p class="sidebar-ttl">功能</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="send_function.html" class="sidebar-a"><i class="icon-nav icon-nav-posts"></i>群发功能</a></li>
+				<li class="sidebar-li "><a href="message_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-message"></i>留言管理</a></li>
+				<li class="sidebar-li active"><a href="vote_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-vote"></i>投票管理</a></li>
+				<li class="sidebar-li "><a href="user_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-users"></i>用户管理</a></li>
+			</ul>
+			
+			<!-- 分隔线 -->
+			<div class="sidebar-line"></div>
+			<p class="sidebar-ttl">分析</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="user_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-analysis"></i>用户分析</a></li>
+				<li class="sidebar-li "><a href="article_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-charts"></i>文章分析</a></li>
+			</ul>
+		</div>		<!-- 左侧导航区end -->
+		
+		<!-- 右侧内容区begin -->
+		<div class="main-conts">
+			<div class="main-hd-fixed">
+				<div class="conts-hd">
+					<div class="page-ttl"><a class="return" href="vote_manage.html"><i class="icon icon-back"></i>投票管理</a><span class="ml5 mr5">|</span><span>新建投票</span></div>
+				</div>
+				
+				<!-- 标题右侧完成按钮 -->
+				<div class="rel">
+					<div class="tab-right">					
+						<label class="ui_button ui_button_primary btn-true" for="voteCreateSubmit">完成</label>
+					</div>				
+				</div>
+			</div>
+
+			<!-- 创建投票的大表单 -->
+			<form class="vote-create" id="voteCreateForm" action="./cgi/json/createVote.html" method="post">
+				<input type="submit" id="voteCreateSubmit" class="clip">		
+				<p class="top-tip"><i class="icon icon-help"></i>新建投票后，必须插入文章中才会生效，投票将统计该投票在各个渠道的综合结果总和。</p>
+				
+				<!-- 新建投票begin -->
+				<div class="new-vote">
+					<div class="line">
+						<h5 class="ttl"><label for="voteTitle">投票名称</label></h5>
+						<div class="ui_input_x input-box">           
+							<input maxlength="35" name="title" id="voteTitle" autocomplete="off" required>
+							<div class="ui_input"></div>
+						</div>						
+						<p class="tip">只用于投票管理后台，不显示在下发的投票内容中</p>
+					</div>
+					<div class="line">
+						<h5 class="ttl">截止时间</h5>
+						<div class="time-choose">						
+							<!-- 日期选择 -->
+							<span class="ui_input ui_date_input mr15"><input type="date" class="date-choose-input dateTime" name="date" required></span>						
+							<span class="ui_input ui_date_input"><input type="time" class="time-choose-input dateTime" name="time" required></span>
+						</div>
+					</div>
+					
+					<!-- 一条问题begin -->
+					<script id="quesTemp" type="text/template">
+					<div class="line jsQuesBox">
+						<input type="checkbox" id="quesToggle{{quesId}}" class="question-check">					
+						<!-- 问题标题 -->
+						<div class="ttl-box">
+							<h4 class="ttl b">问题 {{quesId}}</h4>
+							<p class="fold tr">
+								{{ if quesId > 1 }}<a href="javascript:" class="darkred jsDelQues mr30">删除</a>{{/if}}
+								<label class="blue checked-in abs" for="quesToggle{{quesId}}">展开编辑</label>
+								<label class="gray checked-out" for="quesToggle{{quesId}}">收起</label>								
+							</p>
+						</div>
+						
+						<!-- 问题内容-->
+						<div class="question-cont">
+							<div class="radio-box clearfix">
+								<input id="choose{{quesId}}_1" name="multiple{{quesId}}" type="radio" value="0" required /><label class="ui_radio" for="choose{{quesId}}_1"></label><label class="label-text" for="choose{{quesId}}_1">单选</label>
+								<input id="choose{{quesId}}_2" name="multiple{{quesId}}" type="radio" value="1" required /><label class="ui_radio" for="choose{{quesId}}_2"></label><label class="label-text" for="choose{{quesId}}_2">多选</label>
+							</div>
+							<div class="question-box">
+								<label class="ttl db" for="quesTitle{{quesId}}">问题标题</label>
+								<div class="ui_input_x input-box">           
+									<input maxlength="35" name="ques{{quesId}}" id="quesTitle{{quesId}}" autocomplete="off" required>
+									<div class="ui_input"></div>
+								</div>
+							</div>
+							
+							<!-- 多个选项 -->
+							<div id="jsAnswerX{{quesId}}" class="answer-box">
+								<div class="answer">
+									<p class="ttl"><label for="ques{{quesId}}-1">选项 1</label></p>
+									<div class="ui_input_x input-box">           
+										<input maxlength="35" name="ques{{quesId}}-option1" id="ques{{quesId}}-1" autocomplete="off" required>
+										<div class="ui_input"></div>
+									</div>
+								</div>
+								<div class="answer">
+									<p class="ttl"><label for="ques{{quesId}}-2">选项 2</label></p>
+									<div class="ui_input_x input-box">           
+										<input maxlength="35" name="ques{{quesId}}-option2" id="ques{{quesId}}-2" autocomplete="off" required>
+										<div class="ui_input"></div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- 添加选项 -->
+							<div class="add-option"><a href="javascript:" class="add-option addOption" max="10" data-index="3" data-rel="jsAnswerX{{quesId}}">添加选项</a></div>
+						</div>
+					</div>
+					<!-- 一条问题end -->
+					</script>
+
+					<script id="optionTemp" type="text/template">
+					<div class="answer jsNewOption">
+						<p class="ttl"><label for="ques{{quesId}}-{{optionId}}">选项 {{optionId}}<span class="gray">(可选)</span></label></p>
+						<div class="ui_input_x input-box">           
+							<input id="ques{{quesId}}-{{optionId}}" maxlength="35" name="ques{{quesId}}-option{{optionId}}" autocomplete="off">
+							<div class="ui_input"></div>
+						</div>
+					</div>
+					</script>
+
+					<div id="voteLoading" class="add-vote-placeholder ui_loading"><i class="ui_loading_icon"></i></div>
+					
+					<!-- 添加问题 -->
+					<a href="javascript:" id="addQues" class="add-question" max="5" data-index="1">添加问题</a>
+					
+				</div>
+				<!-- 新建投票end -->
+			</form>
+		</div>
+		<!-- 右侧内容区end -->
+		
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer">
+	<div class="ft-box">
+		<!-- 联系客服弹出begin -->
+		<div id="contact-bubble" class="footer-bubble">
+			<em><i></i></em>
+			<ul>
+				<li><a target="_blank" href="http://kf.qidian.com/Default.aspx">联系起点客服</a></li>
+				<li><a target="_blank" href="http://kf.qq.com/product/chuangshi.html">联系创世客服</a></li>
+			</ul>
+		</div>
+		<!-- 联系客服弹出end -->
+		<!-- 链接 -->
+		<ul class="ft-link">
+			<li><a href="">帮助中心</a></li>
+			<li><a id="contact" href="">联系客服</a></li>
+			<li><a href="">诚聘英才</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">客服中心</a></li>
+			<li><a href="">版权声明</a></li>
+			<li>Copyright © 2015-2016 yuewen.com All Rights Reserved.</li>
+		</ul>
+	</div>
+</div>
+
+<script src="../../../js/mp/build/plugin/sea.js"></script>
+<script src="../../../js/mp/build/plugin/jquery.min.js"></script></div>
+<script type="text/javascript">
+seajs.config({
+	base: '../../../js/mp/build/',
+}).use(['vote_create'], function(voteCreate) {
+	voteCreate.createVote('voteCreateForm');
+
+	voteCreate.addQues({
+		el: $('#addQues')
+	});
+});   
+</script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+.course-top {
+	width: 1000px;
+	margin: 0 auto 20px auto;
+}
+
+.course-top .sec-ttl {
+	font-size: 18px;
+	height: 58px;
+	line-height: 58px;
+}
+
+.course-top .course-box {
+	padding: 20px;
+}
+
+.course-top .pic {
+	float: left;
+	width: 288px;
+	margin-right: 20px;
+}
+
+.course-top .pic img {
+	display: block;
+	width: 288px;
+	height: 162px;
+}
+
+.course-top .right-box {
+	float: left;
+	width: 650px;
+}
+
+.course-top .info-box {
+	overflow: hidden;
+	height: 114px;
+}
+
+.course-top .score-box,
+.course-top .collect,
+.course-top .money {
+	overflow: hidden;
+	height: 24px;
+	margin-bottom: 4px;
+}
+
+.course-top .right-box .ttl {
+	margin-right: 10px;
+}
+
+/**
+ * 五角星
+ */
+.course-top .star i {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	font-style: normal;
+	text-indent: -9999px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -414px;
+}
+
+.course-top .star i.on {
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -390px;
+}
+
+.course-top .right-box .score {
+	margin-left: 10px;
+}
+
+.course-top .right-box .red {
+	color: #ff6d6d;
+}
+
+/**
+ * 去上课
+ */
+.course-top .opt-box .btn-class {
+	float: left;
+}
+
+.course-top .opt-right {
+	float: right;
+	margin-top: 16px;
+}
+
+/**
+ * 收藏
+ */
+.course-top .opt-right .bookmark {
+	float: left;
+	height: 24px;
+}
+
+.course-top .bookmark .mark {
+	padding-left: 34px;
+	display: inline-block;
+	height: 24px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -462px;
+}
+
+.course-top .bookmark .mark.checked {
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -438px;
+}
+
+.course-top .bookmark .mark:hover {
+	color: #4ea8ff;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -438px;
+}
+
+/**
+ * 分享
+ */
+.course-top .opt-box .share {
+	float: left;
+}
+
+.course-top .opt-box .share a {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	text-indent: -9999px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat;
+}
+
+.course-top .opt-box .share .weixin {
+	background-position: 0 -860px;
+}
+
+.course-top .opt-box .share .weixin:hover {
+	background-position: 0 -900px;
+}
+
+.course-top .opt-box .share .pyq {
+	background-position: 0 -940px;
+}
+
+.course-top .opt-box .share .pyq:hover {
+	background-position: 0 -980px;
+}
+
+.course-top .opt-box .share .sina {
+	background-position: 0 -1020px;
+}
+
+.course-top .opt-box .share .sina:hover {
+	background-position: 0 -1060px;
+}
+
+.course-top .opt-box .share .qq {
+	background-position: 0 -1100px;
+}
+
+.course-top .opt-box .share .qq:hover {
+	background-position: 0 -1140px;
+}
+
+/**
+ * 课程介绍
+ */
+.course-detail {
+	padding: 0 20px;
+}
+
+.course-detail .sec-ttl {
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.course-detail {
+	margin-bottom: 0;
+	padding-bottom: 40px;
+}
+
+.course-detail .course-intro {
+	margin-bottom: 40px;
+}
+
+/**
+ * 讲师信息
+ */
+.teacher-intro {
+	margin-bottom: 40px;
+}
+
+.teacher-intro .pic {
+	float: left;
+	width: 64px;
+}
+
+.teacher-intro .right-box {
+	float: right;
+	width: 536px;
+}
+
+.teacher-intro .name {
+	margin: 4px 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/**
+ * 课程评价
+ */
+.course-detail .recommend-box .item {
+	overflow: hidden;
+	height: 30px;
+	line-height: 30px;
+}
+
+.course-detail .recommend-box .ttl {
+	float: left;
+	width: 74px;
+}
+
+.course-detail .recommend-box .percent {
+	float: left;
+	width: 240px;
+	height: 10px;
+	margin: 10px 16px 0 0;
+	background: #dfe0e6;
+}
+
+.course-detail .recommend-box .percent span {
+	display: block;
+	height: 10px;
+	background: #4ea8ff;
+}
+
+.course-detail .recommend-box .number {
+	float: left;
+	color: #000;
+}
+
+.related-course {
+	padding: 20px 24px;
+}
+
+.related-course .title {
+	font-weight: bold;
+}
+
+.related-course .title a:hover {
+	text-decoration: underline;
+}
+
+.related-course .item {
+	margin-bottom: 20px;
+}
+
+.related-course .author {
+	color: #9ea6b4;
+}
+

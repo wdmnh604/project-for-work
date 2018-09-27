@@ -1,0 +1,126 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+.editor-wrap {
+	padding: 40px 0;
+	border: 1px solid #dfe0e6;
+	background: #fff;
+}
+
+.editor-wrap h2 {
+	clear: both;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.editor-wrap h2 .t01 {
+	display: block;
+	margin-bottom: 4px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.editor-wrap h2 .t02 {
+	display: block;
+	margin-bottom: 4px;
+	color: #9ea6b4;
+}
+
+.editor-wrap h2 .line {
+	display: block;
+	width: 64px;
+	height: 1px;
+	margin: 0 auto;
+	background: #4ea8ff;
+}
+
+.editor-box {
+	padding-left: 110px;
+}
+
+.editor-box li {
+	float: left;
+	margin: 0 60px 30px 0;
+	text-align: center;
+}
+
+.editor-box .pic {
+	width: 150px;
+	margin-bottom: 20px;
+}
+
+.editor-box .pic img {
+	display: block;
+	width: 150px;
+	height: 150px;
+}
+
+.editor-box .name {
+	font-weight: bold;
+}
+
+.editor-box .name .title {
+	display: block;
+	font-weight: normal;
+	color: #9ea6b4;
+}
+
+/**
+ * 首席内容专家
+ */
+.principle-editor {
+	margin-bottom: 30px;
+}
+
+.principle-editor .editor-box li {
+	width: 370px;
+	text-align: left;
+}
+
+.principle-editor .editor-box .pic {
+	float: left;
+	margin: 0 16px 0 0;
+}
+
+.principle-editor .editor-box .name {
+	float: left;
+	width: 200px;
+	margin-top: 54px;
+	font-weight: bold;
+}
+
+.principle-editor .editor-box .name .title {
+	display: block;
+	font-weight: normal;
+	color: #9ea6b4;
+}
+
+/**
+ * 资深内容专家
+ */
+.senior-editor {
+	margin-bottom: 30px;
+}
+
+.expert-editor {
+	margin-bottom: 30px;
+}
+
+.editor-list  {
+	padding-left: 110px;
+}
+
+.editor-list  li {
+	float: left;
+	width: 170px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 8px;
+}
+
+
+
+
+
+

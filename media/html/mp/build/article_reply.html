@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>写留言</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../../../css/mp/build/article.css">
+</head>
+<body>
+<div class="article-wrap">
+    <form id="artMsgForm" action="./cgi/json/messageReply.html" method="post">
+        <div class="msg-textarea">
+            <textarea id="artMsgArea" rows="8" maxlength="500" placeholder="留言将由作家筛选后显示，对所有人可见" required="" name="content"></textarea>
+        </div>        
+        <div class="msg-btn-box">
+            <input type="submit" id="artMsgSubmit" class="article-btn" disabled="">
+            <label for="artMsgSubmit" class="article-btn disabled">提交</label>
+        </div>
+    </form>
+</div>
+<script src="../../../js/mp/build/article-es5.js"></script>
+<script>
+ARTICLE.disabled('artMsgArea');
+ARTICLE.init('artMsgForm');
+</script>
+</body>
+</html>

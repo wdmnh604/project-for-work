@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" href="../../../css/mp/build/ui.css"/>
+<link rel="stylesheet" href="../../../css/mp/build/common.css"/>
+
+    <title>群发功能 - 阅文自媒体</title>
+    <link rel="stylesheet" href="../../../css/mp/build/send_function.css"/>
+    <!-- @author author | @designer designer | @pm pm -->
+</head>
+<body>
+<div class="container">
+
+	<!-- 顶部header begin -->
+	<!-- 顶部header begin -->
+	<div class="header">
+		<div class="hd-wrap clearfix">
+			
+			<!-- logo -->
+			<h1 class="logo"><a href="./" class="logo-a">作家自媒体</a></h1>
+			
+			<!-- 右侧作家信息begin -->
+			<div class="header-right">
+				<a href="javascript:" id="hdAuthor" class="header-author-box">
+					<p class="header-author">
+						<!--<i class="icon icon-ring"></i>-->夕阳剑客<i class="icon icon-dropdown"></i>
+					</p>					
+				</a>
+			</div>
+			<!-- 右侧作家信息end -->
+		</div>
+	</div>
+
+	<!-- 作家信息下拉begin -->
+	<div id="hdDrop" class="header-drop">
+		<div class="header-drop-box">
+			<p class="header-drop-pic">
+				<i class="header-drop-circle"></i>
+				<img src="../../../img/mp/p1/temp/photo01.jpg" class="header-avatar" alt="夕阳剑客" />
+			</p>
+			<p class="header-drop-name">夕阳剑客</p>
+		</div>
+		<a href="" class="header-logout"><i class="icon icon-signout"></i>退出登录</a>
+	</div>
+	<!-- 作家信息下拉end -->	<!-- 顶部header end -->
+
+	<!-- 内容区 -->
+	<div class="main-wrap">
+		
+		<!-- 左侧导航区begin -->
+		<div class="sidebar">
+			<p class="sidebar-ttl">功能</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li active"><a href="send_function.html" class="sidebar-a"><i class="icon-nav icon-nav-posts"></i>群发功能</a></li>
+				<li class="sidebar-li "><a href="message_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-message"></i>留言管理</a></li>
+				<li class="sidebar-li "><a href="vote_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-vote"></i>投票管理</a></li>
+				<li class="sidebar-li "><a href="user_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-users"></i>用户管理</a></li>
+			</ul>
+			
+			<!-- 分隔线 -->
+			<div class="sidebar-line"></div>
+			<p class="sidebar-ttl">分析</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="user_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-analysis"></i>用户分析</a></li>
+				<li class="sidebar-li "><a href="article_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-charts"></i>文章分析</a></li>
+			</ul>
+		</div>		<!-- 左侧导航区end -->
+		
+		<!-- 右侧内容区begin -->
+		<div class="main-conts">
+						<div class="main-hd-fixed">
+				<!-- 页面tab切换begin -->
+				<div id="tabView" class="ui_tab_tabs">
+					<a href="javascript:;" class="ui_tab_tab checked" data-rel="sendWait">待发送</a>
+					<a href="javascript:;" class="ui_tab_tab" data-rel="sendHas">已发送</a>                    
+				</div>
+				<!-- 页面导航end -->
+				
+				<!-- 选项卡右侧描述 -->
+				<div class="rel">
+					<div class="tab-right">					
+						<a href="javascript:;" class="tab-right-info jsRule"><i class="icon icon-help"></i>群发规则说明</a>
+						<a class="btn-true ml20" target="_blank" href="create.html">写文章</a>
+					</div>
+					<ol class="rule_content jsRuleContent" style="display: none">
+						<li>登录自媒体平台功能=>群发消息选择已有的文章编辑或者新建文章，在编辑页面点击发布即可。</li>
+						<li>自媒体平台群发文章的接受人数没有限制，只能群发给粉丝，不支持群发给非关注用户。后期支持针对QQ阅读、起点读书等不同平台分发。</li>
+						<li>文章内容可以插入图片，视频，链接和作品，链接解析只支持qq.com和qidian.com域名的解析。</li>
+						<li>自媒体平台群发消息在1天只能群发1条消息（每天0点更新，次数不会累加）。</li>
+						<li>文章的标题上限为64个字节。</li>
+						<li>通过自媒体平台群发的图文文章，可在“已发送”中删除；进入自媒体平台=>功能=>群发功能=>已发送=>找到需删除消息=>点击“删除”图标删除即可。</li>
+						<li>删除动作将删除文章的详情页，但关注用户仍能可以查看预览的内容。</li>
+						<li>图文消息删除后，群发每天1条文章的权限不会恢复。</li>
+					</ol>
+				</div>
+			</div>
+			
+			<div class="ui_tab_contents">
+			    <div id="sendWait" class="ui_tab_content table_content checked">
+			    	<form id="sendWaitForm" action="./cgi/json/getSendArticle.html" method="get">
+			    		<input type="hidden" name="type" value="wait">
+			    	</form>
+			    	<script id="sendWaitTemp" type="text/template">
+						{{each data}}
+						<tr>
+							<td>
+								<p class="user-pic"><img class="user-img" src="{{$value.imgurl}}" /></p>
+							</td>
+							<td>
+								<p class="title">{{$value.title}}</p>
+							</td>								
+							<td>{{$value.target}}</td>
+							<td>{{$value.time}}{{ if $value.isready }}<i class="icon icon-timer"></i>{{/if}}</td>
+							<td>
+								<p class="edit mb5"><a href="create.html?id={{$value.id}}">编辑</a></p>
+								<p class="delete"><a href="javascript:;" class="darkred jsDel" data-url="./cgi/json/del.html" data-params="id={{$value.id}}&amp;userid=100001">删除</a></p>
+							</td>
+						</tr>
+						{{/each}}
+			    	</script>
+			    	<div class="table_x">
+						<div class="table_size"><!-- 尺寸控制，主要是高度 -->
+							<!-- 列表 -->
+							<table class="ui_table article_table vertical_middle">
+								<thead>
+									<tr>
+										<th scope="col" width="80">文章</th>
+										<th scope="col" width="496"></th>
+										<th scope="col" width="110">目标用户</th>
+										<th scope="col" width="170">发送时间</th>
+										<th scope="col">操作</th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+							</table>
+							<div class="table_null_x dn">
+			                        <div class="table_null">
+			                            <h2 class="table_null_title">暂无数据</h2>
+			                        </div><i class="table_vm"></i>
+			                    </div>
+			                    <!-- 列表加载loading -->
+			                    <div class="ui_loading"><i class="ui_loading_icon"></i></div>
+			                    <!-- 底部分页 -->
+							 	<div class="table_page_x">
+							 		<div class="table_page"></div>
+							 	</div>						 </div>
+					</div>
+			    </div>
+			    <div id="sendHas" class="ui_tab_content table_content">
+			    	<form id="sendHasForm" action="./cgi/json/getSendArticle.html" method="get">
+			    		<input type="hidden" name="type" value="sended">
+			    	</form>
+			    	<script id="sendHasTemp" type="text/template">
+			    		{{each data}}
+			    		<tr>
+							<td>
+								<p class="user-pic"><img class="user-img" src="{{$value.imgurl}}" /></p>
+							</td>
+							<td>
+								<p class="title">{{$value.title}}</p>
+								{{ if $value.reply > 0 || $value.like > 0 }}
+								<p class="num">
+									<span class="num-reply"><i class="icon icon-chat"></i>{{$value.reply}}</span>
+									<span class="num-like"><i class="icon icon-like"></i>{{$value.like}}</span>
+								</p>
+								{{/if}}
+							</td>								
+							<td>{{$value.target}}</td>
+							<td>{{$value.time}}</td>
+							<td>
+								<p class="edit mb5"><span class="gray">{{$value.status}}</span></p>
+								<p class="delete"><a href="javascript:;" class="darkred jsDel" data-url="./cgi/json/del.html" data-params="id={{$value.id}}&amp;userid=100001">删除</a></p>
+							</td>
+						</tr>
+						{{/each}}
+			    	</script>
+			    	<div class="table_x">
+						<div class="table_size"><!-- 尺寸控制，主要是高度 -->
+							<!-- 列表 -->
+							<table class="ui_table article_table vertical_middle">
+								<thead>
+									<tr>
+										<th scope="col" width="80">文章</th>
+										<th scope="col" width="496"></th>
+										<th scope="col" width="110">目标用户</th>
+										<th scope="col" width="170">发送时间</th>
+										<th scope="col">操作</th>
+									</tr>
+								</thead>
+								<tbody></tbody>							
+							</table>
+							<div class="table_null_x dn">
+			                        <div class="table_null">
+			                            <h2 class="table_null_title">暂无数据</h2>
+			                        </div><i class="table_vm"></i>
+			                    </div>
+			                    <!-- 列表加载loading -->
+			                    <div class="ui_loading"><i class="ui_loading_icon"></i></div>
+			                    <!-- 底部分页 -->
+							 	<div class="table_page_x">
+							 		<div class="table_page"></div>
+							 	</div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 右侧内容区end -->
+		
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer">
+	<div class="ft-box">
+		<!-- 联系客服弹出begin -->
+		<div id="contact-bubble" class="footer-bubble">
+			<em><i></i></em>
+			<ul>
+				<li><a target="_blank" href="http://kf.qidian.com/Default.aspx">联系起点客服</a></li>
+				<li><a target="_blank" href="http://kf.qq.com/product/chuangshi.html">联系创世客服</a></li>
+			</ul>
+		</div>
+		<!-- 联系客服弹出end -->
+		<!-- 链接 -->
+		<ul class="ft-link">
+			<li><a href="">帮助中心</a></li>
+			<li><a id="contact" href="">联系客服</a></li>
+			<li><a href="">诚聘英才</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">客服中心</a></li>
+			<li><a href="">版权声明</a></li>
+			<li>Copyright © 2015-2016 yuewen.com All Rights Reserved.</li>
+		</ul>
+	</div>
+</div>
+
+<script src="../../../js/mp/build/plugin/sea.js"></script>
+<script src="../../../js/mp/build/plugin/jquery.min.js"></script></div>
+
+<script type="text/javascript">
+seajs.config({
+	base: '../../../js/mp/build/'
+}).use(['send'], function(send) {
+	// send.every = 10;
+});
+</script>
+
+</body>
+</html>

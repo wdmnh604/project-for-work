@@ -1,0 +1,779 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+input,
+textarea,
+select {
+	*font-size: 100%;
+}
+
+a {
+	color: #475259;
+	outline: 0;
+	text-decoration: none;
+}
+
+body {
+	position: relative;
+	min-width: 1110px;
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #475259;
+	background: #e4e8eb;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+p {
+	padding: 0;
+}
+
+input {
+	outline: 0;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #cdd3d8;
+	font-family: PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #cdd3d8;
+	font-family: PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #cdd3d8;
+	font-family: PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #cdd3d8;
+	font-family: PingFangSC-Regular,HelveticaNeue-Light,'Helvetica Neue Light','Microsoft YaHei',sans-serif;
+}
+
+
+.clearfix:after {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	content: '.';
+}
+
+.clearfix {
+	*display: inline-block;
+}
+
+.container {
+	min-width: 1180px;
+}
+
+/**
+ * 头部样式
+ */
+.header {
+	height: 66px;
+	margin-bottom: 30px;
+	background: #fff;
+}
+
+.hd-wrap {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+/**
+ * logo
+ */
+.header .logo {
+	float: left;
+	width: 117px;
+	margin: 22px 40px 0 0;
+}
+
+.header .logo a {
+	display: block;
+}
+
+.header .logo img {
+	display: block;
+	width: 117px;
+	height: 22px;
+}
+
+/**
+ * 作者
+ */
+.header .hd-right {
+	float: right;
+}
+
+.header .author-box {
+	position: relative;
+	margin-top: 24px;
+}
+
+.header .author-box .author {
+	padding-left: 40px;
+	cursor: pointer;
+	font-weight: bold;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 0;
+}
+
+.header .author-box .author em {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	width: 6px;
+	height: 4px;
+	margin-left: 5px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -40px;
+}
+
+/**
+ * 作者下拉
+ */
+.author-drop {
+	position: absolute;
+	z-index: 1000;
+	right: -16px;
+	top: 50px;
+	width: 200px;
+	height: 125px;
+	background: #fff;
+	box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+	border-radius:2px;
+}
+
+/**
+ * 作者头像
+ */
+.author-drop .box {
+	padding: 16px;
+	font-size: 15px;
+	border-bottom: 1px solid #e4e8eb;
+}
+.author-drop .pic {
+	position: relative;
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+}
+
+.author-drop .circle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 32px;
+	height: 32px;
+}
+
+.author-drop .pic img {
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 100px;
+}
+
+.author-drop .info {
+	float: left;
+	width: 120px;
+}
+
+.author-drop .name {
+	overflow: hidden;
+	font-weight: bold;
+	height: 32px;
+	line-height: 32px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/**
+ * 退出按钮
+ */
+.logout {
+	clear: both;
+}
+
+.logout a {
+	display: block;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 20px -70px;
+}
+
+/**
+ * 底部
+ */
+.footer {
+	margin-top: 32px;
+	height: 64px;
+	text-align: center;
+	color: #9da9b3;
+	background: #fff;
+}
+
+.footer a {
+	color: #9da9b3;
+}
+
+.footer .ft-box {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.footer .ft-link {
+	padding-top: 24px;
+	font-size: 12px;
+}
+
+.footer .ft-link li {
+	display: inline;
+	margin: 0 2px;
+}
+
+/**
+ * 左侧导航
+ */
+.sidebar {
+	float: left;
+	width: 207px;
+	padding-top: 24px;
+}
+
+.sidebar .side-ttl {
+	padding: 0 0 12px 32px;
+	font-size: 13px;
+	color: #9da9b3;
+}
+
+/**
+ * 左侧链接
+ */
+.sidebar .side-link li {
+	overflow: hidden;
+	height: 40px;
+	margin-bottom: 4px;
+	line-height: 40px;
+	color: #9da9b3;
+}
+
+.sidebar .side-link li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 70px;
+	color: #9da9b3;
+	border-left: 3px solid #fff;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 0;
+}
+
+.sidebar .side-link li.active a {
+	color: #475259;
+	border-left: 3px solid #2e99e6;
+	background-color: #eff8ff;
+}
+
+.sidebar .side-link li.ico01 a {
+	background-position: 30px -140px;
+}
+
+.sidebar .side-link li.ico02 a {
+	background-position: 30px -180px;
+}
+
+.sidebar .side-link li.ico03 a {
+	background-position: 30px -220px;
+}
+
+.sidebar .side-link li.ico04 a {
+	background-position: 30px -260px;
+}
+
+.sidebar .side-link li.ico05 a {
+	background-position: 30px -300px;
+}
+
+.sidebar .side-link li.ico06 a {
+	background-position: 30px -340px;
+}
+
+.sidebar .side-link li a:hover {
+	color: #2e99e6;
+}
+
+.sidebar .bt-line {
+	height: 1px;
+	margin: 15px 0 24px;
+	background: #e4e8eb;
+}
+
+/**
+ * 内容区
+ */
+.main-wrap {
+	width: 1180px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.main-wrap:after {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	content: '.';
+}
+
+.main-wrap {
+	*display: inline-block;
+}
+
+.main-conts {
+	float: left;
+	width: 972px;
+	min-height: 780px;
+	padding-bottom: 32px;
+	border-left: 1px solid #e4e8eb;
+}
+
+.conts-hd {
+	overflow: hidden;
+	height: 67px;
+	padding: 0 24px;
+	line-height: 67px;
+	border-bottom: 1px solid #e4e8eb;
+}
+
+.conts-hd .tab-ttl {
+	float: left;
+}
+
+.conts-hd .tab-ttl li {
+	float: left;
+	margin-right: 32px;
+}
+
+.conts-hd .tab-ttl li a {
+	display: block;
+	height: 65px;
+	color: #9da9b3;
+}
+
+.conts-hd .tab-ttl li.current a {
+	color: #475259;
+	border-bottom: 2px solid #419ad9;
+}
+
+.conts-hd .info {
+	float: right;
+}
+
+.conts-hd .info a {
+	padding-left: 18px;
+	font-size: 12px;
+	color: #9da9b3;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -389px;
+}
+
+.conts-bd {
+	width: 924px;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.blue {
+	color: #419ad9;
+}
+
+.red {
+	color: #db6b61;
+}
+
+.page-ttl a {
+	padding-left: 32px;
+	color: #419ad9;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -547px;
+}
+
+.conts-hd .page-ttl {
+	float: left;
+}
+
+/**
+ * 分页样式
+ */
+.pagination {
+	float: right;
+	padding-top: 32px;
+}
+
+.pagination ul li {
+	float: left;
+	margin: 0 2px;
+	color: #9da9b3;
+}
+
+.pagination ul li.prev a,
+.pagination ul li.next a {
+	width: auto;
+	padding: 0 9px;
+}
+
+.pagination ul li a {
+	display: block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #9da9b3;
+	display: inline-block;
+}
+
+.pagination ul li.prev a,
+.pagination ul li.next a {
+	color: #475259;
+}
+
+.pagination ul li.noclick a {
+	color: #9da9b3;
+}
+
+.pagination ul li.noclick a:hover {
+	background: none;
+}
+
+.pagination ul li.active a {
+	background: #419ad9;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.pagination ul li a:hover {
+	background: #eff8ff;
+	border-radius: 4px;
+}
+
+.pagination ul li.active a:hover {
+	background: #419ad9;
+	border-radius: 4px;
+	color: #fff;
+}
+
+/**
+ * 弹窗样式
+ */
+
+.dialog-mask {
+	overflow: hidden;
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	background: #000;
+}
+
+.dialog-body {
+	overflow: hidden;
+	position: fixed;
+	z-index: 1010;
+	left: 50%;
+	top: 20%;
+	width: 440px;
+	margin-left: -220px;
+	background: #fff;
+	border-radius: 6px;
+}
+
+.dialog01 {
+	width: 440px;
+	margin-left: -220px;
+}
+
+/**
+ * 弹窗标题
+ */
+.dialog-content .up-ttl {
+	padding: 45px 0 30px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.dialog01 .input-box {
+	width: 360px;
+	margin: 0 auto 16px auto;
+}
+
+.dialog01 .input-box .input-text {
+	width: 358px;
+	height: 38px;
+	line-height: 38px;
+	text-indent: 16px;
+	padding: 0;
+	margin-bottom: 16px;
+	color: #cdd3d8;
+	background: #ffffff;
+	border: 1px solid #e4e8eb;
+	border-radius: 2px;
+}
+
+.dialog-body .btn-opt {
+	height: 56px;
+	line-height: 56px;
+	background: #f7fbff;
+	border-top: 1px solid #ebeef0;
+}
+
+.dialog-body .btn-opt a {
+	float: left;
+	display: block;
+	width: 49.8%;
+	height: 56px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 56px;
+	background: #f7fbff;
+}
+
+.dialog-body .btn-cancel {
+	color: #9da9b3;
+	border-right: 1px solid #ebeef0;
+}
+
+/* retina屏双倍图 */
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+	.header .author-box .author,
+	.header .author-box .author em,
+	.logout a,
+	.sidebar .side-link li a,
+	.conts-hd .info a {
+		background-image: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite2x.png);
+		background-size: 50px;
+	}
+}
+
+/* 确认删除弹窗样式 */
+.dialog-delete .tip {
+	margin-bottom: 44px;
+	font-size:16px;
+	text-align: center;
+}
+
+.dialog-delete .btn-confirm {
+	color: #db6b61;
+}
+
+.btn-true {
+	display: inline-block;
+	width: 144px;
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	background:#419ad9;
+	border-radius:100px;
+	text-align: center;
+}
+
+.btn-true {
+	display: inline-block;
+	width: 144px;
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	background:#419ad9;
+	border-radius:100px;
+	text-align: center;
+}
+
+.btn-false {
+	display: inline-block;
+	width: 144px;
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	background: #a0cdec;
+	border-radius:100px;
+	text-align: center;
+}
+
+.button-creat ul li {
+	position: relative;
+}
+
+.tool-tip {
+	position: absolute;
+	padding-bottom: 8px;
+}
+
+.tool-tip .tip {
+	display: block;
+	height: 40px;
+	padding: 0 16px;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 4px;
+	background: rgba(71,82,89,0.9);
+}
+
+.tool-tip .ico {
+	display: block;
+	width: 16px;
+	height: 8px;
+	margin: 0 auto;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -1321px;
+}
+
+input[type=checkbox], input[type=radio] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+}
+
+.ui_radio {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #e4e8eb;
+	border-radius: 50%;
+	background-color: #fff;
+	vertical-align: -.5ex;
+	-webkit-transition: border-color .2s;
+	transition: border-color .2s;
+}
+
+.ui_radio::before {
+	display: block;
+	content: "";
+	width: 10px;
+	height: 10px;
+	margin: 4px auto 0;
+	border-radius: 50%;
+	background-color: #00a5e0;
+	visibility: hidden;
+}
+
+:checked+.ui_radio::before {
+	visibility: visible;
+	-webkit-animation: bounceIn .2s;
+	animation: bounceIn .2s;
+}

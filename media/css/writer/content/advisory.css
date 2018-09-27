@@ -1,0 +1,280 @@
+.problemList {
+	width: 898px;
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
+}
+.problemList li {
+	border-bottom: 1px solid #E5E5E5;
+}
+.problemList li a {
+	font: 14px/41px "Microsoft YaHei";
+	padding-left: 33px;
+	display: block;
+}
+.problemList li a:hover {
+	color: inherit;
+	background: #F5FAFF;
+}
+.proList h3 {
+	padding-left: 17px;
+	background: #F8F8F8;
+	font: 700 14px/45px "Microsoft YaHei";
+	border-bottom: 1px solid #E5E5E5;
+}
+.msgListWrap {
+	width: 900px;
+	margin: 0 auto;
+}
+.msgListWrap ul {
+	padding-top: 5px;
+}
+.msgListWrap li {
+	padding: 19px 0 14px;
+	overflow: hidden;
+ *zoom:1;
+	border-bottom: 1px solid #E6E6E6;
+	vertical-align: bottom;
+}
+.sourceIcon {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	width: 46px;
+	height: 46px;
+	background-image: url(http://dev.img1.write.qq.com/writer/p1/content/site_icon.png);
+}
+.sourceIcon.csIco {
+	background-position: 0 0;
+}
+.sourceIcon.yqIco {
+	background-position: -47px 0;
+}
+.sourceIcon.qdIco {
+	background-position: -94px 0;
+}
+.sourceIcon cite {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-position: 0 -24px;
+	font: 12px/15px Arial;
+	color: #FFF;
+	text-align: center;
+	right: -3px;
+	top: -2px;
+}
+.msgText {
+	float: left;
+	width: 834px;
+}
+.msgText p {
+	font: 14px/1.8 "Microsoft YaHei";
+}
+.msgText span {
+	color: #333;
+}
+.msgText .btn em {
+	font: 12px/1.8 Arial;
+	color: #999;
+}
+.msgText .btn a {
+	color: #45c268;
+	float: right;
+	margin-top: 6px;
+	font: 12px/1.8 "Microsoft YaHei";
+}
+.msgText .btn span {
+	color: #E6E6E6;
+	margin-right: 14px;
+	float: right;
+	margin-top: 10px;
+	line-height: 1;
+	font-family: simsun;
+}
+.msgText .btn a.reply {
+	margin-right: 14px;
+}
+.msgCtrl {
+	padding-top: 10px;
+	width: 900px;
+	margin: 0 auto;
+	font: 12px/1.8 "Microsoft YaHei";
+}
+.msgCtrl a {
+	color: #575757;
+	margin-right: 14px;
+}
+.msgCtrl a:hover{
+	color: #4ea8ff;
+}
+.msgCtrl span {
+	color: #E6E6E6;
+	margin-right: 14px;
+}
+.replyMsgWrap {
+	padding: 23px 0 0 0;
+	margin-left: 120px;
+	width: 730px;
+}
+.replyMsgWrap h3 {
+	color: #858585;
+	font: 14px/1.8 "Microsoft YaHei";
+	margin-bottom: 5px;
+}
+.replyMsgWrap h3 span {
+	margin-left: 10px;
+	color: #333;
+}
+.replyMsgWrap textarea {
+	border: 1px solid #DDD;
+	display: block;
+	width: 725px;
+	height: 94px;
+	background: #FAFAFA;
+	line-height: 1.8;
+	overflow-y: hidden;
+	margin-bottom: 10px;
+}
+.replyText {
+	position: relative;
+}
+.replyText a.button {
+	position: absolute;
+	right: 0;
+	width: 180px;
+	height: 35px;
+	font: 14px/35px "Microsoft YaHei";
+}
+.replyMsgWrap .msgListWrap {
+	width: 730px;
+	padding-top: 40px;
+}
+.replyMsgWrap .msgListWrap li {
+	border-bottom: 1px dashed #E6E6E6;
+}
+.replyMsgWrap .msgText {
+	width: 664px;
+}
+/* 收，发件箱 */
+.inBoxListWrap {
+	width: 900px;
+	margin: 0 auto;
+	border: 1px solid #E6E6E6;
+	border-bottom:none;
+	margin-top: 33px;
+}
+.inBoxListWrap.noMsg{
+	border:none;
+	text-align:center;
+	padding-top:120px;
+}
+.inBoxListWrap.noMsg span{
+	padding-left:20px;
+}
+.msgListBox li {
+	border-bottom: 1px solid #E6E6E6;
+	position: relative;
+	overflow: hidden;
+ *zoom:1;
+}
+.msgListBox li .link {
+	display: block;
+	padding: 0 13px 0 19px;
+	color: #333;
+	font: 14px/41px "Microsoft YaHei";
+}
+.msgListBox li .link.visited {
+	color: #999;
+}
+.msgListBox li .link span {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	margin: 2px 18px 0 0;
+	background: url(http://dev.img1.write.qq.com/writer/p1/content/sprite.png) no-repeat -38px -7px;
+}
+.msgListBox li .link span.on {
+	background: url(http://dev.img1.write.qq.com/writer/p1/content/sprite.png) no-repeat -38px 0;
+}
+.minLogo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin: 2px 6px 0 0;
+	background-image: url(http://dev.img1.write.qq.com/writer/p1/content/site_minilogo.png)
+}
+.msgListBox li .line {
+	margin: 0 15px;
+	color: #e6e6e6;
+	font-family:Simsun;
+}
+.msgListBox li .link b {
+	display: inline-block;
+	vertical-align: middle;
+	width: 710px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: 400;
+}
+.msgListBox li .link .time {
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
+.msgListBox li .link:hover{
+	background: #F6FBFF;
+}
+.msgListBox li.act{
+	background:#E1F2FF;
+	border-bottom:1px solid #D7EDFF;
+}
+.msgListBox li.act .link{
+	color:#8baece;
+}
+.msgListBox li.act .link:hover{
+	background:#E1F2FF;
+}
+.msgListBox li.act .line{
+	color:#8BAECE;
+}
+.msgListBox li.act .time{
+	display:none;
+}
+.detailMsgBox {
+	display:none;
+	position: relative;
+	padding:0 14px 0 40px;
+}
+.detailMsgBox .del {
+	top: -38px;
+	right: 14px;
+	width: 17px;
+	height: 15px;
+	position: absolute;
+	background-position: -169px 0;
+}
+.detailMsgBox p {
+	font: 14px/1.8 "Microsoft YaHei";
+	margin: 0.8em 0;
+	color:#376590;
+}
+.minLogo.cs {
+	background-position: 0 0;
+}
+.minLogo.yq{
+	background-position: 0 -17px;
+}
+.minLogo.yw{
+	background-position: 0 -34px;
+}
+.minLogo.qd{
+	background-position: 0 -51px;
+}
+
+
+
+

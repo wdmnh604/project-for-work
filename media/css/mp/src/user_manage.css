@@ -1,0 +1,102 @@
+/**
+ * @author wangdongmei
+ * @design yangyifan;
+ */
+
+.conts-bd {
+	font-size: 13px;
+}
+
+/**
+ * 用户搜索
+ */
+.user-search {
+	position: relative;
+	float: right;
+	width: 280px;
+	height: 36px;
+	margin-top: 16px;
+}
+
+.user-search .btn-search {
+	position: absolute;
+	left: 16px;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -590px;
+}
+
+.user-search input {
+	display: block;
+	width: 280px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0;
+	border: 1px solid #e4e8eb;
+	border-radius: 100px;
+	color: #cdd3d8;
+	text-indent: 40px;
+	outline: 0;
+}
+
+/**
+ * 栏目标题
+ */
+ 
+.conts-bd .thead {
+	overflow: hidden;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #e4e8eb;
+}
+
+.conts-bd .thead li {
+	float: left;
+	font-size: 13px;
+	color: #9da9b3;
+}
+
+.conts-bd .user {
+	width: 560px;
+}
+
+.conts-bd .source {
+	width: 160px;
+	margin-right: 4px;
+}
+
+.conts-bd .tip {
+	width: 196px;
+}
+
+.oneline {
+	overflow: hidden;
+	clear: both;
+	padding-top: 32px;
+}
+
+.tbody .user-pic {
+	float: left;
+	width: 56px;
+	margin-right: 24px;
+}
+
+.tbody .user-pic img {
+	display: block;
+	width: 56px;
+	height: 56px;
+	border-radius: 2px;
+}
+
+.tbody .user .name {
+	float: left;
+	width: 480px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.tbody .source,
+.tbody .tip {
+	margin-top: 20px;
+}

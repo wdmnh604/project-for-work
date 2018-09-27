@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title></title>
+    <meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" href="../../../css/mp/build/ui.css"/>
+<link rel="stylesheet" href="../../../css/mp/build/common.css"/>
+
+    <link rel="stylesheet" href="../../../css/mp/build/message.css" type="text/css"/>
+    <!-- @author author | @designer designer | @pm pm -->
+</head>
+<body>
+<div class="container">
+	<!-- 顶部header begin -->
+	<div class="header">
+		<div class="hd-wrap clearfix">
+			
+			<!-- logo -->
+			<h1 class="logo"><a href="./" class="logo-a">作家自媒体</a></h1>
+			
+			<!-- 右侧作家信息begin -->
+			<div class="header-right">
+				<a href="javascript:" id="hdAuthor" class="header-author-box">
+					<p class="header-author">
+						<!--<i class="icon icon-ring"></i>-->夕阳剑客<i class="icon icon-dropdown"></i>
+					</p>					
+				</a>
+			</div>
+			<!-- 右侧作家信息end -->
+		</div>
+	</div>
+
+	<!-- 作家信息下拉begin -->
+	<div id="hdDrop" class="header-drop">
+		<div class="header-drop-box">
+			<p class="header-drop-pic">
+				<i class="header-drop-circle"></i>
+				<img src="../../../img/mp/p1/temp/photo01.jpg" class="header-avatar" alt="夕阳剑客" />
+			</p>
+			<p class="header-drop-name">夕阳剑客</p>
+		</div>
+		<a href="" class="header-logout"><i class="icon icon-signout"></i>退出登录</a>
+	</div>
+	<!-- 作家信息下拉end -->	
+	<!-- 顶部header end -->
+
+	<!-- 内容区 -->
+	<div class="main-wrap">
+		
+		<!-- 左侧导航区begin -->
+		<div class="sidebar">
+			<p class="sidebar-ttl">功能</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="send_function.html" class="sidebar-a"><i class="icon-nav icon-nav-posts"></i>群发功能</a></li>
+				<li class="sidebar-li active"><a href="message_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-message"></i>留言管理</a></li>
+				<li class="sidebar-li "><a href="vote_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-vote"></i>投票管理</a></li>
+				<li class="sidebar-li "><a href="user_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-users"></i>用户管理</a></li>
+			</ul>
+			
+			<!-- 分隔线 -->
+			<div class="sidebar-line"></div>
+			<p class="sidebar-ttl">分析</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="user_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-analysis"></i>用户分析</a></li>
+				<li class="sidebar-li "><a href="article_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-charts"></i>文章分析</a></li>
+			</ul>
+		</div>		<!-- 左侧导航区end -->
+		
+		<!-- 右侧内容区begin -->
+		<div class="main-conts">
+			<!-- 文章点击进去的留言页面 -->
+			<div class="message-detail">
+				<div class="main-hd-fixed">
+					<!-- 页面导航begin -->
+					<div class="conts-hd">
+						<div class="page-ttl"><a class="page-a" href="message_manage.html?targetTab=articleMsg"><i class="icon icon-back"></i>文章留言管理</a><span class="ml5 mr5">|</span><span class="">申屠余夏：早餐，像爱自己一样温柔</span></div>
+					</div>
+					<!-- 页面导航end -->
+				</div>
+				<!-- 内容begin -->
+				<div id="articlaMsg" class="table_content">
+					<form id="articlaMsgForm" action="./cgi/json/getMessageData.html" method="get">
+			    		<input type="hidden" name="type" value="all">
+			    		<input type="hidden" name="articleid" value="1">
+			    	</form>
+			    	<script id="articlaMsgTemp" type="text/template">
+			    		{{each data}}
+			    		<tr>
+							<td>
+								<p class="user-pic"><img class="user-img" src="{{$value.imgurl}}" /></p>
+							</td>
+							<td>
+								<div class="user-text">
+									<p class="name">{{$value.username}}</p>
+									<p class="words">{{$value.content}}</p>
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<p class="pt20">{{$value.time}}</p>
+							</td>
+							<td>
+								<p class="pt20">{{$value.from}}</p>
+							</td>
+							<td>
+								<div class="pt20">
+									<input type="checkbox" id="joinFav_{{$value.id}}" class="jsFav" name="fav" value="1" data-url="./cgi/json/fav.html" data-params="msgid={{$value.id}}&amp;userid=1111" {{ if $value.status == 1 }} checked {{/if}}>
+									<label for="joinFav_{{$value.id}}" class="user-checked-in">
+										<i class="icon icon-stared"></i><span class="dib blue">移除</span>
+									</label>
+									<label for="joinFav_{{$value.id}}" class="user-checked-out">
+										<i class="icon icon-star"></i><span class="dib blue">加入</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<p class="reply pt5"><a href="javascript:;" class="jsReply" data-rel="replyTr_{{$value.id}}">回复</a></p>
+								<p class="delete"><a href="javascript:;" class="darkred jsDelMsg" data-url="./cgi/json/del.html" data-params="id={{$value.id}}&amp;userid=100001">删除</a></p>
+							</td>
+						</tr>
+						{{each $value.reply as valueReply}}
+						<tr class="table-hasreply jsHasReply">
+							<td></td>
+							<td><div class="answer">作者回复：{{valueReply.content.escape().replace(/\[\:(\w+?)\]/g, function(matchs, m1) { return '<img src="../../../img/mp/p1/face/'+ m1 +'.png">'; })}}</div></td>
+							<td></td>
+							<td><div class="time">{{valueReply.time}}</div></td>
+							<td></td>
+							<td></td>
+							<td>
+								<p class="delete"><a class="darkred jsDelReply" href="javascript:;" data-url="./cgi/json/del.html" data-params="id={{valueReply.replyid}}&amp;userid=100001">删除</a></p>
+							</td>
+						</tr>
+						{{/each}}
+						
+						<!-- 回复输入框table_reply -->
+						<tr id="replyTr_{{$value.id}}" class="table-reply jsReplyTr dn">
+							<td></td>
+							<td colspan="6">
+								<!-- 答复begin -->
+								<form class="answer-area" action="./cgi/json/messageReply.html" method="post">
+									<input type="hidden" name="msgid" value="{{$value.id}}">
+									<h6 class="title">回复留言</h6>
+									<div class="ui_textarea_x">
+									    <textarea maxlength="140" rows="2" name="content" class="jsArea"></textarea>
+									    <div class="ui_textarea"></div>
+									</div>
+									<div class="pt15 clearfix">
+										<a href="javascript:" class="gray fl pt5 pb5 jsAddFace"><i class="icon icon-emoji mr5"></i>添加表情</a>
+										<div class="fr">
+											<input type="submit" id="replySubmit_{{$value.id}}" class="clip" disabled>
+											<label class="ui_button ui_button_primary btn-true disabled" for="replySubmit_{{$value.id}}">发送</label>
+										</div>
+									</div>
+								</form>
+								<!-- 答复end -->
+							</td>
+						</tr>
+						{{/each}}
+			    	</script>
+
+			    	<!-- 留言回复成功后的模板 -->
+			    	<script id="replyMsgTemp" type="text/template">
+						<tr class="table-hasreply jsHasReply">
+							<td></td>
+							<td><div class="answer">作者回复：{{data.content.escape().replace(/\[\:(\w+?)\]/g, function(matchs, m1) { return '<img src="../../../img/mp/p1/face/'+ m1 +'.png">'; })}}</div></td>
+							<td></td>
+							<td><div class="time">{{data.time}}</div></td>
+							<td></td>
+							<td></td>
+							<td>
+								<p class="delete"><a class="darkred jsDelReply" href="javascript:;" data-url="./cgi/json/del.html" data-params="id={{data.replyid}}&amp;userid=100001">删除</a></p>
+							</td>
+						</tr>
+			    	</script>
+
+					<div class="table_x">
+						<div class="table_size"><!-- 尺寸控制，主要是高度 -->
+							<!-- 列表 -->
+							<table class="ui_table article_table">
+								<thead>
+									<tr>
+										<th scope="col" width="80">留言</th>
+										<th scope="col" width="250"></th>
+										<th scope="col" width="232"></th>
+										<th scope="col" width="136">留言时间</th>
+										<th scope="col" width="84">来源</th>
+										<th scope="col" width="84">精选状态</th>
+										<th scope="col">操作</th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+							</table>
+							<div class="table_null_x dn">
+			                        <div class="table_null">
+			                            <h2 class="table_null_title">暂无数据</h2>
+			                        </div><i class="table_vm"></i>
+			                    </div>
+			                    <!-- 列表加载loading -->
+			                    <div class="ui_loading"><i class="ui_loading_icon"></i></div>
+			                    <!-- 底部分页 -->
+							 	<div class="table_page_x">
+							 		<div class="table_page"></div>
+							 	</div>						 </div>
+					</div>				
+	
+				</div>
+			</div>
+		</div>
+		<!-- 右侧内容区end -->
+		
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer">
+	<div class="ft-box">
+		<!-- 联系客服弹出begin -->
+		<div id="contact-bubble" class="footer-bubble">
+			<em><i></i></em>
+			<ul>
+				<li><a target="_blank" href="http://kf.qidian.com/Default.aspx">联系起点客服</a></li>
+				<li><a target="_blank" href="http://kf.qq.com/product/chuangshi.html">联系创世客服</a></li>
+			</ul>
+		</div>
+		<!-- 联系客服弹出end -->
+		<!-- 链接 -->
+		<ul class="ft-link">
+			<li><a href="">帮助中心</a></li>
+			<li><a id="contact" href="">联系客服</a></li>
+			<li><a href="">诚聘英才</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">客服中心</a></li>
+			<li><a href="">版权声明</a></li>
+			<li>Copyright © 2015-2016 yuewen.com All Rights Reserved.</li>
+		</ul>
+	</div>
+</div>
+
+<script src="../../../js/mp/build/plugin/sea.js"></script>
+<script src="../../../js/mp/build/plugin/jquery.min.js"></script></div>
+
+<script>
+seajs.config({
+	base: '../../../js/mp/build/'
+}).use(['message'], function(message) {
+	// 借用管理页面的留言方法
+	message.loadDataList({
+		el: $('<div></div').attr('data-rel', 'articlaMsg')
+	});
+});
+</script>
+</body>
+</html>

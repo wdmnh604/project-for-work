@@ -1,0 +1,123 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+/**
+ * 我的收藏
+ */
+.my-collection {
+	overflow: hidden;
+}
+
+.my-collection .article-box {
+	position: relative;
+	margin-bottom: -1px;
+}
+
+.my-collection .item {
+	padding: 20px 0;
+	margin: 0 20px;
+	border-bottom: 1px solid #f3f4f6;
+}
+
+.my-collection .title-box {
+	overflow: hidden;
+	height: 24px;
+	margin-bottom: 10px;
+}
+
+.my-collection .title-box .title {
+	float: left;
+	font-weight: bold;
+}
+
+.my-collection .title-box .title a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * 取消收藏
+ */
+.my-collection .title-box .cancel {
+	float: right;
+}
+
+.my-collection .title-box .cancel a {
+	color: #9ea6b4;
+}
+
+.my-collection .title-box .cancel a:hover {
+	color: #4ea8ff;
+}
+
+.my-collection .desc {
+	width: 510px;
+	color: #9ea6b4;
+}
+
+.my-collection .item.last {
+	border-bottom: 0;
+}
+
+/**
+ * 我的关注
+ */
+.my-interest {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+.my-interest .article-box {
+	position: relative;
+	margin-bottom: -1px;
+}
+
+.my-interest .item {
+	padding: 20px 0;
+	margin: 0 20px;
+	border-bottom: 1px solid #f3f4f6;
+}
+
+.my-interest .pic {
+	float: left;
+	width: 48px;
+	margin-right: 20px;
+}
+
+.my-interest .intro-box {
+	float: left;
+	width: 448px;
+}
+
+/**
+ * 取消关注
+ */
+.my-interest .intro-box .title {	
+	font-weight: bold;
+}
+
+.my-interest .intro-box .title a:hover {
+	text-decoration: underline;
+}
+
+.my-interest .cancel {
+	float: right;
+}
+
+.my-interest .cancel a {
+	color: #9ea6b4;
+}
+
+.my-interest .cancel a:hover {
+	color: #4ea8ff;
+}
+
+.my-interest .intro-box .desc,
+.my-interest .intro-box .data {
+	color: #9ea6b4;
+}
+
+.my-interest .item.last {
+	border-bottom: 0;
+}

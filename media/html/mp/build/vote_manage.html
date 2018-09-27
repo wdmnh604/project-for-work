@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" href="../../../css/mp/build/ui.css"/>
+<link rel="stylesheet" href="../../../css/mp/build/common.css"/>
+
+    <title>投票管理 - 阅文自媒体</title>
+    <link rel="stylesheet" href="../../../css/mp/build/vote_manage.css" rel="stylesheet" type="text/css"/>
+    <!-- @author author | @designer designer | @pm pm -->
+</head>
+<body>
+<div class="container">
+
+	<!-- 顶部header begin -->
+	<!-- 顶部header begin -->
+	<div class="header">
+		<div class="hd-wrap clearfix">
+			
+			<!-- logo -->
+			<h1 class="logo"><a href="./" class="logo-a">作家自媒体</a></h1>
+			
+			<!-- 右侧作家信息begin -->
+			<div class="header-right">
+				<a href="javascript:" id="hdAuthor" class="header-author-box">
+					<p class="header-author">
+						<!--<i class="icon icon-ring"></i>-->夕阳剑客<i class="icon icon-dropdown"></i>
+					</p>					
+				</a>
+			</div>
+			<!-- 右侧作家信息end -->
+		</div>
+	</div>
+
+	<!-- 作家信息下拉begin -->
+	<div id="hdDrop" class="header-drop">
+		<div class="header-drop-box">
+			<p class="header-drop-pic">
+				<i class="header-drop-circle"></i>
+				<img src="../../../img/mp/p1/temp/photo01.jpg" class="header-avatar" alt="夕阳剑客" />
+			</p>
+			<p class="header-drop-name">夕阳剑客</p>
+		</div>
+		<a href="" class="header-logout"><i class="icon icon-signout"></i>退出登录</a>
+	</div>
+	<!-- 作家信息下拉end -->	<!-- 顶部header end -->
+
+	<!-- 内容区 -->
+	<div class="main-wrap">
+		
+		<!-- 左侧导航区begin -->
+		<div class="sidebar">
+			<p class="sidebar-ttl">功能</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="send_function.html" class="sidebar-a"><i class="icon-nav icon-nav-posts"></i>群发功能</a></li>
+				<li class="sidebar-li "><a href="message_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-message"></i>留言管理</a></li>
+				<li class="sidebar-li active"><a href="vote_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-vote"></i>投票管理</a></li>
+				<li class="sidebar-li "><a href="user_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-users"></i>用户管理</a></li>
+			</ul>
+			
+			<!-- 分隔线 -->
+			<div class="sidebar-line"></div>
+			<p class="sidebar-ttl">分析</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="user_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-analysis"></i>用户分析</a></li>
+				<li class="sidebar-li "><a href="article_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-charts"></i>文章分析</a></li>
+			</ul>
+		</div>		<!-- 左侧导航区end -->
+		
+		<!-- 右侧内容区begin -->
+		<div class="main-conts">		
+			<div class="main-hd-fixed">
+				<div class="conts-hd">
+					<div class="page-ttl">投票管理</div>
+				</div>
+				
+				<!-- 标题右侧描述 -->
+				<div class="rel">
+					<div class="tab-right">					
+						<a href="javascript:;" class="tab-right-info jsRule"><i class="icon icon-help"></i>投票规则说明</a>
+						<a class="btn-true ml20" href="vote_create.html"><span class="pl20 pr20">新建投票</span></a>
+					</div>	
+
+					<!-- 投票规则说明 -->
+					<ol class="rule_content jsRuleContent" style="display: none">
+						<li>可通过自媒体平台=>功能=>投票管理=>新建投票进行投票。</li>
+						<li>投票名称只用于投票后台，不显示在下发的投票内容中，截止时间只能在当前时间之后的半年之内。</li>
+						<li>投票最多设置5个问题，10个选项，且不能超过20个字，不能为空，投票新建后，不支持修改投票内容。</li>
+						<li>为了保护微信用户隐私，投票管理后台暂不支持查看具体参与人员的微信号或昵称。</li>				
+						<li>除QQ阅读和起点读书内打开文章可以投票，其他平台暂不支持投票。</li>				
+						<li>您可通过自媒体平台=>功能=>投票管理=>查看对应投票标题即可。</li>				
+					</ol>					
+				</div>
+			</div>
+			<div id="allVote" class="ui_tab_content table_content checked">
+				<form id="allVoteForm" action="./cgi/json/getVoteList.html" method="get">
+		    		<input type="hidden" name="userid" value="1">
+		    	</form>
+		    	<script id="allVoteTemp" type="text/template">
+		    		{{each data}}
+					<tr>
+						<td>
+							<p class="title b"><a class="dark" href="vote_detail.html?id={{$value.id}}">{{$value.title}}</a></p>
+						</td>								
+						<td>{{$value.time}}</td>
+						<td>{{$value.number}}</td>
+						<td>
+							{{ if $value.status == 1 }}
+							<p>投票中</p>
+							{{ else if $value.status == 0 }}
+							<p class="gray">已过期</p>
+							{{/if}}							
+						</td>
+					</tr>
+		    		{{/each}}
+				</script>
+
+				<!-- 模板结束，下面为静态内容，无需关心  -->
+				<div class="table_x">
+					<div class="table_size"><!-- 尺寸控制，主要是高度 -->
+						<!-- 列表 -->
+						<table class="ui_table vote_table vertical_middle">
+							<thead>
+								<tr>
+									<th scope="col" width="600">投票</th>
+									<th scope="col" width="154">投票时间</th>
+									<th scope="col" width="100">投票人数</th>
+									<th scope="col">状态</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+						<div class="table_null_x dn">
+			                        <div class="table_null">
+			                            <h2 class="table_null_title">暂无数据</h2>
+			                        </div><i class="table_vm"></i>
+			                    </div>
+			                    <!-- 列表加载loading -->
+			                    <div class="ui_loading"><i class="ui_loading_icon"></i></div>
+			                    <!-- 底部分页 -->
+							 	<div class="table_page_x">
+							 		<div class="table_page"></div>
+							 	</div>					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 右侧内容区end -->
+		
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer">
+	<div class="ft-box">
+		<!-- 联系客服弹出begin -->
+		<div id="contact-bubble" class="footer-bubble">
+			<em><i></i></em>
+			<ul>
+				<li><a target="_blank" href="http://kf.qidian.com/Default.aspx">联系起点客服</a></li>
+				<li><a target="_blank" href="http://kf.qq.com/product/chuangshi.html">联系创世客服</a></li>
+			</ul>
+		</div>
+		<!-- 联系客服弹出end -->
+		<!-- 链接 -->
+		<ul class="ft-link">
+			<li><a href="">帮助中心</a></li>
+			<li><a id="contact" href="">联系客服</a></li>
+			<li><a href="">诚聘英才</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">客服中心</a></li>
+			<li><a href="">版权声明</a></li>
+			<li>Copyright © 2015-2016 yuewen.com All Rights Reserved.</li>
+		</ul>
+	</div>
+</div>
+
+<script src="../../../js/mp/build/plugin/sea.js"></script>
+<script src="../../../js/mp/build/plugin/jquery.min.js"></script></div>
+<script type="text/javascript">
+seajs.config({
+	base: '../../../js/mp/build/'
+}).use(['vote'], function(vote) {
+	vote.loadVoteData('allVote');
+});
+</script>
+</body>
+</html>

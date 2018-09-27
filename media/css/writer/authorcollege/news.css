@@ -1,0 +1,75 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+.news-list {
+	margin-bottom: 0;
+}
+
+.news-list .article-box {
+	position: relative;
+	margin-bottom: -1px;
+}
+
+.news-list .article-box .item {
+	padding: 20px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.news-list .article-box .item.last {
+	border-bottom: 0;
+}
+
+.news-list .article-box .article-content {
+	overflow: hidden;
+}
+
+.news-list .article-box .article-content .intro {
+	overflow: hidden;
+	max-height: 72px;
+}
+
+.news-list .article-box .item h3 {
+	overflow: hidden;
+	height: 25px;
+	margin-bottom: 8px;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.news-list .article-box .item h3 a:hover {
+	text-decoration: underline;
+}
+
+.news-list .article-box .time {
+	color: #9ea6b4;
+}
+
+.news-list .article-box .has-pic .intro-box {
+	float: left;
+	width: 392px;
+}
+
+.news-list .article-box .photo-box {
+	position: relative;
+	float: right;
+	width: 192px;
+}
+
+.news-list .article-box .photo-box .videobg {
+	position: absolute;
+	z-index: 10;
+	left: 64px;
+	top: 22px;
+	width: 64px;
+	height: 64px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -780px;
+}
+
+.news-list .article-box .photo-box img {
+	display: block;
+	width: 192px;
+	height: 108px;
+}

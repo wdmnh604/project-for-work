@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/**
+ * $author rainszhang
+ */
+/*
+* Clearfix
+*
+* Clears floats inside the container
+*/
+.lbf-autocomplete {
+  /* 循环输出 */ }
+  .lbf-autocomplete-suggestions {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid #d9d9d9 \9;
+    *border: 1px solid #d9d9d9;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    outline: none; }
+    .lbf-autocomplete-suggestions strong {
+      font-weight: bold;
+      color: #000; }
+  .lbf-autocomplete-suggestion {
+    padding: 4px 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px; }
+  .lbf-autocomplete-no-suggestion {
+    padding: 4px 6px; }
+  .lbf-autocomplete-selected {
+    background: #f0f0f0; }
+  .lbf-autocomplete-group {
+    padding: 4px 6px; }
+    .lbf-autocomplete-group strong {
+      display: block;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #f0f0f0;
+      font-weight: bold;
+      color: #000; }
+
+/*# sourceMappingURL=Autocomplete.css.map */

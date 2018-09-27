@@ -1,0 +1,97 @@
+.vipPassword {
+	padding: 164px 0 0;
+	margin: 0 auto;
+	width: 460px;
+}
+.vipPwBox {
+	font: 14px/30px "Microsoft YaHei";
+}
+.vipPwInput {
+	border: 1px solid #DDD;
+	height: 28px;
+	line-height: 28px;
+	width: 250px;
+	padding-left: 5px;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.vipPwBox .confirm {
+	padding: 20px 0 0 97px;
+}
+.vipPwBox .confirm .button {
+	display: inline-block;
+	width: 180px;
+	height: 36px;
+	font: 14px/36px "Microsoft YaHei";
+}
+.forget {
+	margin-left: 20px;
+	color: #999;
+}
+.vipPwTip {
+	padding-top: 20px;
+	font: 12px/2 "Microsoft YaHei";
+	margin-top: 62px;
+	width: 454px;
+	border-top: 1px solid #E6E6E6;
+}
+.vipPwTip p {
+	color: #999;
+}
+.vipPassword h3 {
+	text-align: center;
+	font: 24px/1.8 "Microsoft YaHei";
+	color: #4bc46d;
+	margin-bottom:40px;
+}
+.vipPassword h3.red{
+	color:#e55555;
+}
+.vipPassword h3 .ok {
+	width: 28px;
+	height: 24px;
+	background-position: -80px -147px;
+	margin: -3px 12px 0 0;
+}
+.vipPassword h3 .error {
+	width: 22px;
+	height: 22px;
+	background-position: -171px -16px;
+	margin: -3px 12px 0 0;
+}
+.savePw li {
+	position: relative;
+	line-height: 30px;
+	padding-left: 84px;
+	margin-bottom: 20px;
+}
+.savePw li em {
+	width: 70px;
+	font: 14px/30px "Microsoft YaHei";
+	position: absolute;
+	left: 0;
+	color:#858585;
+	text-align:right;
+}
+.savePw li input {
+	border: 1px solid #DDD;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 5px;
+	width: 300px;
+	margin-bottom:5px;
+}
+.savePw li p.tip {
+	color: #999;
+	font: 12px/1.8 "Microsoft YaHei";
+}
+.confirm2 {
+	padding:25px 0 0;
+}
+.confirm2 .button {
+	display: block;
+	width: 180px;
+	height: 36px;
+	margin:0 auto;
+	font: 14px/36px "Microsoft YaHei";
+}

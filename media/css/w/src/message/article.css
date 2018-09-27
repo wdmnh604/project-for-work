@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/**
+ * @author  chenbaixiang
+ */
+.wrap {
+  min-width: 320px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/**文章显示**/
+.primary {
+  padding: 0 15px;
+  border-bottom: 1px solid #dedede;
+}
+.primary h1.title {
+  padding: 24px 0 17px 0;
+  font-size: 22px;
+  color: #222;
+  text-align: left;
+}
+.primary .meta {
+  color: #c9c9c9;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+.primary .meta .time {
+  overflow: hidden;
+  width: 70px;
+  color: #c9c9c9;
+  padding-right: 8px;
+}
+.primary .meta .author a {
+  color: #419ad9;
+  text-decoration: none;
+}
+.primary .content {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Helvetica,STHeiti,Droid Sans Fallback;
+}
+.primary .content p {
+  line-height: 1.8;
+  font-size: 1.125em;
+  margin-bottom: 20px;
+}
+.primary .content p a{
+  color: #008bec;
+}
+
+.primary .content  img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+

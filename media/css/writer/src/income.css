@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.incomeWrap {
+    padding: 40px 35px 0;
+}
+.filter-box {
+    margin-bottom: 20px;
+    font: 14px/30px "Microsoft YaHei";
+}
+.filter-box em {
+    float: left;
+    margin-right: 10px;
+}
+.filter-box .combo-select {
+    float: left;
+    width: 240px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.filter-box .option-item {
+    font-size: 12px;
+}
+.filter-box.income .combo-select {
+    width: 120px;
+}
+.filter-box input {
+    *padding-left: 10px;
+}
+.filter-box .button {
+    float: left;
+    width: 78px;
+    height: 28px;
+    font: 14px/28px "Microsoft YaHei";
+}
+.totalBox {
+    width: 310px;
+    height: 124px;
+    background: #50A8FF;
+    margin-right: 19px;
+}
+.totalBox .all {
+    color: #FFF;
+    overflow: hidden;
+    *zoom: 1;
+    padding: 0 22px;
+}
+.totalBox .all i {
+    font: 16px/72px "Microsoft YaHei";
+}
+.totalBox .all em {
+    float: right;
+    color: #FFF;
+    font: 42px/72px Arial;
+}
+.platform {
+    height: 42px;
+    background: #3F8CDA;
+    padding-top: 10px;
+}
+.platform span,
+.platform em {
+    display: block;
+}
+.platform i,
+.platform b {
+    float: left;
+}
+.platform i {
+    padding-left: 17px;
+}
+.platform i span {
+    color: #A1D1FF;
+    font: 12px/1 "Microsoft YaHei";
+    margin-bottom: 8px;
+}
+.platform i em {
+    color: #FFF;
+    font: 12px/1 Arial;
+}
+.platform b {
+    border-right: 1px solid #A1D1FF;
+    height: 32px;
+    padding: 0 5px 0 23px;
+}
+.reserveBox .record {
+    width: 570px;
+    height: 124px;
+    background: #69DB89;
+}
+.record ul {
+    padding: 29px 0 0;
+}
+.record li {
+    float: left;
+    border-right: 1px solid #BBF5CB;
+    height: 61px;
+    width: 189px;
+    text-align: center;
+    padding-top: 5px;
+}
+.record li p {
+    color: #FFF;
+    font: 16px/1 "Microsoft YaHei";
+    margin-bottom: 8px;
+}
+.record li span {
+    color: #FFF;
+    font: 42px/1 Arial;
+}
+.record li.br0 {
+    border-right: none;
+}
+.reserveBox .tip {
+    font: 12px/30px "Microsoft YaHei";
+    color: #999;
+}
+.reserveTitle {
+    font: 18px/1.8 "Microsoft YaHei";
+    margin-bottom: 8px;
+    position: relative;
+    width: 899px;
+    z-index: 1;
+    clear: both;
+}
+.reserveTitle .searchBtn {
+    float: right;
+    width: 58px;
+    height: 28px;
+    font: 14px/26px "Microsoft YaHei";
+    margin-left: 10px;
+}
+.selectBox {
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.selectBox .combo-select {
+    float: right;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.selectBox .combo-select input {
+    border-radius: 3px;
+    *width: 70px;
+    float: left;
+}
+.reserveTitle em {
+    margin: -5px 10px 0 0;
+}
+.reserveTitle em.chart {
+    width: 22px;
+    height: 22px;
+    background-position: -171px -56px;
+}
+.reserveTitle em.detail {
+    width: 22px;
+    height: 24px;
+    background-position: -171px -79px;
+}
+.reserveTitle em.reward {
+    width: 22px;
+    height: 19px;
+    background-position: -171px -128px;
+}
+.reserveTitle em.pie {
+    width: 23px;
+    height: 23px;
+    background-position: -171px -104px;
+    margin: -2px 10px 0 0;
+}
+.chartWrap {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #E6E6E6;
+    min-height: 350px;
+}
+.totalCenter {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 260px;
+    top: 30px;
+    left: 350px;
+}
+.totalData {
+    height: 50%;
+    margin-top: 75px;
+}
+.totalData td {
+    height: 30px;
+    position: relative;
+    z-index: 50;
+}
+.totalData h3 {
+    font: 16px/1.5 "Microsoft YaHei";
+}
+.totalData p {
+    color: #4EA8FF;
+    font: 28px/1.5 Arial;
+    border-bottom: 1px solid #E6E6E6;
+    width: 150px;
+    margin: 0 auto 8px;
+}
+.totalData h4 {
+    font: 14px/1.5 "Microsoft YaHei";
+}
+.totalData .detailWrap span {
+    color: #4EA8FF;
+    font: 22px/1.5 Arial;
+    cursor: pointer;
+}
+.totalData .detailWrap em.icon {
+    margin: -3px 0 0 5px;
+    width: 15px;
+    height: 15px;
+    background-position: -194px -80px;
+}
+.detailBubble {
+    display: none;
+    position: absolute;
+    border: 1px solid #DDD;
+    background: #FFF;
+    padding: 0 18px;
+    z-index: 50;
+    left: 38px;
+    top: 134px;
+    cursor: default;
+}
+.detailBubble cite {
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    background-position: -65px -70px;
+    top: -8px;
+    left: 50%;
+    margin-left: -7px;
+}
+.detailBubble ul {
+    margin-bottom: -1px;
+}
+.detailBubble li {
+    border-bottom: 1px solid #DDD;
+    height: 44px;
+    font: 14px/44px "Microsoft YaHei";
+    overflow: hidden;
+    *zoom: 1;
+    width: 200px;
+    text-align: left;
+    color: #8C8C8C;
+}
+.detailBubble li i {
+    float: right;
+    color: #333;
+}
+.chartWrap .tabSwitch {
+    height: auto;
+}
+.chartWrap .tabSwitch span {
+    padding: 0 19px;
+}
+.reserveTitle .combo-select {
+    float: right;
+    width: 114px;
+    height: 28px;
+}
+.reserveTitle .combo-select input,
+.reserveTitle .combo-select {
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.detailTable {
+    text-align: center;
+    font-size: 14px;
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+}
+.detailTable.f12, .detailTable.f12 td, .detailTable.f12 th {
+    font-size: 12px;
+}
+.detailTable.f12 th {
+    border-right: 1px solid #E6E6E6;
+}
+.detailTable.f12 th.nobr {
+    border-right: none;
+}
+.detailTable th,
+.detailTable td {
+    border-bottom: 1px solid #E6E6E6;
+}
+.detailTable th {
+    height: 44px;
+    background: #F9F9F9;
+    font-weight: 400;
+}
+.detailTable td {
+    height: 38px;
+}
+.detailTable td .q_icon {
+    background-position: -210px -80px;
+    width: 15px;
+    height: 15px;
+    margin: -2px 0 0 5px;
+}
+.detailTable td p.section {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 400px;
+    margin-left: 20px;
+}
+.detailTable tfoot td {
+    text-align: right;
+    padding-right: 30px;
+}
+.reserveGraph text {
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.nodataBox {
+    width: 141px;
+    margin: 65px auto 0;
+    text-align: center;
+}
+.nodataBox img {
+    display: block;
+    margin-bottom: 20px;
+}
+.gTip {
+    padding: 40px 0;
+}
+.gTip p {
+    font: 12px/2 "Microsoft YaHei";
+    color: #999;
+}
+.payState {
+    padding: 20px 0 30px;
+    text-align: center;
+}
+.payState p {
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.payState p .icon {
+    background-position: -210px -80px;
+    width: 15px;
+    height: 15px;
+    margin: -2px 0 0;
+}

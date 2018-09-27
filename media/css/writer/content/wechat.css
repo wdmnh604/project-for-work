@@ -1,0 +1,56 @@
+.wechatWrap{
+	padding:40px 70px 0 80px;
+}
+.slogan p{
+	font:14px/2 "Microsoft YaHei"
+}
+.featureList ul{
+	padding:70px 0 10px;
+}
+.featureList li {
+	float:left;
+	width:390px;
+	padding-bottom:28px;
+}
+.featureList li.mr{
+	margin-right:30px;
+}
+.featureList li span{
+	width:60px;
+	height:60px;
+	float:left;
+	margin:2px 27px 0 0;
+	background-image:url(http://dev.img1.write.qq.com/writer/p1/content/medal_sprite.png)
+}
+.featureList li span.m1{
+	background-position:0 0;
+}
+.featureList li span.m2{
+	background-position:-61px 0;
+}
+.featureList li span.m3{
+	background-position:0 -61px;
+}
+.featureList li span.m4{
+	background-position:-61px -61px;
+}
+.featureList li .fInfo{
+	float:left;
+	width:300px;
+}
+.featureList li .fInfo h3{
+	color:#4ea8ff;
+	font:16px/1 "Microsoft YaHei";
+	margin-bottom:5px;
+}
+.featureList li .fInfo p{
+	font-size:14px;
+}
+.featureList .apply{
+	clear:both;
+	width:180px;
+	height:35px;
+	font:14px/35px "Microsoft YaHei";
+	display:block;
+	margin:0 auto;
+}

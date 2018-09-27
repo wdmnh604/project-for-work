@@ -1,0 +1,298 @@
+/**
+ * @author wangdongmei
+ * @design yangyifan;
+ */
+
+.conts-bd {
+	font-size: 13px;
+}
+
+/**
+ * 栏目标题
+ */
+.conts-bd .thead {
+	overflow: hidden;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #e4e8eb;
+}
+
+.conts-bd .thead li {
+	float: left;
+	font-size: 13px;
+	color: #9da9b3;
+}
+
+.conts-bd .message {
+	width: 280px;
+	margin-right: 48px;
+}
+
+.conts-bd .title {
+	width: 184px;
+	margin-right: 48px;
+}
+
+.conts-bd .time {
+	width: 130px;
+	margin-right: 7px;
+}
+
+.conts-bd .source {
+	width: 74px;
+	margin-right: 10px;
+}
+
+.conts-bd .state {
+	width: 52px;
+	margin-right: 32px;
+}
+
+.conts-bd .operator {
+	width: 58px;
+}
+
+.oneline {
+	clear: both;
+	padding-top: 32px;
+}
+
+.message-box .user-pic {
+	float: left;
+	width: 56px;
+	margin-right: 24px;
+}
+
+.message-box .user-pic img {
+	display: block;
+	width: 56px;
+	height: 56px;
+	border-radius: 2px;
+}
+
+.message-box .message .text {
+	float: left;
+	width: 200px;
+}
+
+.message-box .message .name {
+	overflow: hidden;
+	height: 15px;
+	margin-bottom: 3px;
+	line-height: 15px;
+	font-size: 15px;
+	color: #9da9b3;
+}
+
+.message-box .title p {
+	overflow: hidden;
+	height: 13px;
+	margin-top: 20px;
+	line-height: 13px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.message-box .time p,
+.message-box .source p {
+	margin-top: 20px;
+	line-height: 13px;
+}
+
+/**
+ * 精选状态
+ */
+.message-box .state p {
+	margin-top: 17px;
+	padding-left: 20px;
+	color: #419ad9;
+	cursor: pointer;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -468px;
+}
+
+.message-box .state .remove {
+	display: none;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -428px;
+}
+
+.message-box .operator .reply {
+	margin: 4px 0 6px;
+}
+
+.reply a {
+	color: #419ad9;
+}
+
+.delete a {
+	color: #db6b61;
+}
+
+/**
+ * 答复样式
+ */
+.answer-box {
+	width: 812px;
+	padding-top: 16px;
+	margin: 16px 0 0 80px;
+	border-top: 1px solid #e4e8eb;
+}
+
+.answer-box .answer {
+	float: left;
+	width: 200px;
+	margin-right: 280px;
+	color: #9da9b3;
+}
+
+.answer-box .time {
+	float: left;
+	width: 130px;
+}
+
+.answer-box .operator {
+	float: right;
+	width: 26px;
+}
+
+/**
+ * 答复输入框
+ */
+.answer-box .title {
+	margin-bottom: 16px;
+	line-height: 13px;
+}
+
+.answer-box textarea {
+	width: 780px;
+	height: 30px;
+	padding: 10px 15px;
+	line-height: 30px;
+	font-size: 15px;
+	resize: none;
+	outline: 0;
+	color: #000;
+	border-radius: 2px;
+	border: 1px solid #e4e8eb;
+}
+
+.emoji-wysiwyg-editor {
+	width: 780px;
+	height: 30px;
+	padding: 10px 15px;
+	line-height: 30px;
+	font-size: 15px;
+	resize: none;
+	outline: 0;
+	color: #000;
+	border-radius: 2px;
+	border: 1px solid #e4e8eb !important;
+}
+
+.emoji-button {
+	display: inline-block;
+	padding-left: 22px;
+	margin-top: 16px;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	color: #9da9b3;
+	cursor: pointer;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -500px;
+}
+
+.opt-box {
+	margin-top: -36px;
+}
+
+.answer-box .opt-box .opt-r {
+	float: right;
+	width: 225px;
+	height: 36px;
+	line-height: 36px;
+}
+
+.answer-box .opt-box .opt-r .remain {
+	float: left;
+	width: 110px;
+	color: #9da9b3;
+}
+
+.answer-box .opt-box .opt-r .outnumber {
+	float: left;
+	width: 110px;
+	color: #9da9b3;
+	display: none;
+}
+
+.answer-box .opt-box .opt-r .outnumber em {
+	color: #db6b61;
+}
+
+.answer-box .opt-box .btn-send {
+	float: right;
+	width: 108px;
+}
+
+.btn-blue {
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 100px;
+	background: #419ad9;
+}
+
+.btn-false {
+	background: #a0cdec;
+}
+
+.message-article .article {
+	width: 658px;
+}
+
+.message-article .number {
+	width: 70px;
+}
+
+.message-article .article-pic {
+	float: left;
+	width: 56px;
+	margin-right: 24px;
+}
+
+.message-article .article-pic img {
+	display: block;
+	width: 56px;
+	height: 56px;
+	border-radius: 2px;
+}
+
+.message-article .article .text {
+	float: left;
+	width: 530px;
+}
+
+.message-article .article .name {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.message-article .time p,
+.message-article .number p {
+	margin-top: 20px;
+}
+
+.message-article .view {
+	margin: 6px 0;
+}
+
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+	.message-box .state p,
+	.message-box .state .remove,
+	.emoji-button {
+		background-image: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite2x.png);
+		background-size: 50px;
+	}
+}

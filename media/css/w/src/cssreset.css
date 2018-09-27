@@ -1,0 +1,81 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, a, blockquote, th {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #333;
+	background:#F5F5F8;
+	line-height:1.8;
+	/*overflow-y: hidden;*/
+}
+body.ddd{
+	background:#f2f2f2;
+}
+:focus {
+	outline: 0;
+}
+html {
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+}
+html, body, p, form, div, table, textarea, input, span, select {
+	word-wrap: break-word;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"," Microsoft YaHei ";
+}
+img form {
+	border: 0;
+}
+ol, ul, li {
+	list-style: none outside none;
+}
+a {
+	color: #333;
+	outline: none;
+	text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+input, textarea {
+	padding: 0 4px;
+}
+input {
+    outline: none;
+    border: none;
+}
+textarea {
+	resize: none;
+}
+input[type='checkbox'] {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.nobr {
+	border: 0;
+}
+.fr{
+	float:right;
+}
+.fl{
+	float:left;
+}
+/* clear fix */
+i, em {
+	font-style: normal;
+}
+.cf {
+	zoom: 1;
+}
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.block {
+    display: block;
+}
+.hidden {
+    display: none;
+}

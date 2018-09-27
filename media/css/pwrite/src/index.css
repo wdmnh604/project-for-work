@@ -1,0 +1,278 @@
+/*
+ * 作家呼吁
+ * author   liuwentao
+ * create   2016/05/23 222222222222244444444444
+*/
+/*设置背景颜色*/
+body{
+    background: #F7F9FA;
+    padding-bottom: 100px;
+}
+/*作家呼吁*/
+.author-appeal{
+    position:relative;
+
+}
+/*作者介绍背景*/
+.author-appeal:before{
+    position: absolute;
+    content: "";
+    left:0;
+    top:0;
+    width: 100%;
+    padding-top:100%;
+    background:url("http://dev.img1.write.qq.com/pwrite/p1/header-bg.png") 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 100% auto;
+    z-index:0;
+}
+/*作家头像*/
+.author-appeal .author-cont{
+    position: relative;
+    padding-top:14.9333333%;
+}
+.author-appeal .author-cont .author-img{
+    width: 3.7546667rem;
+    height: 3.7546667rem;
+    margin:0 auto;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:0.0853333rem solid #fff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.author-cont .author-img img{
+    width:100%;
+    height: 100%;
+}
+.author-cont .author-name{
+    margin-top:0.5rem;
+    color:#fff;
+    font-size:0.8533333rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.author-cont .author-level{
+    margin-top:0.3rem;
+    text-align: center;
+}
+.author-cont .author-level span{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:0 0.4266667rem;
+    border:0.0426667rem solid #fff;
+    -webkit-border-radius:0.08533333rem;
+    -moz-border-radius:0.08533333rem;
+    border-radius: 0.08533333rem;
+    color:#fff;
+    font-size:0.5546667rem ;
+    line-height: 1.024rem;
+}
+/*呼吁内容*/
+.author-appeal .appeal-box{
+    position: relative;
+    width: 13.2693333rem;
+    margin:1.4933333rem auto 0;
+    background: #fff;
+    -webkit-border-radius:0.128rem;
+    -moz-border-radius:0.128rem;
+    border-radius: 0.128rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 5px rgba(17,62,122,0.12) ;
+    -moz-box-shadow: 0px 0px 5px rgba(17,62,122,0.12) ;
+    box-shadow: 0px 0px 5px rgba(17,62,122,0.12) ;
+    padding: 3.072rem 1.3653333rem 1.3653333rem;
+    font-size: 0.6826667rem;
+    line-height: 0.9813333rem;
+}
+.author-appeal .appeal-box:before{
+    position:absolute;
+    content: "";
+    left:50%;
+    top:1.3653333rem;
+    -webkit-transform: translate3d(-50%,0 , 0 );
+    -moz-transform: translate3d(-50%,0 , 0 );
+    -ms-transform: translate3d(-50%,0 , 0 );
+    transform: translate3d(-50%,0 , 0 );
+    width:0.9813333rem;
+    height:0.6826667rem;
+     background: url(http://dev.img1.write.qq.com/pwrite/p1/quote.svg) no-repeat center;
+    -webkit-background-size :100% 100%;
+    background-size :100% 100%;
+}
+.author-appeal .appeal-box .appeal-txt{
+    font-family:fangZheng ;
+}
+/*支持正版*/
+.author-appeal .appeal-box .appeal-voice{
+    position: relative;
+    margin-top:0.8533333rem;
+    text-align: center;
+    color:#888A8C;
+    font-size: 0.5973333rem;
+}
+.appeal-box .appeal-voice span{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 0 0.512rem;
+}
+.appeal-box .appeal-voice:before{
+    position: absolute;
+    content: "";
+    top:50%;
+    left:50%;
+    -webkit-transform: translate3d(-50%,-50% , 0 );
+    -moz-transform: translate3d(-50%,-50% , 0 );
+    -ms-transform: translate3d(-50%,-50% , 0 );
+    transform: translate3d(-50%,-50% , 0 );
+    width: 93.3333333%;
+    height:0.256rem;
+    border-top:0.04266667rem solid #E6E6E6;
+    border-bottom:0.04266667rem solid #E6E6E6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*我的最新力作*/
+.my-books{
+    margin-top:1.3665333rem;
+}
+.my-books h3{
+    color:#242526;
+    font-size: 0.768rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.my-books .books-list-box{
+    width: 100%;
+    margin-top:1.0666667rem;
+    overflow:hidden;
+}
+.my-books .books-list-box .books-list{
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 1.0666667rem;
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.books-list-box .books-list .books-item{
+    display: inline-block;
+    width: 5.3333333rem;
+    padding-right:1.0666667rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.books-list .books-item img{
+    width:4.2666667rem;
+    height: 5.3333333rem;
+}
+.books-list .books-item p{
+    margin-top:0.42666667rem;
+    color:#9A9C9E;
+    width:100%;
+    height:0.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    font-size:0.5973333rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+/*立马分享*/
+.must-share{
+    display: block;
+    width:9.856rem;
+    height:2.048rem;
+    font-size: 0.5973333rem;
+    border-radius: 10.24rem;
+    background: #0B8BE6;
+    color:#fff;
+    line-height:2.048rem;
+    text-align: center;
+    margin:1.3665333rem auto 0;
+}
+/*下载链接*/
+.qd-down{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:64px;
+    background: #ffffff;
+    line-height: 40px;
+    padding: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    -webkit-box-shadow:0px -2px 4px rgba(223,223,223,0.5) inset;
+    -moz-box-shadow: 0px -2px 4px rgba(223,223,223,0.5) inset;
+    box-shadow: 0px -2px 4px rgba(223,223,223,0.5) inset;
+}
+.qd-down .qd-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(http://dev.img1.write.qq.com/pwrite/p1/combinedShape.svg) no-repeat center;
+    -webkit-background-size :100% 100%;
+    background-size :100% 100%;
+    vertical-align: middle;
+}
+.qd-down .pc-center{
+    position: relative;
+}
+.qd-down .qd-txt{
+    margin-left:5px;
+    color:#242526;
+    vertical-align: middle;
+}
+.qd-down .arrow-icon{
+    position: absolute;
+    right:12px;
+    top:50%;
+    height:15px;
+    width:10px;
+    background: url(http://dev.img1.write.qq.com/pwrite/p1/arrow.svg) no-repeat center;
+    -webkit-background-size :100% 100%;
+    background-size :100% 100%;
+    -webkit-transform: translate3d(0,-50% , 0 );
+    -moz-transform: translate3d(0,-50% , 0 );
+    -ms-transform: translate3d(0,-50% , 0 );
+    transform: translate3d(0,-50% , 0 );
+
+}
+/*share遮罩*/
+.share-pop{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0 , 0 , 0 , 0.7);
+}
+.share-pop .share-text{
+    position: absolute;
+    right:10px;
+    top:0;
+    width:135px;
+    height:108px;
+    background: url(http://dev.img1.write.qq.com/pwrite/p1/mask2x.png) no-repeat center;
+    -webkit-background-size :100% 100%;
+    background-size :100% 100%;
+}
+

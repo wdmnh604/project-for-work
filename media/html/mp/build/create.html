@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新建图文消息 - 阅文自媒体</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" href="../../../css/mp/build/ui.css"/>
+<link rel="stylesheet" href="../../../css/mp/build/common.css"/>
+
+<link rel="stylesheet" href="../../../css/mp/build/create.css">
+
+</head>
+<body>
+<div class="container">
+	<!-- 顶部header begin -->
+	<!-- 顶部header begin -->
+	<div class="header">
+		<div class="hd-wrap clearfix">
+			
+			<!-- logo -->
+			<h1 class="logo"><a href="./" class="logo-a">作家自媒体</a></h1>
+			
+			<!-- 右侧作家信息begin -->
+			<div class="header-right">
+				<a href="javascript:" id="hdAuthor" class="header-author-box">
+					<p class="header-author">
+						<!--<i class="icon icon-ring"></i>-->夕阳剑客<i class="icon icon-dropdown"></i>
+					</p>					
+				</a>
+			</div>
+			<!-- 右侧作家信息end -->
+		</div>
+	</div>
+
+	<!-- 作家信息下拉begin -->
+	<div id="hdDrop" class="header-drop">
+		<div class="header-drop-box">
+			<p class="header-drop-pic">
+				<i class="header-drop-circle"></i>
+				<img src="../../../img/mp/p1/temp/photo01.jpg" class="header-avatar" alt="夕阳剑客" />
+			</p>
+			<p class="header-drop-name">夕阳剑客</p>
+		</div>
+		<a href="" class="header-logout"><i class="icon icon-signout"></i>退出登录</a>
+	</div>
+	<!-- 作家信息下拉end -->	<!-- 顶部header end -->
+
+	<!-- 内容区 -->
+	<div class="main-wrap">
+		<div class="main-hd-fixed">
+			<div id="constHd" class="conts-hd">
+				<div class="page-ttl"><a class="return" href="send_function.html"><i class="icon icon-back"></i>群发功能</a><span class="ml5 mr5">|</span><span>新建图文消息</span></div>
+				<div id="autoSaveInfo" class="save-info"></div>
+			</div>
+		</div>
+		<div class="create-main">
+		
+			<!-- 上传图片begin -->
+			<div class="banner">
+				<label for="imgUpload" class="banner-label">					
+										<div class="banner-placeholder">
+						<img src="../../../img/mp/p1/upload-image.png" /><p class="mt10">点击上传图片</p>
+					</div><i class="middle"></i>
+										
+				</label>
+			</div>
+			<!-- 上传图片end -->
+
+			<form action="./cgi/json/upload.html" method="post" enctype="multipart/form-data">
+				<input type="file" id="imgUpload" name="picture" class="clip" accept="image/*">
+			</form>
+			
+			<form id="createForm" action="./cgi/json/articleSave.html" class="content" method="post">
+				<!-- 文章id value=0表示新文章 -->
+				<input type="hidden" id="articleID" name="id" value="0">
+
+				<!-- 文章封面 -->
+				<input type="hidden" id="coverImage" name="cover" value="">
+				<!-- 文章大标题 -->
+				<div class="ui_input_x input-big-title">           
+					<input id="inputTitle" maxlength="20" name="title" placeholder="文章大标题" required autocomplete="off">
+				</div>
+				
+				<!-- 文章简介 -->
+				<div id="shortDes" class="ui_textarea_x textarea-short-des"> 
+					<!-- textarea这里直接输出文章内容 -->
+					<textarea id="textareaDes" name="desc" maxlength="120" rows="1" placeholder="请输入文章描述"></textarea>
+					<label for="textareaDes" class="ui_textarea_count">     
+						<span>0</span>/<span>120</span>
+					</label>
+				</div>
+				
+				<!-- 图文编辑正文 -->
+				<div id="elm1Bar" class="content-area-bar"></div>
+				<textarea id="elm1" class="content-area" name="article">
+									</textarea>
+
+
+				
+				<!-- 投票输出格式end -->				
+				<input type="submit" class="clip" id="createSubmit">
+			</form>
+			<form action="./cgi/json/upload.html" method="post" enctype="multipart/form-data">
+				<input type="file" id="editorUpload" name="picture" class="clip" accept="image/*">
+			</form>
+		</div>
+	</div>
+	
+	<!-- 底部发布功能begin -->
+	<div class="button-creat">
+		<ul>
+						<li><a id="previewBtn" class="btn-blue disabled" href="preview.html?preview=true" target="_blank">预览</a></li>
+						
+			<li><a id="saveBtn" class="btn-blue" href="javascript:" data-params="draft=true">保存</a></li>
+			
+			<li><label class="ui_button ui_button_primary btn-true jsTips" title="今天还可以群发 1 条消息" for="createSubmit">发布</label></li>
+		</ul>
+	</div>
+	<!-- 底部发布功能end -->
+</div>
+
+<!-- 发布文章弹窗 -->
+<script id="dialogPubTemp" type="text/template">
+<p class="tc mt10 mb10 f16">文章发布后无法撤销，是否确认发布？</p>
+<form id="publishForm" action="./cgi/json/upload.html" method="post">
+	<div class="article-auto">
+		<span class="fl f16">定时发布</span>
+		<div class="fr">
+			<input type="checkbox" id="switchTime" name="timing" value="1"><label class="ui_switch" for="switchTime"></label>
+		</div>
+	</div>
+
+	<!-- 定时发布选择 -->
+	<div id="dialogTimepk" class="pb5">
+		<!-- 日期选择 -->
+		<span class="ui_input ui_date_input mr5 disabled"><input type="date" class="dateTime" name="date" min="2016-10-26" disabled></span>
+		<span class="ui_input ui_date_input disabled"><input type="time" class="dateTime" name="time" value="15:30" disabled></span>
+	</div>
+</form>
+</script>
+
+<!-- 插入图片 -->
+<!-- <div id="dialog-image" class="dialog-box">
+	<div class="editor-picupload">
+		<label for="editor-input-file" class="editor-input-file"><img src="../../../img/mp/p1/upload-image.png" />点击上传图片</label>
+		<input type="file" name="editor-input-file" id="editor-input-file" /> 
+	</div>
+</div> -->
+
+<!-- 插入视频弹窗 -->
+<script id="dialogVideoTemp" type="text/template">
+<!-- 视频地址 -->
+<form id="videoForm" class="video-adress">
+	<div class="ui_input"><input id="videoLink" class="input-radius" type="url" placeholder="请输入视频网址" required="" autocomplete="off" /></div>
+	<p class="info"><i class="icon icon-caution"></i>仅支持腾讯视频网址</p>
+	<input type="submit" class="clip">
+</form>
+<!-- 视频预览区 -->
+<div class="preview-content video-preview">
+	<!-- 存放视频容器 -->
+	<div id="videoCont" class="video-content">视频预览区域</div>
+</div>
+</script>
+
+<!-- 插入书籍弹窗 -->
+<script id="dialogBookTemp" type="text/template">			
+<!-- 书籍搜索 -->
+<form class="search-book" action="./cgi/json/getBookList.html" method="get">
+	<div class="ui_input ui_search_input">
+		<input type="search" id="bookSearch" placeholder="请输入书籍名称" name="key">
+		<label class="ui_icon_search">搜索</label>
+	</div>
+</form>
+
+<!-- 图书预览区 -->
+<div id="bookPrvX" class="preview-content book-preview">
+<div class="book-show">
+	<div class="book-show-pic"><img id="bookPicImg" class="book-pic-img" /></div>
+</div>
+</div>
+<!-- 此textarea的data-api-*为autocomplete返回书名和作者的接口名称 -->
+<textarea id="bookPrvTemp" class="dn" data-api-title="title" data-api-author="author">
+<div class="book-show">
+	<div class="book-show-pic"><img id="bookPicImg" class="book-pic-img" src="{{imgurl}}" /></div>
+	<div class="book-show-ttl">{{title}}</div>
+	<div class="book-show-author">作者: {{author}}</div>
+</div>
+<!-- 这一部分div可以返回end -->
+
+<ul class="input-box">
+	<li><input id="insertBookName" type="radio" name="bookinsert" value="name" /><label class="ui_radio" for="insertBookName"></label><label class="label-text" for="insertBookName">插入书名</label></li>
+	<li><input id="insertBookCover" type="radio" name="bookinsert" value="cover" checked /><label class="ui_radio" for="insertBookCover"></label><label class="label-text" for="insertBookCover">插入封面</label></li>
+</ul>
+</textarea>
+<!-- 插入书名的模板 其中的{{base64}}和{{width}},{{height}}前端用的，可以忽略 -->
+<textarea id="insertNameTemp" class="dn">
+	<a href="#{{id}}" class="base64Name" data-title="{{title}}" data-id="{{id}}"><img src="{{base64}}" width="{{width}}" height="{{height}}"></a>
+</textarea>
+<!-- 插入封面的模板 其中的{{base64}}前端用的，可以忽略 -->
+<textarea id="insertCoverTemp" class="dn">
+	<p><img class="base64Cover" src="{{base64}}" width="310" height="80" style="display:block;margin:auto;padding: 200px 0 0;background: url({{imgurl}}) no-repeat center top;" data-title="{{title}}" data-author="{{author}}" data-id="{{id}}" alt="{{title}}"></p>
+</textarea>
+</script>
+
+<!-- 插入链接弹窗 -->
+<script id="dialogLinkTemp" type="text/template">
+<form class="inser-link">
+	<div class="ui_input mb15">
+		<input type="text" id="linkUrl" pattern="^(?:http(?:s)?\:)?(?:\/\/)?(?:[a-zA-Z0-9\-]+\.)*(?:qq|yuewen)\.com((\/?)|(\/[0-9a-z_!~*'().;?:@&amp;=+$,%#-]+)+/?)$" placeholder="输入网址" autocomplete="off" required="" />
+	</div>
+	<div class="ui_input mb15">
+		<input type="text" id="linkText" placeholder="输入文本" autocomplete="off" required />
+	</div>
+	<input type="submit" class="clip">
+</form>
+</script>
+
+<!-- 新建投票弹窗 -->
+<script id="dialogVoteTemp" type="text/template">
+<div class="ui_tab_tabs create-vote-tab">
+	<a href="vote_create.html" class="ui_tab_tab" data-rel="createVote">新建投票</a>
+	<a href="javascript:;" class="ui_tab_tab checked" data-rel="alreadyVote">已有投票</a>                    
+</div>
+<div class="preview-content vote-preview">
+	<div id="createVote" class="new-vote" style="display: none">
+
+	</div>
+	<!-- 已有投票begin -->
+	<div id="alreadyVote" class="already-vote">
+		<table cellpadding="0" cellspacing="0">
+			<col width="66%" />
+			<col width="22%" />
+			<col width="12%" />
+			<thead>
+				<tr>
+					<th>投票</th>
+					<th>截止时间</th>
+					<th>投票人数</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input id="vote1" name="vote" type="radio" /><label class="ui_radio" for="vote1"></label><label class="label-text" for="vote1">最近最喜欢的游戏是什么？</label></td>
+					<td>2016.07.02 22:52</td>
+					<td>72</td>
+				</tr>
+				<tr>
+					<td><input id="vote2" name="vote" type="radio" /><label class="ui_radio" for="vote2"></label><label class="label-text" for="vote2">最近最喜���的游戏是什么？</label></td>
+					<td>2016.07.02 22:52</td>
+					<td>72</td>
+				</tr>
+				<tr>
+					<td><input id="vote3" name="vote" type="radio" /><label class="ui_radio" for="vote3"></label><label class="label-text" for="vote3">最近最喜欢的游戏是什么？</label></td>
+					<td>2016.07.02 22:52</td>
+					<td>72</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 已有投票end -->
+</div>
+</script>
+
+<!-- <p class="tool-tip"><span class="tip">今天还可以群发 1 条消息</span><span class="ico"></span></p> -->
+<!-- 公共js -->
+<script src="../../../js/mp/build/plugin/sea.js"></script>
+<script src="../../../js/mp/build/plugin/jquery.min.js"></script>
+<!-- 公共js end -->
+
+<!-- 图文编辑js -->
+<script src="../../../js/mp/build/tinymce/tinymce.min.js"></script>
+
+<script type="text/javascript">
+seajs.config({
+	base: '../../../js/mp/build/'
+}).use(['create'], function(create) {
+	// 一些需要异步加载的JS资源
+	create.js = {
+		upload: '../../../js/mp/build/util/jquery.form.js',
+		player: 'http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js'
+	};
+	// 文章自动保存时间，单位是秒
+	create.autoSaveTime = 300;
+});
+</script>
+</body>
+</html>

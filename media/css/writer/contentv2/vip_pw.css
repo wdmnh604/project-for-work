@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.vipPassword {
+    width: 460px;
+    margin: 0 auto;
+    padding: 164px 0 0;
+}
+.vipPwBox {
+    font: 14px/30px 'Microsoft YaHei';
+}
+.vipPwInput {
+    border: 1px solid #DDD;
+    width: 250px;
+    height: 28px;
+    margin-left: 15px;
+    padding-left: 5px;
+    line-height: 28px;
+    vertical-align: middle;
+}
+.vipPwBox .confirm {
+    padding: 20px 0 0 93px;
+}
+.vipPwBox .confirm .button {
+    display: inline-block;
+    width: 180px;
+    height: 36px;
+    font: 14px/36px 'Microsoft YaHei';
+}
+.forget {
+    margin-left: 20px;
+    color: #999;
+}
+.vipPwTip {
+    border-top: 1px solid #E6E6E6;
+    width: 438px;
+    margin-top: 62px;
+    padding-top: 20px;
+    font: 12px/2 'Microsoft YaHei';
+}
+.vipPwTip p {
+    color: #999;
+}
+.vipPassword h3 {
+    margin-bottom: 40px;
+    font: 24px/1.8 'Microsoft YaHei';
+    text-align: center;
+    color: #4BC46D;
+}
+.vipPassword h3.red {
+    color: #E55555;
+}
+.vipPassword h3 .ok {
+    width: 28px;
+    height: 24px;
+    margin: -3px 12px 0 0;
+    background-position: -80px -147px;
+}
+.vipPassword h3 .error {
+    width: 22px;
+    height: 22px;
+    margin: -3px 12px 0 0;
+    background-position: -171px -16px;
+}
+.savePw li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 84px;
+    line-height: 30px;
+}
+.savePw li em {
+    position: absolute;
+    left: 0;
+    width: 70px;
+    font: 14px/30px 'Microsoft YaHei';
+    text-align: right;
+    color: #858585;
+}
+.savePw li input {
+    border: 1px solid #DDD;
+    width: 300px;
+    height: 28px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    line-height: 28px;
+}
+.savePw li p.tip {
+    font: 12px/1.8 'Microsoft YaHei';
+    color: #999;
+}
+.confirm2 {
+    padding: 25px 0 0;
+}
+.confirm2 .button {
+    display: block;
+    width: 180px;
+    height: 36px;
+    margin: 0 auto;
+    font: 14px/36px 'Microsoft YaHei';
+}

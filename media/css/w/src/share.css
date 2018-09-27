@@ -1,0 +1,80 @@
+#fullpage{
+	padding-bottom:30px;
+}.textBox{
+	padding:14px 20px;
+}
+.textBox h3{
+	font:4rem/1.5 "Helvetica Neue", "Helvetica", "Arial", "sans-serif"," Microsoft YaHei ";
+	word-break:break-all;
+}
+.source{
+	font:14px/2.5 Simsun;
+	color:#999;
+}
+.source a{
+	color:#999;
+	margin-left:10px;
+}
+.text p{
+	text-align:justify;
+	text-indent:2em;
+	font:2.5rem/1.8 "Helvetica Neue", "Helvetica", "Arial", "sans-serif"," Microsoft YaHei ";
+	margin-bottom:1.5em;
+}
+.bottomBox{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:48px;
+	background:rgba(0,0,0,.8)
+}
+.bottomBox a.close{
+	position:absolute;
+	background:url(http://dev.img1.write.qq.com/w/p1/close.png) no-repeat;
+	width:14px;
+	height:14px;
+	top:10px;
+	left:15px;
+}
+.appBox{
+	width:50%;
+	color:#FFF;
+	position:absolute;
+	left:50px;
+	top:10px;
+}
+.appBox h3{
+	font-weight:400;
+	font-size:1.5rem;
+	top:0;
+	left:40px;
+	position:absolute;
+}
+.appBox p{
+	position:absolute;
+	left:40px;
+	top:18px;
+	font-family:Arial;
+}
+.download{
+	position:absolute;
+	width:105px;
+	height:30px;
+	background:#0093EF;
+	color:#FFF;
+	right:10px;
+	top:10px;
+	font:1.8rem/30px "Helvetica Neue", "Helvetica", "Arial", "sans-serif"," Microsoft YaHei ";
+	text-align:center;
+	border-radius:3px;
+	letter-spacing:3px;
+}@media screen and (min-width: 320px) and (max-width: 630px) {
+html {
+	font-size: 45%;
+}
+}
+@media screen and (max-width: 320px) {
+html {
+	font-size: 31.25%;
+}	
+}

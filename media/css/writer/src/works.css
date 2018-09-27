@@ -1,0 +1,1441 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.null{
+    width: 380px;
+    margin: 140px auto;
+    font-size: 18px;
+    text-align: center;
+}
+.null img{
+    margin-bottom: 50px;
+}
+.null .button{
+    display: inline-block;
+    width: 178px;
+    height: 34px;
+    font: 14px/34px "Microsoft YaHei";
+}
+.msgBoxTitle .create.button{
+    width: 102px;
+}
+.create .icon{
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-position: -21px 0;
+}
+/* 作品列表 */
+.worklist-table{
+    text-align: center;
+}
+.worklist-table th{
+    border-bottom: 1px solid #E6E6E6;
+    height: 44px;
+    font: 14px/44px "Microsoft YaHei";
+    background: #F9F9F9;
+}
+.worklist-table td{
+    border-bottom: 1px solid #E6E6E6;
+    height: 48px;
+    padding: 5px 0;
+    font: 14px/1.5 "Microsoft YaHei";
+    color: #575757;
+}
+.worklist-table td a{
+    color: #575757;
+}
+.worklist-table tr.active{
+    background: #E1F2FF;
+}
+.worklist-table tr.active td{
+    height: auto;
+    padding: 10px 0 5px;
+}
+.worklist-table td .work-photo{
+    display: none;
+    width: 125px;
+    height: 92px;
+    margin-left: -17px;
+    padding: 4px 0;
+    background: url("https://dev.img1.write.qq.com/writer/p1/src/work_img.png") no-repeat;
+}
+.worklist-table .active .work-photo{
+    display: block;
+}
+.work-photo img{
+    display: block;
+    margin: 0 auto;
+}
+.worklist-table .dib-wrap .button{
+    border: 1px solid #50A8FF;
+    border-radius: 3px;
+    width: 28px;
+    height: 28px;
+    font: 12px/1 "Microsoft YaHei";
+    transition: none;
+    text-decoration: none;
+    color: #AAA;
+}
+.worklist-table .dib-wrap i{
+    display: none;
+}
+.worklist-table .active .dib-wrap i{
+    display: block;
+}
+.worklist-table .dib-wrap a span{
+    display: block;
+}
+.worklist-table .dib-wrap .blue span{
+    width: 20px;
+    height: 24px;
+    margin: 3px auto;
+    background-position: -195px -146px;
+}
+.worklist-table .dib-wrap .white span{
+    width: 18px;
+    height: 21px;
+    margin: 4px auto;
+    background-position: -195px -171px;
+}
+.worklist-table .button.blue{
+    margin-right: 10px;
+    color: #FFF;
+}
+.worklist-table .dib-wrap .white{
+    border: 1px solid #DDD;
+}
+.worklist-table .active .dib-wrap .button{
+    width: 66px;
+    height: 66px;
+}
+.worklist-table .active .dib-wrap .button span{
+    margin: 10px auto;
+}
+.worklist-table .active .dib-wrap .white span{
+    margin: 12px auto;
+}
+.worklist-table .active .dib-wrap .button{
+    text-indent: 0;
+}
+/* 创建步骤序列 */
+
+.workStepList{
+    width: 500px;
+    margin: 80px auto 0;
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.workStepList li{
+    position: relative;
+    padding-left: 78px;
+    line-height: 32px;
+
+    *zoom: 1;
+}
+.workStepList li span.radio{
+    margin-top: 11px;
+}
+.workStepList li select{
+    visibility: visible;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    filter: alpha(opacity=100);
+}
+select.bigClass{
+    width: 100px;
+}
+select.subClass{
+    width: 266px;
+}
+.step1 li{
+    margin-bottom: 20px;
+}
+.step2 li{
+    margin-bottom: 15px;
+}
+.step2 li label{
+    line-height: 32px;
+}
+.step2 li label.mr20{
+    margin-right: 20px;
+}
+.step2 li .readme{
+    font-size: 12px;
+    line-height: 32px;
+}
+.step2 li .accredit{
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 34px;
+}
+.workStepList li em{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 32px;
+}
+.workStepList li .tip{
+    clear: both;
+    width: 350px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #999;
+}
+.step1 p{
+    line-height: 28px;
+}
+.step1 .tip{
+    padding-left: 18px;
+}
+.selectBox{
+    margin-bottom: 10px;
+}
+.workStepList .selectBox select{
+    border: 1px solid #DDD;
+    height: 30px;
+}
+.workStepList li .error{
+    font-size: 12px;
+    color: #E55555;
+}
+.workStepList li input[type="text"].long{
+    border: 1px solid #DDD;
+    width: 378px;
+    height: 28px;
+    margin-bottom: 5px;
+    line-height: 28px;
+    text-indent: 5px;
+}
+.filterTagBox{
+    border: 1px solid #DDD;
+    width: 418px;
+    height: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+.filterTagBox a{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    height: 22px;
+    margin: 3px 0 0 5px;
+    padding: 0 24px 0 7px;
+    font: 12px/22px "Microsoft YaHei";
+    vertical-align: middle;
+    color: #FFF;
+    background: #50A8FF;
+
+    *margin: -4px 0 0 5px;
+}
+.filterTagBox a i{
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    width: 7px;
+    height: 7px;
+    background: url(https://dev.img1.write.qq.com/writer/p1/src/sprite.png) no-repeat -21px -13px;
+}
+.filterTagBox a:hover{
+    color: #FFF;
+}
+.stepBtn{
+    padding: 10px 0 0 78px;
+}
+.stepBtn .button{
+    display: inline-block;
+    width: 180px;
+    height: 35px;
+    font: 14px/35px "Microsoft YaHei";
+}
+.step2 textarea{
+    overflow-y: hidden;
+    border: 1px solid #DDD;
+    width: 373px;
+    height: 94px;
+    margin: 5px 0;
+    padding-left: 5px;
+}
+.step2 .stepBtn .button{
+    margin-right: 20px;
+}
+.accreditTip{
+    position: absolute;
+    top: 40px;
+    left: 151px;
+    border: 1px solid #DDD;
+    width: 268px;
+    padding: 4px 0;
+    font: 12px/1.8 "Microsoft YaHei";
+    background: #FAFAFA;
+}
+.workStepList li.z1 .accreditTip{
+    left: 106px;
+}
+.accreditTip p{
+    width: 228px;
+    margin: 0 auto;
+}
+.accreditTip cite{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 15px;
+    height: 8px;
+    margin-left: -5px;
+    background-position: -80px -20px;
+}
+.step3{
+    width: 450px;
+    margin: 100px auto 0;
+    padding-left: 0;
+}
+.step3 h3{
+    margin-bottom: 50px;
+    font: 24px/1 "Microsoft YaHei";
+    text-align: center;
+    color: #4BC46D;
+}
+.step3Btn a{
+    display: inline-block;
+    width: 180px;
+    height: 36px;
+    margin: 0 10px;
+    font: 14px/36px "Microsoft YaHei";
+}
+.step3 .qrZone{
+    border-top: 1px solid #E6E6E6;
+    margin-top: 126px;
+    padding-top: 12px;
+}
+.step3 .qrZone h4{
+    font-weight: 400;
+    color: #575757;
+}
+.step3 .qrZone dd{
+    overflow: hidden;
+    padding: 19px 0 0;
+
+    *zoom: 1;
+}
+.step3 .qrZone dl img{
+    float: left;
+    margin-right: 18px;
+}
+.step3 .qrZone dl .qrZoneInfo{
+    float: left;
+    width: 360px;
+}
+.step3 .qrZone dl .qrZoneInfo h5{
+    margin-bottom: 10px;
+    font: 16px/1 "Microsoft YaHei";
+}
+.step3 .qrZone dl .qrZoneInfo p{
+    font-size: 12px;
+    color: #999;
+}
+/* 作品详情 */
+
+.worksInfoWrap{
+    position: relative;
+    border-bottom: 1px solid #E6E6E6;
+    height: 96px;
+    padding-bottom: 150px;
+    background: url(https://dev.img1.write.qq.com/writer/p1/src/works_bg.png) no-repeat;
+}
+.worksImgBox{
+    position: absolute;
+    top: 25px;
+    left: 34px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    box-shadow: 0 0 1px #CCC;
+}
+.worksImgBox span{
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    width: 134px;
+    height: 32px;
+    font: 14px/30px "Microsoft YaHei";
+    text-align: center;
+    color: #FFF;
+    background: #444;
+    background: rgba(0, 0, 0, .6);
+}
+.worksImgBox img{
+    padding: 4px;
+}
+.worksInfoText{
+    position: absolute;
+    top: 55px;
+    left: 198px;
+}
+.worksInfoText h3{
+    width: 740px;
+    margin-bottom: 40px;
+    font: 24px/1 "Microsoft YaHei";
+    color: #376590;
+}
+.worksInfoText h3 .vip{
+    display: inline-block;
+    border: 1px solid #FFB250;
+    height: 16px;
+    margin-left: 10px;
+    padding: 0 5px;
+    font: 12px/16px "Microsoft YaHei";
+    vertical-align: middle;
+    color: #FFB24E;
+    background: #FBECD8;
+}
+.worksInfoText h3 .number{
+    float: right;
+    font: 12px/30px "Microsoft YaHei";
+    color: #8BAECE;
+}
+.worksInfoText p{
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #858585;
+}
+.worksInfoText p .Num, .worksInfoText p i{
+    margin: 0;
+    color: #333;
+}
+.worksInfoText p span{
+    margin-right: 28px;
+}
+.worksInfoText p cite{
+    margin-left: 20px;
+    font: 12px/1.8 Arial;
+    color: #999;
+}
+.worksFunction{
+    padding: 30px 0 0 35px;
+}
+.worksFunction li{
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 26px;
+}
+.worksFunction li a{
+    display: block;
+    border: 1px solid #E6E6E6;
+    width: 188px;
+    height: 62px;
+    padding-left: 20px;
+    font: 16px/62px "Microsoft YaHei";
+    background: #F9F9F9;
+}
+.worksFunction li a:hover{
+    border: 1px solid #50A8FF;
+    color: #FFF;
+    background: #50A8FF;
+}
+.worksFunction li a span{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background-image: url(https://dev.img1.write.qq.com/writer/p1/src/detailicon.png);
+}
+.worksFunction li a span.setup{
+    background-position: 0 0;
+}
+.worksFunction li a:hover span{
+    background-position: -28px 0;
+}
+.worksFunction li a span.manager{
+    background-position: 0 -28px;
+}
+.worksFunction li a:hover span.manager{
+    background-position: -28px -28px;
+}
+.worksFunction li a span.VIP{
+    height: 26px;
+    background-position: 0 -57px;
+}
+.worksFunction li a:hover span.VIP{
+    background-position: -28px -57px;
+}
+.worksFunction li a span.dy_refer{
+    background-position: 0 -84px;
+}
+.worksFunction li a:hover span.dy_refer{
+    background-position: 28px -84px;
+}
+.worksFunction li a span.apply_sign{
+    height: 26px;
+    background-position: 0 -114px;
+}
+.worksFunction li a:hover span.apply_sign{
+    background-position: -28px -114px;
+}
+.worksFunction li a span.apply_whb{
+    background-position: 0 -140px;
+}
+.worksFunction li a:hover span.apply_whb{
+    background-position: -28px -140px;
+}
+.worksFunction li a span.apply_wyzd{
+    height: 26px;
+    background-position: 0 -170px;
+}
+.worksFunction li a:hover span.apply_wyzd{
+    background-position: -28px -170px;
+}
+.worksFunction li a span.apply_rec{
+    background-position: 0 -197px;
+}
+.worksFunction li a:hover span.apply_rec{
+    background-position: -28px -197px;
+}
+.worksFunction li a span.security{
+    background-position: 0 -224px;
+}
+.worksFunction li a:hover span.security{
+    background-position: -28px -224px;
+}
+/* 章节管理 */
+
+.mLeftList{
+    border-right: 1px solid #E6E6E6;
+    width: 230px;
+    height: 788px;
+    background: #F6F6F6;
+}
+.leftListWrap{
+    padding: 25px 0 0 12px;
+}
+.mLeftList .titleBox h3{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 13px;
+    font: 16px/1 "Microsoft YaHei";
+}
+.minTipBox{
+    position: absolute;
+    z-index: 100;
+    top: 30px;
+    left: 101px;
+    width: 167px;
+    height: 31px;
+    font: 12px/31px "Microsoft YaHei";
+    text-indent: 15px;
+    color: #FFF;
+    background: #50A8FF;
+}
+.minTipBox .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+    background-position: -194px -96px;
+}
+.slimScrollDiv{
+    z-index: 1;
+}
+.slimScrollRail{
+    border-right: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+}
+.slimScrollBar{
+    border-right: 1px solid #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+    cursor: move;
+}
+.minTipBox b{
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    width: 13px;
+    height: 7px;
+    margin-left: -5px;
+    background-position: -65px -113px;
+}
+.mLeftList .titleBox p{
+    margin-bottom: 10px;
+    font: 12px/1 "Microsoft YaHei";
+    color: #999;
+}
+.sectionManage{
+    position: relative;
+    border-top: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+    height: 740px;
+    background: #FFF;
+}
+.sectionList li{
+    overflow: hidden;
+    cursor: pointer;
+
+    *zoom: 1;
+}
+.sectionList li.act{
+    border-bottom: 1px solid #D0E9FF;
+}
+.sectionList li.act{
+    background: #E1F2FF;
+}
+.sectionList li.act .sectionBox p{
+    color: #376590;
+}
+.sectionList li.act .sectionBox p.f12{
+    color: #8BAECE;
+}
+.sectionBox{
+    border-bottom: 1px solid #E6E6E6;
+    padding: 8px 20px 6px 9px;
+}
+.sectionList li:last-of-type .sectionBox{
+    border-bottom: none;
+}
+.volumeList li:last-of-type .sectionBox{
+    border-bottom: 1px solid #E6E6E6;
+}
+.sectionList li.act .sectionBox{
+    border-bottom: none;
+}
+.volumeBox{
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 9px 8px;
+    cursor: pointer;
+}
+.volumeBox p{
+    position: relative;
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #333;
+}
+.volumeBox p.f12{
+    overflow: hidden;
+    width: 200px;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+}
+.volumeBox p span{
+    margin-left: 5px;
+    font: 12px/1 "Microsoft YaHei";
+    color: #999;
+}
+.volumeBox p cite{
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    border: 8px solid;
+    border-style: solid dashed dashed dashed;
+    border-color: #999 transparent transparent transparent;
+    width: 0;
+    height: 0;
+
+    _overflow: hidden;
+}
+.volume.act .volumeBox p cite{
+    top: 1px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #999 transparent;
+}
+.sectionList .sectionBox{
+    padding: 12px 20px 3px 29px;
+}
+.sectionWrap{
+    display: none;
+}
+.sectionBox p{
+    overflow: hidden;
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #333;
+
+    *zoom: 1;
+}
+.sectionWrap li{
+    background: #FAFAFA;
+}
+.sectionBox p.f12{
+    font-size: 12px;
+    color: #999;
+}
+.sectionBox p.f12 i{
+    float: right;
+}
+.sectionBox p em{
+    display: inline-block;
+    overflow: hidden;
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sectionWrap .sectionBox p em{
+    width: 150px;
+}
+.sectionBox p .time{
+    float: right;
+    width: 17px;
+    height: 18px;
+    margin-top: 5px;
+    background-position: -24px -138px;
+}
+.mRightContent{
+    width: 738px;
+    height: 788px;
+}
+.mRightContent .midWrap .titleHead{
+    margin-top: 24px;
+}
+.mRightContent .midWrap .titleHead h3{
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 16px;
+    font: 18px/35px "Microsoft YaHei";
+}
+.mRightContent .midWrap .titleHead h3 input{
+    width: 400px;
+    padding: 8px 0;
+    font-family: "Microsoft YaHei";
+    color: #BBB;
+}
+.mRightContent .midWrap.editWrap .titleHead h3{
+    border-bottom: none;
+    margin-top: -10px;
+}
+.titleBtn{
+    padding: 8px 0 0;
+}
+.titleBtn a{
+    float: left;
+    margin-right: 10px;
+    font: 14px/28px "Microsoft YaHei";
+}
+.titleBtn .button{
+    height: 28px;
+    padding: 0 13px;
+}
+.titleBtn .button.white{
+    color: #999;
+}
+.titleBtn .button.font{
+    padding: 0 6px;
+}
+.titleBtn .button.green{
+    width: 78px;
+    padding: 0;
+    text-decoration: none;
+}
+.titleBtn .button.green .icon{
+    width: 17px;
+    height: 16px;
+    margin: -3px 6px 0 0;
+    background-position: -195px -193px;
+}
+.titleBtn .button.save .icon{
+    width: 16px;
+    height: 16px;
+    margin: -3px 8px 0 0;
+    background-position: -18px -23px;
+}
+.titleBtn .button.modify .icon{
+    width: 16px;
+    height: 16px;
+    margin: -3px 8px 0 0;
+    background-position: -171px -39px;
+}
+.apply-intro{
+    border: 1px solid #DDD;
+    width: 570px;
+    margin-top: 8px;
+    padding: 0 10px;
+    font: 14px/28px "Microsoft YaHei";
+    color: #BBB;
+}
+.sectionViewWrap{
+    position: relative;
+}
+.sectionViewWrap h4{
+    overflow: hidden;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    font: 12px/1 "Microsoft YaHei";
+
+    *zoom: 1;
+}
+.sectionBtnBox{
+    border-bottom: 1px solid #E6E6E6;
+    height: 46px;
+    padding: 1px 24px 0 24px;
+    font-size: 12px;
+    background: #FAFAFA;
+}
+.sectionBtnBox.fixed{
+    top: 0;
+    width: 690px;
+}
+.sectionBtnBox .combo-select{
+    z-index: 5;
+    float: left;
+    width: 104px;
+    height: 28px;
+    margin: 8px 10px 0 0;
+}
+* + html .sectionBtnBox .combo-select .combo-input{
+    width: 90%;
+    height: 27px;
+    padding-left: 10px;
+    text-indent: 0;
+}
+.sectionBtnBox em{
+    float: left;
+    margin-right: 10px;
+    line-height: 46px;
+}
+.sectionBtnBox b{
+    font-weight: 400;
+    line-height: 46px;
+}
+.sectionBtnBox i{
+    float: left;
+    padding-left: 20px;
+}
+.sectionBtnBox .radio{
+    margin: 14px 5px 0 0;
+}
+.sectionBtnBox label{
+    float: left;
+    margin-right: 15px;
+    color: #858585;
+}
+.sectionViewWrap .zwText{
+    padding: 10px 20px 0;
+    font: 14px/1.8 "Microsoft YaHei";
+    word-break: break-all;
+}
+.sectionViewWrap .zwText .br{
+    margin-bottom: .8em;
+}
+.sectionViewWrap .zwText .authorSay{
+    border-top: 1px solid #E6E6E6;
+    padding: 10px 0 20px;
+}
+.zwText input{
+    border-bottom: 1px solid #E6E6E6;
+    width: 100%;
+    margin: 16px 0 10px;
+    padding: 0 4px 6px;
+    font: 18px/40px "Microsoft YaHei";
+}
+.zwText textarea{
+    overflow: hidden;
+    overflow-y: auto;
+    border: none;
+    width: 698px;
+    height: 540px;
+    padding: 0 4px;
+    word-break: break-all;
+    color: #575757;
+}
+.say-area{
+    border-top: 1px solid #E6E6E6;
+    margin-top: 8px;
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.say-area .say{
+    overflow-y: auto;
+    word-break: break-all;
+}
+.say-area textarea{
+    overflow-y: auto;
+    border: none;
+    width: 702px;
+    height: 98px;
+    margin-top: 8px;
+    padding: 0 0 0 24px;
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #575757;
+}
+.cartoon-cover{
+    padding: 10px 0 98px 20px;
+}
+.cartoon-cover .cover{
+    border: 1px solid #DEDEDE;
+    width: 298px;
+    height: 448px;
+    margin-right: 20px;
+}
+.cartoon-cover img{
+    display: block;
+    width: 298px;
+    height: 448px;
+}
+.upload-box{
+    position: relative;
+    width: 360px;
+}
+.upload-box .button.white{
+    display: block;
+    width: 98px;
+    height: 28px;
+    margin-bottom: 16px;
+    font: 14px/28px "Microsoft YaHei";
+    color: #999;
+}
+.upload-box input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    font-size: 22px;
+    opacity: 0;
+
+    filter: alpha(opacity=0);
+}
+.upload-box p{
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #999;
+}
+.cartoon-content{
+    border-top: 1px solid #E6E6E6;
+    margin: 0 20px;
+}
+.cartoon-content textarea{
+    overflow: hidden;
+    border: none;
+    width: 690px;
+    height: 80px;
+    margin: 5px 4px 0;
+    padding: 0 0 0 5px;
+    color: #575757;
+    background: none;
+}
+/* 新增分卷 */
+
+.newVolume{
+    width: 698px;
+    margin: 0 auto;
+    padding: 24px 0 0;
+}
+.newVolume h3{
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 20px;
+    font: 16px/1 "Microsoft YaHei";
+}
+.newVolume h3 span{
+    margin-left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.volumeForm{
+    width: 576px;
+    padding: 30px 0 0;
+}
+.volumeForm li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 100px;
+    line-height: 30px;
+}
+.volumeForm li em{
+    position: absolute;
+    left: 0;
+    width: 80px;
+    font: 14px/30px "Microsoft YaHei";
+    text-align: right;
+    color: #858585;
+}
+.volumeForm li input.midInput{
+    border: 1px solid #DDD;
+    width: 373px;
+    height: 28px;
+    padding-left: 5px;
+}
+.volumeForm li textarea{
+    border: 1px solid #DDD;
+    width: 373px;
+    height: 88px;
+    padding-left: 5px;
+}
+.volumeForm li p{
+    font: 14px/30px "Microsoft YaHei";
+}
+/* 申请管理 */
+.apply-wrap-content{
+    padding: 30px 20px 0;
+}
+.apply-wrap-content h3{
+    margin-bottom: 20px;
+    font: 700 18px/1.8 "Microsoft YaHei";
+    text-align: center;
+}
+.apply-wrap-content p{
+    font: 14px/1.8 "Microsoft YaHei";
+    text-align: justify;
+}
+.apply-List li{
+    border-bottom: 1px solid #E6E6E6;
+    height: 69px;
+}
+.apply-List li a{
+    display: block;
+    padding-left: 20px;
+    font: 14px/70px "Microsoft YaHei";
+}
+.apply-List li a span{
+    width: 27px;
+    margin: -3px 10px 0 0;
+}
+.apply-List li a .sign{
+    height: 25px;
+    background-position: -113px -114px;
+}
+.apply-List li a .margin{
+    height: 28px;
+    background-position: -112px -224px;
+}
+.apply-List li a .wenxiu{
+    width: 28px;
+    height: 28px;
+    background-position: -112px -140px;
+}
+.apply-List li a .wyzd{
+    width: 28px;
+    height: 26px;
+    background-position: -112px -169px;
+}
+.apply-List li a .rec{
+    width: 28px;
+    height: 28px;
+    background-position: -112px -197px;
+}
+.apply-List li.act{
+    border-bottom: 1px solid #D0E9FF;
+    background: #E1F2FF;
+}
+.apply-List li.act a{
+    color: #376590;
+}
+/* 作品设置 */
+.workStateWrap{
+    padding: 40px 0 0 40px;
+}
+.workStateWrap .bookState em{
+    display: inline-block;
+    width: 56px;
+    margin-right: 20px;
+    font: 14px/35px "Microsoft YaHei";
+    text-align: right;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: #858585;
+}
+.workStateWrap .bookState i{
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 25px;
+    font: 14px/35px "Microsoft YaHei";
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+
+    _width: 128px;
+}
+.workSetList li{
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 90px;
+    vertical-align: bottom;
+}
+.workSetList li b{
+    display: inline-block;
+    width: 140px;
+    margin-right: 100px;
+    font: 14px/30px "Microsoft YaHei";
+}
+.workSetList li cite{
+    font: 14px/30px "Microsoft YaHei";
+    color: #858585;
+}
+.workSetList li em{
+    position: absolute;
+    left: 0;
+    width: 75px;
+    font: 14px/30px "Microsoft YaHei";
+    text-align: right;
+    color: #858585;
+}
+.workSetList li span.radio{
+    margin: 10px 5px 0 0;
+}
+.workSetList li p.saved, .workSetList li p.modify{
+    float: left;
+    font: 14px/30px "Microsoft YaHei";
+}
+.workSetList li p.modify label{
+    margin-right: 20px;
+}
+.workSetList li p.f12{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.workSetList li p.error{
+    line-height: 30px;
+}
+.workStateWrap .fmBox{
+    border: 1px solid #E6E6E6;
+    width: 120px;
+    height: 158px;
+    margin: 8px 40px 0 0;
+}
+.fmBox .fm{
+    position: relative;
+}
+.fmBox .fm .upload-btn{
+    position: absolute;
+    left: 0;
+    width: 120px;
+    height: 33px;
+    font-size: 23px;
+    opacity: 0;
+
+    filter: alpha(opacity=0);
+}
+.workStateWrap .fmBox .fm span{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 120px;
+    height: 33px;
+    font: 14px/33px "Microsoft YaHei";
+    text-align: center;
+    opacity: .9;
+    color: #FFF;
+    background: rgba(0, 0, 0, .7);
+    background: #000/0;
+
+    filter: alpha(opacity=90);
+}
+.workStateWrap .fmBox img{
+    display: block;
+    width: 114px;
+    height: 152px;
+    margin: 3px 0 0 3px;
+}
+.fm-tipbox{
+    padding: 7px 0;
+}
+.fm-tipbox p{
+    font: 12px/1.8 "Microsoft YaHei";
+    color: #999;
+}
+.workSetList li{
+    min-height: 30px;
+}
+.workSetList li .fl{
+}
+.workSetList li p{
+    font: 14px/30px "Microsoft YaHei";
+}
+.workSetList li i.tag{
+    border: 1px solid #FFB250;
+    height: 16px;
+    margin-left: 10px;
+    padding: 0 3px;
+    font: 12px/18px "Microsoft YaHei";
+    color: #FFB250;
+    background: #FBECD8;
+}
+.workSetList li .midInput{
+    border: 1px solid #DDD;
+    width: 345px;
+    height: 28px;
+    padding-left: 5px;
+    line-height: 28px;
+}
+.workSetList li span.radio{
+    margin: 10px 5px 0 0;
+}
+.workSetList li textarea{
+    overflow-y: auto;
+    border: 1px solid #DDD;
+    width: 413px;
+    height: 88px;
+    padding-left: 5px;
+}
+.workSetList li .button.green{
+    position: absolute;
+    top: 0;
+    left: 451px;
+    width: 58px;
+    height: 28px;
+    font: 14px/28px "Microsoft YaHei";
+    text-decoration: none;
+}
+.workSetList .confirm, .workSetList .modify-btn{
+    padding: 10px 0 0 90px;
+}
+.workSetList .dib-wrap .button{
+    width: 178px;
+    height: 34px;
+    font: 14px/34px "Microsoft YaHei";
+    vertical-align: middle;
+}
+.workSetList .confirm .button{
+    width: 78px;
+    height: 28px;
+    margin-right: 10px;
+    line-height: 28px;
+}
+.recTagBox a{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #DDD;
+    margin-right: 5px;
+    padding: 0 20px 0 5px;
+    font: 12px/20px "Microsoft YaHei";
+    text-align: left;
+    color: #575757;
+    background: #F9F9F9;
+}
+.recTagBox a cite{
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 7px;
+    height: 7px;
+    background-position: -29px -13px;
+}
+.lenovoBox{
+    position: absolute;
+    z-index: 1;
+    top: 29px;
+    display: none;
+    overflow-y: auto;
+    border: 1px solid #DDD;
+    width: 378px;
+    height: 200px;
+    font: 14px/1.8 "Microsoft YaHei";
+    background: #FFF;
+}
+.lenovoBox dd a{
+    display: block;
+    padding-left: 5px;
+}
+.lenovoBox dd a:hover{
+    color: #376590;
+    background: #E1F1FE;
+}
+.applyTextWrap{
+    padding: 40px 80px 0;
+}
+.applyTextWrap h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #575757;
+}
+.applyTextWrap p{
+    font: 14px/2 "Microsoft YaHei";
+}
+.applyTextWrap input.message{
+    display: block;
+    border: 1px solid #DDD;
+    width: 800px;
+    height: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font: 14px/30px "Microsoft YaHei";
+    color: #999;
+}
+.applyTextWrap .applyBtn{
+    display: block;
+    width: 180px;
+    height: 36px;
+    font: 14px/36px "Microsoft YaHei";
+}
+/* 申请模板 */
+
+.applyTemplate{
+    padding: 20px 139px 50px;
+}
+.applyTemplate h3{
+    margin-bottom: 8px;
+    font: 18px/2 "Microsoft YaHei";
+    text-align: center;
+}
+.applyTable{
+    border-top: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+}
+.applyTable td{
+    border-right: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    height: 31px;
+    padding: 4px 0;
+    font: 14px/1.8 "Microsoft YaHei";
+    text-align: center;
+}
+.applyTable .fa{
+    background: #FAFAFA;
+}
+.applyTable .top{
+    padding: 30px 0;
+    vertical-align: top;
+}
+.applyTable td p{
+    padding: 0 10px;
+    text-align: justify;
+    color: #333;
+}
+.applyTable td em.Num{
+    display: inline-block;
+    border-bottom: 1px solid #575757;
+    width: 50px;
+    line-height: 1;
+    text-align: center;
+}
+/* 出版自荐申请 */
+
+.myRecWrap{
+    padding: 30px 35px 0;
+}
+.myRecWrap h3{
+    margin: 10px 0;
+}
+.myRecWrap p{
+    font: 14px/2 "Microsoft YaHei";
+}
+.recFormWrap{
+    padding: 20px 0 40px;
+}
+.goTemplate{
+    border-top: 1px solid #E6E6E6;
+    text-align: right;
+}
+.goTemplate a{
+    font: 12px/30px "Microsoft YaHei";
+    text-decoration: none;
+}
+.recFormList{
+    padding: 0 52px 0 45px;
+}
+.recFormList em{
+    color: #858585;
+}
+.recFormList p{
+    margin-bottom: 20px;
+}
+.recFormList p label{
+    margin-right: 20px;
+    line-height: 30px;
+}
+.recFormList p em{
+    margin-right: 20px;
+}
+.recFormList p i{
+    margin-right: 40px;
+    color: #333;
+}
+.recFormList p input.words{
+    border: 1px solid #DDD;
+    width: 78px;
+    height: 28px;
+    margin: 0 10px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+}
+.recFormList li{
+    position: relative;
+    overflow: hidden;
+    padding-left: 78px;
+    vertical-align: bottom;
+
+    *zoom: 1;
+}
+.recFormList li em{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: 14px/30px "Microsoft YaHei";
+}
+.recFormList li textarea{
+    overflow-y: hidden;
+    border: 1px solid #DDD;
+    width: 717px;
+    height: 214px;
+    padding-left: 5px;
+}
+.recFormList li .tip{
+    margin: 5px 0 15px;
+    font: 12px/20px "Microsoft YaHei";
+    color: #999;
+}
+.recFormList li input.midInput{
+    border: 1px solid #DDD;
+    width: 373px;
+    height: 30px;
+    padding-left: 5px;
+    line-height: 28px;
+    vertical-align: middle;
+}
+.recFormList .confirm{
+    padding: 10px 0 0 80px;
+}
+.recFormList .confirm .button{
+    display: inline-block;
+    width: 180px;
+    height: 36px;
+    font: 14px/34px "Microsoft YaHei";
+}
+.recFormList li.line{
+    border-bottom: 1px solid #E6E6E6;
+    margin: 20px 0;
+}
+.recFormList .grade li{
+    margin-bottom: 15px;
+}
+.recFormList li.gradeTit{
+    padding: 10px 0;
+}
+.gradeTit a{
+    font-size: 12px;
+    text-decoration: none;
+}
+.recForm.grade textarea{
+    width: 633px;
+    height: 138px;
+    color: #BBB;
+}
+.recForm.grade .scoreInput{
+    border: 1px solid #DDD;
+    border-left: none;
+    width: 78px;
+    height: 20px;
+    padding: 59px 0;
+    font: 24px/20px Arial;
+    text-align: center;
+    vertical-align: top;
+    color: #FFBE4E;
+}
+.recForm.grade .tip{
+    margin-bottom: 0;
+}
+.recForm.grade .scoreInput.on{
+    background: url(https://dev.img1.write.qq.com/writer/p1/src/score_bg.png) no-repeat center;
+}
+.recForm.grade .scoreInput.off{
+    background: none;
+}
+.recForm.grade .filterTagBox{
+    height: auto;
+    min-height: 28px;
+}
+.recForm.grade .filterTagBox a{
+    margin-bottom: 3px;
+}

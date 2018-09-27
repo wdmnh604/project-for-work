@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/**
+ * @author  chenbaixiang
+ */
+.wrap {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+/**文章显示**/
+.primary {
+  padding: 0 15px;
+  border-bottom: 1px solid #dedede;
+}
+.primary .title {
+  padding: 24px 0 17px 0;
+  font-size: 22px;
+  color: #222;
+  text-align: left;
+}
+.primary .meta {
+  color: #c9c9c9;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+.primary .meta .time {
+  overflow: hidden;
+  width: 70px;
+  color: #c9c9c9;
+  padding-right: 8px;
+}
+.primary .meta .author a {
+  color: #419ad9;
+  text-decoration: none;
+}
+.primary .content {
+  font-size: 16px;
+  line-height: 24px;
+}
+.primary .content p {
+  margin-bottom: 24px;
+}
+.primary .content .image {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.primary .content .image img {
+  width: 100%;
+}
+
+/* 小调查 */
+.survey {
+  border: 1px solid #dedede;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.survey .item {
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20px;
+}
+.survey .item-title {
+  line-height: 18px;
+  color: #222;
+  font-size: 15px;
+}
+.survey .item-title .grayfont {
+  color: #888;
+  font-size: 12px;
+}
+.survey .ui-controlgroup .line {
+  position: relative;
+  z-index: 1;
+  height: 28px;
+  margin: 10px 0;
+  width: 100%;
+}
+.survey .ui-controlgroup .line label {
+  overflow: hidden;
+  display: block;
+  min-height: 28px;
+  line-height: 28px;
+  margin-right: 44px;
+  font-size: 14px;
+}
+.survey .ui-controlgroup .line .iradio_square-blue {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: -21px;
+}
+.survey .ui-controlgroup .line .icheckbox_square-blue {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: -21px;
+}
+.survey .ui-controlgroup .inner {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
+.survey .ui-controlgroup .result {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #eee;
+  border-radius: 4px;
+  width: 139px;
+  height: 28px;
+  line-height: 28px;
+  text-align: right;
+}
+.survey .ui-controlgroup .result span {
+  position: absolute;
+  right: 5px;
+  font-size: 14px;
+}
+.survey .btn-box {
+  text-align: center;
+}
+.survey .btn-box .btn {
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 256px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+}
+.survey .btn-box .btn-disabled {
+  background: rgba(108, 163, 217, 0.5);
+  color: #dfebf7;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+.survey .btn-box .btn-submit {
+  background: #6ca3d9;
+  color: #dfebf7;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+.survey .btn-box .time {
+  width: 100%;
+  padding: 16px 0 24px 0;
+  font-size: 10px;
+  color: #888;
+  line-height: 13px;
+  text-align: center;
+}
+.survey .vote-nums {
+  width: 100%;
+  padding: 16px 0 24px 0;
+  font-size: 10px;
+  color: #888;
+  line-height: 13px;
+  text-align: center;
+}
+
+.more-detail {
+  height: 30px;
+  padding-bottom: 10px;
+}
+.more-detail .zan {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+  color: #888;
+}
+.more-detail .zan .zan-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #a4a4a4;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: url(http://dev.img1.write.qq.com/mp/p1/src/zan.svg) no-repeat center center;
+  background-size: 14px 14px;
+}
+.more-detail .zan .zan-icon.active {
+  background: #6ca3d9 url(http://dev.img1.write.qq.com/mp/p1/src/zan_hover.svg) no-repeat center center;
+  background-size: 14px 14px;
+  color: #fff;
+  border: 1px solid #6ca3d9;
+}
+.more-detail .shows {
+  display: block;
+  overflow: hidden;
+  float: right;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+  color: #888;
+  text-align: right;
+}
+.more-detail .shows .shows-icon {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  font-size: 16px;
+  color: #888;
+  vertical-align: middle;
+  text-stroke-width: 0;
+  -webkit-text-stroke-width: 0;
+  margin-top: -2px;
+  background: url(http://dev.img1.write.qq.com/mp/p1/src/eye.svg) no-repeat center center;
+  background-size: 16px 16px;
+}
+
+/*精选留言*/
+.msg-list {
+  margin-bottom: 15px;
+  background: #fff;
+  border-bottom: 1px solid #dedede;
+}
+.msg-list .hd {
+  background: #fafafa;
+  height: 56px;
+  line-height: 56px;
+  padding: 0 15px;
+  border-bottom: 1px solid #dedede;
+}
+.msg-list .hd .title {
+  float: left;
+  font-size: 16px;
+  color: #555;
+}
+.msg-list .hd a.msg-link {
+  float: right;
+  color: #6ca3d9;
+  text-decoration: none;
+}
+.msg-list .bd {
+  padding-left: 15px;
+}
+.msg-list .bd .dataitem {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  padding: 15px 15px 0 0;
+  border-bottom: 1px solid #e4e5e5;
+}
+.msg-list .bd .dataitem .avatar {
+  overflow: hidden;
+  width: 49px;
+  height: 49px;
+  margin-right: 15px;
+}
+.msg-list .bd .dataitem .avatar img {
+  width: 49px;
+  height: 49px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+.msg-list .bd .dataitem .info {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+.msg-list .bd .dataitem .info .username {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+.msg-list .bd .dataitem .info .msg-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.msg-list .bd .dataitem .info .time {
+  color: #bbb;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.msg-list .bd .dataitem .info .reply-box {
+  margin-bottom: 15px;
+}
+.msg-list .bd .dataitem .info .reply-box .r-username {
+  overflow: hidden;
+  height: 14px;
+  line-height: 14px;
+  margin-bottom: 8px;
+  border: 4px solid #6ca3d9;
+  border-width: 0 0 0 4px;
+  font-size: 14px;
+  color: #888;
+  padding-left: 10px;
+}
+.msg-list .bd .dataitem .info .reply-box .r-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.msg-list .bd .dataitem .info .reply-box .r-time {
+  color: #bbb;
+  font-size: 12px;
+}
+.msg-list .bd .dataitem:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+/*# sourceMappingURL=artcle.css.map */

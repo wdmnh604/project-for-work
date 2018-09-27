@@ -1,0 +1,1287 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+fieldset,
+img {
+  border: 0; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before,
+q:after {
+  content: ''; }
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input,
+textarea,
+select {
+  *font-size: 100%; }
+
+a {
+	color: #3d495f;
+    outline: 0;
+	text-decoration: none;
+}
+
+body {
+	min-width: 1110px;
+	font: 14px/24px PingFangSC-Regular,'-apple-system',"microsoft yahei";
+	color: #3d495f;
+    background: #f4f4f4;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    content: '.';
+}
+
+.clearfix {
+    *display: inline-block;
+}
+
+.blue {
+    color: #4ea8ff;
+}
+
+/* body 0920增加 */
+html {
+	overflow-y: scroll;
+}
+
+:root {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+:root body {
+	position: absolute;
+}
+
+body {
+	width: 100vw;
+	overflow: hidden;
+}
+/* body 0920增加end */
+
+/**
+ * 头部样式
+ */
+.header {
+	height: 54px;
+	margin-bottom: 20px;
+	background: #fff;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.hd-wrap {
+	width: 1000px;
+	margin: 0 auto 20px auto;
+}
+
+/**
+ * logo
+ */
+.header .logo {
+	float: left;
+	width: 136px;
+	margin: 16px 40px 0 0;
+}
+
+.header .logo a {
+	display: block;
+}
+
+.header .logo img {
+	display: block;
+	width: 136px;
+	height: 22px;
+}
+
+/**
+ * 页面导航
+ */
+.top-nav {
+	overflow: hidden;
+	float: left;
+	height: 54px;
+}
+
+.top-nav li {
+	float: left;
+	width: 80px;
+	margin-right: 10px;
+}
+
+.top-nav li a {
+	display: block;
+	width: 80px;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	font-size: 16px;
+	color: #9ea6b4;
+}
+
+.top-nav li a:hover {
+	color: #3d495f;
+}
+
+.top-nav li.active a {
+	color: #3d495f;
+}
+
+.header .hd-right {
+	float: right;
+}
+
+/**
+ * 头部登录
+ */
+.header .login-box {
+	float: right;
+	position: relative;
+}
+
+/**
+ * 未登录
+ */
+.header .login-box .nologin {
+	margin-top: 15px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.header .login-box .nologin em {
+	margin: 0 10px;
+}
+
+/**
+ * 已登录
+ */
+.header .login-box .yeslogin {
+	margin-top: 12px;
+}
+
+.header .login-box .author-pic {
+	position: relative;
+	cursor: pointer;
+}
+
+.header .login-box .author-pic img {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+}
+
+.pic30 {
+	width: 30px;
+	height: 30px;
+}
+
+.pic30 img {
+	width: 30px;
+	height: 30px;	
+}
+
+/**
+ * 作者下拉
+ */
+.author-drop {
+	position: absolute;
+	z-index: 1000;
+	right: 0;
+	top: 42px;
+	width: 320px;
+	padding-top: 14px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/drop_bg.png) no-repeat 0 0;
+}
+
+.author-drop .inner {
+	box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+
+.author-drop .box {
+	padding: 20px;
+}
+
+/**
+ * 作者头像
+ */
+.author-drop .pic {
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin-right: 14px;
+}
+
+.author-drop .pic img {
+	display: block;
+	width: 48px;
+	height: 48px;
+	border-radius: 100px;
+}
+
+.author-drop .info {
+	float: left;
+	width: 118px;
+}
+
+.author-drop .name {
+	overflow: hidden;
+	height: 24px;
+	margin-right: 2px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.author-drop .score {
+	overflow: hidden;
+	height: 24px;
+}
+
+.author-drop .my {
+	float: left;
+	width: 100px;
+	height: 38px;
+}
+
+/**
+ * 我的主页按钮
+ */
+.btn-blue {
+	display: inline-block;
+	width: 100px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+	background: #4ea8ff;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.btn-blue:hover {
+	background: #83c2ff;
+}
+
+/**
+ * 退出按钮
+ */
+.logout {
+	clear: both;
+}
+
+.logout a {
+	display: block;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	border: 1px solid #dfe0e6;
+	background: #f4f4f4;
+}
+
+/**
+ * 头部搜索
+ */
+.header  .search-box {
+	float: right;
+	margin: 15px 20px 0 0;
+}
+
+.header  .search-box .btn-search {
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 0;
+}
+
+.header  .search-box .btn-search:hover {
+	background-position: 0 -24px;
+}
+
+.header  .search-box .search {
+	overflow: hidden;
+	width: 0;
+	display: block;
+	float: left;
+}
+
+.header  .search-box .input-search {
+	border: 0;
+	outline: 0;
+}
+
+/* 内容区 */
+.main-wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.main-wrap:after {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    content: '.';
+}
+
+.main-wrap {
+    *display: inline-block;
+}
+
+.main-wrap .main-left {
+	float: left;
+	width: 660px;
+}
+
+.circle {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.circle img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.pic32,
+.pic48,
+.pic64 {
+	position: relative;
+}
+
+.pic32 .circle {
+	width: 32px;
+	height: 32px;
+}
+
+.pic48 .circle {
+	width: 48px;
+	height: 48px;
+}
+
+.pic64 .circle {
+	width: 64px;
+	height: 64px;
+}
+
+.pic32 img {
+	width: 32px;
+	height: 32px;
+}
+
+.pic48 img {
+	width: 48px;
+	height: 48px;
+}
+
+.pic64 img {
+	width: 64px;
+	height: 64px;
+}
+
+/**
+ * 右侧内容
+ */
+.main-wrap .side-right {
+	float: right;
+	width: 320px;
+}
+
+/**
+ * 我的专区
+ */
+.side-right .author-box {
+	padding: 20px;
+}
+
+/**
+ * 作者信息
+ */
+.side-right .author-box .pic {
+	width: 48px;
+	height: 48px;
+	float: left;
+}
+
+.side-right .author-box .pic img {
+	display: block;
+	width: 48px;
+	height: 48px;
+}
+
+.side-right .author-box .right {
+	float: right;
+	width: 216px;
+}
+
+.side-right .author-box .info span {
+	margin-right: 8px;
+}
+
+.side-right .author-box .honor {
+	padding: 2px 10px;
+	font-size: 12px;
+	border: 1px solid #9ea6b4;
+	border-radius: 50px;
+}
+
+.side-right .author-box .level {
+	padding: 2px 10px;
+	font-size: 12px;
+	color: #4ea8ff;
+	border: 1px solid #4ea8ff;
+	border-radius: 50px;
+}
+
+.side-right .author-box .jifen {
+	color: #9ea6b4;;
+}
+
+/**
+ * 右侧链接
+ */
+.side-right .link-manage {
+	margin: 0 0 10px 30px;
+}
+
+.side-right .link-manage li {
+	overflow: hidden;
+	float: left;
+	width: 100px;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 70px 10px 0;
+}
+
+.side-right .link-manage li.mr0 {
+	margin-right: 0;
+}
+
+.side-right .link-manage li a {
+	display: block;	
+	height: 24px;
+	line-height: 24px;
+	padding-left: 30px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat;
+}
+
+.side-right .link-manage li a:hover {
+	text-decoration: underline;
+}
+
+.side-right .link-manage li.work a {
+	background-position: 0 -174px;
+}
+
+.side-right .link-manage li.work a:hover {
+	background-position: 0 -150px;
+}
+
+.side-right .link-manage li.income a {
+	background-position: 0 -222px;
+}
+
+.side-right .link-manage li.income a:hover {
+	background-position: 0 -198px;
+}
+
+.side-right .link-manage li.consulting a {
+	background-position: 0 -270px;
+}
+
+.side-right .link-manage li.consulting a:hover {
+	background-position: 0 -246px;
+}
+
+.side-right .link-manage li.exchange a {
+	background-position: 0 -318px;
+}
+
+.side-right .link-manage li.exchange a:hover {
+	background-position: 0 -294px;
+}
+
+/**
+ * 资讯
+ */
+.side-right .news-section .news-list {
+	position: relative;
+	padding: 20px;
+	margin-bottom: -20px;
+}
+
+.side-right .news-section .item {
+	margin-bottom: 20px;
+}
+
+.side-right .news-section .title {
+	overflow: hidden;
+	height: 24px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.side-right .news-section .title a:hover {
+	text-decoration: underline;
+}
+
+.side-right .news-section .time {
+	color: #9ea6b4;
+}
+
+.side-right .news-section .more-bottom {
+	height: 48px;
+	line-height: 48px;
+}
+
+/**
+ * 阅文编辑团队介绍
+ */
+.side-right .editorial-team .pic {
+	padding: 20px;
+}
+
+.side-right .editorial-team img {
+	display: block;
+	width: 280px;
+	height: 100px;
+}
+
+/* 0921 edite */
+/**
+ * 阅文编辑团队介绍
+ */
+.side-right .editorial-team .pic {
+	padding: 20px;
+}
+.side-right .editorial-team img {
+	display: block;
+	width: 280px;
+}
+
+/**
+ * 我的专区未登录
+ */
+.side-right .nologin-box .login-box {
+	clear: both;
+	margin: 0 20px 20px 20px;
+	height: 44px;
+	line-height: 44px;
+	background: #4ea8ff;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.side-right .nologin-box .login-box a {
+	display: inline-block;
+	padding: 0 52px;
+	color: #fff;
+}
+
+.side-right .nologin-box .login-box a:hover {
+	text-decoration: underline;
+}
+
+.side-right .nologin-box .login-box .line {
+	display: inline-block;
+	position: relative;
+	width: 1px;
+	height: 16px;
+	top: 4px;
+	background: #fff;
+}
+
+/**
+ * 阅文作家福利体系
+ */
+.side-right .welfare-system .pic {
+	padding: 20px;
+}
+
+.side-right .welfare-system img {
+	display: block;
+	width: 280px;
+}
+
+/**
+ * 官方推荐
+ */
+.side-right .recommend-box {
+	padding: 30px 0;
+	margin: 0 20px;
+	border-bottom: 1px solid #dfd3e7;
+}
+
+.side-right .recommend-box .info-box {
+	margin-bottom: 8px;
+}
+
+.side-right .recommend-box .pic {
+	width: 64px;
+	float: left;
+	margin-right: 6px;
+}
+
+.side-right .recommend-box .pic img {
+	display: block;
+	width: 64px;
+}
+
+.side-right .recommend-box .pic img.app {
+	width: 56px;
+}
+
+.side-right .recommend-box .right-box {
+	overflow: hidden;
+}
+
+.side-right .recommend-box .title {
+	margin: 6px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.side-right .recommend-box .desc {
+	color: #9ea6b4;
+	line-height: 20px;
+}
+
+.side-right .recommend-box  .download {
+	margin-top: 10px;
+}
+
+.side-right .recommend-box  .download a {
+	display: inline-block;
+	width: 132px;
+	padding: 11px 0;
+	line-height: 20px;
+	text-align: center;
+	background: #ffffff;
+	border: 1px solid #dfe0e6;
+	border-radius: 2px;
+}
+
+.side-right .recommend-box  .download a:hover {
+	background: #f3f4f6;
+	border: 1px solid #dfe0e6;
+}
+
+.side-right .recommend-box  .download .d-ios {
+	margin-right: 4px;
+}
+
+.side-right .ico {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	line-height: 20px;
+	white-space: nowrap;
+	letter-spacing: -1em;
+	text-indent: -99em;
+	color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat;
+}
+
+.side-right .ico:before {
+	content: '\3000';
+}
+
+.side-right .ico-ios {
+	background-position: 0 -1200px;
+}
+
+.side-right .ico-android {
+	background-position: 0 -1240px;
+}
+
+.side-right .ico-saoma {
+	background-position: 0 -1280px;
+}
+
+.no-border {
+	border: 0 !important;
+}
+/* 0921 edite  end */
+
+/**
+ * 右侧广告
+ */
+.side-ad img {
+	display: block;
+	width: 320px;
+	height: 90px;
+}
+
+/**
+ * 底部
+ */
+.footer {
+	margin-top: 40px;
+	padding: 20px 0;
+	clear: both;
+	background: #fff;
+	border-top: 1px solid #dfe0e6;
+}
+
+.footer .ft-box {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.footer .ft-box .ft-link {
+	float: left;
+}
+
+.footer .ft-box .ft-link li {
+	float: left;
+	font-size: 12px;
+}
+
+.footer .ft-box .ft-link li a {
+	display: inline-block;
+}
+
+.footer .ft-box .ft-link li a:hover {
+	text-decoration: underline;
+}
+
+.footer .ft-box .ft-link em {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.footer .ft-box .copyright {
+	float: right;
+	font-size: 12px;
+	color: #9ea6b4;
+}
+
+/* 联系客服弹出 */
+.footer .ft-box .ft-link {
+	position: relative;
+}
+
+.footer-bubble {
+	display: none;
+	position: absolute;
+	top: -76px;
+	left: 47px;
+	width: 98px;
+	text-align: center;
+	border: 1px solid #E6E6E6;
+	border-bottom: none;
+	background: #FFF;
+}
+.w1000 .footer-bubble{
+	left:197px;
+}
+.footer-bubble li a {
+	display: block;
+	width: 98px;
+	height: 33px;
+	border-bottom: 1px solid #E6E6E6;
+	font: 12px/33px "Microsoft YaHei";
+	color: #575757;
+}
+.footer-bubble em {
+	position: absolute;
+	top:67px;
+	left: 29px;
+	border-top: 8px solid #E6E6E6;
+	border-bottom: 0 none;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	width: 0;
+	height: 0;
+	margin-left: -7px;
+}
+.footer-bubble em i {
+	position: absolute;
+	top:-8px;
+	right: -7px;
+	border-top: 7px solid #FFF;
+	border-bottom: 0 none;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	width: 0;
+	height: 0;
+}
+/* 联系客服弹出end */
+
+/* 0921增加-官方微信弹出begin */
+.weixin-bubble {
+	display: none;
+	z-index: 100;
+	position: absolute;
+	top: -306px;
+	left: 174px;
+	width: 460px;
+	padding-top: 24px;
+	text-align: center;
+	border: 1px solid #E6E6E6;
+	background: #FFF;
+}
+
+.w1000 .weixin-bubble{
+	left: 197px;
+}
+
+.weixin-bubble .info-box {
+	padding: 0 30px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.weixin-bubble .info-box .erweima {
+	width: 110px;
+	float: left;
+	margin-right: 9px;
+}
+
+.weixin-bubble .info-box .erweima img {
+	display: block;
+	width: 110px;
+}
+
+.weixin-bubble .info-box .right-box {
+	float: left;
+	width: 280px;
+}
+
+.weixin-bubble .info-box .title {
+	margin: 4px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.weixin-bubble em {
+	position: absolute;
+	bottom: -10px;
+	left: 210px;
+	border-top: 10px solid #E6E6E6;
+	border-bottom: 0 none;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	width: 0;
+	height: 0;
+	margin-left: -5px;
+}
+
+.weixin-bubble em i {
+	position: absolute;
+	top: -11px;
+	right: -10px;
+	border-top: 10px solid #FFF;
+	border-bottom: 0 none;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	width: 0;
+	height: 0;
+}
+/* 0921增加-官方微信弹出end */
+
+/**
+ * 不能点击按钮
+ */
+.btn-false {
+	width: 98px;
+	height: 36px;
+	line-height: 36px;
+	color: #3d495f;
+	border: 1px solid #dfe0e6;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.btn-false:hover {
+	background: #f3f4f6;
+}
+
+.btn-blue02 a {
+	display: block;
+	overflow: hidden;
+	width: 98px;
+	height: 36px;
+	margin-top: 10px;
+	line-height: 36px;
+	text-align: center;
+	color: #4ea8ff;
+	border: 1px solid #4ea8ff;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.btn-blue02 a:hover {
+	background: #dceeff;
+}
+
+/**
+ * 意见反馈
+ */
+.fixed-feedback {
+	position: fixed;
+	right: 0;
+	top: 50%;	
+	width: 28px;
+	margin-top: -50px;
+}
+
+.fixed-feedback .btn-feedback {
+	position: absolute;
+	right: 0;
+	width: 14px;
+	height: 62px;
+	padding: 18px 7px;
+	border: 1px solid #dfe0e6;
+	border-radius: 3px 0px 0px 3px;
+	line-height: 1.2;
+	background: #fff;
+}
+
+.feedback-box {
+    width: 208px;
+    margin-left: 31px;
+    border: 1px solid #DDD;
+    background: #FFF;
+}
+.feedback-box h3 {
+    position: relative;
+    overflow: hidden;
+    padding-left: 15px;
+    font: 16px/43px 'Microsoft YaHei';
+    background: #F9F9F9;
+}
+.feedback-box .text {
+    padding: 20px;
+}
+.feedback-box .text p {
+    padding-right: 20px;
+    font: 12px/1.8 'Microsoft YaHei';
+}
+
+/**
+ * 返回顶部
+ */
+.page-top {
+	display: none;
+	position: fixed;
+	right: 0;
+	bottom: 10%;
+	width: 56px;
+	height: 56px;
+}
+
+.page-top a {
+	display: block;
+	width: 56px;
+	height: 56px;
+	text-indent: -9999px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -700px;
+}
+
+/**
+ * 左右浮动
+ */
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/**
+ * 公共模块
+ */
+.com-section {
+    margin-bottom: 20px;
+    border: 1px solid #dfe0e6;
+    background: #fff;
+}
+
+.com-section .sec-ttl {
+	overflow: hidden;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 20px;
+	border-bottom: 1px solid #dfe0e6;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/**
+ * 标签云
+ */
+.tag-cloud {
+	padding: 20px 10px 10px 20px;
+}
+
+.tag-cloud li {
+	float: left;
+	margin: 0 10px 10px 0;
+	height: 36px;
+	padding: 0 20px;
+	line-height: 36px;
+	border: 1px solid #dfe0e6;
+	border-radius: 3px;
+	background: #f3f4f6;
+}
+
+.separate {
+	position: relative;
+	top: -1px;
+	margin: 0 10px;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
+}
+
+/**
+ * 弹窗样式
+ */
+.dialog-box {
+	position: relative;
+}
+
+.dialog-mask {
+    overflow: hidden;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+    background: #000;
+}
+
+.dialog-body {
+	overflow: hidden;
+	position: fixed;
+    z-index: 1010;
+    left: 50%;
+	top: 10%;
+	width: 360px;
+	margin-left: -180px;
+	padding-bottom: 30px;
+	background: #fff;
+	border-top: 2px solid #9ea6b4;
+	box-shadow: 0 5px 10px 1px rgba(0,0,0,0.1);
+}
+
+/**
+ * 弹窗关闭按钮
+ */
+.dialog-close {
+	float: right;
+	width: 24px;
+	height: 24px;
+	margin: 8px 10px 8px 0;
+}
+
+.dialog-close a {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -535px;
+}
+
+.dialog-content .up-ttl {
+	clear: both;
+	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.dialog-content .text-box {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/**
+ * 弹窗功能按钮
+ */
+.dialog-body .btn-opt {
+	text-align: center;
+}
+
+.dialog-body .btn-opt a {
+	margin: 0 5px;
+}
+
+.btn-gray02 {
+	display: inline-block;
+	width: 98px;
+	height: 36px;
+	line-height: 36px;
+	color: #3d495f;
+	border: 1px solid #dfe0e6;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.btn-gray02:hover {
+	background: #f3f4f6;
+}
+
+/**
+ * 加载更多样式
+ */
+.more-bottom {
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #4ea8ff;
+    border-top: 1px solid #dfe0e6;
+}
+
+.more-bottom a {
+    display: block;
+    color: #4ea8ff;
+}
+
+
+.nomore-bottom {
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	border-top: 1px solid #dfe0e6;
+}
+
+/* 0905 add */
+.article-box .article-content .photo-box {
+	margin-left: 32px;
+}
+
+.article-box .article-content .intro-box {
+	overflow: hidden;
+}
+
+.article-box .item .article-content h3 {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* 页面暂无内容 */
+.no-content {
+	padding: 60px 0;
+	text-align: center;
+	color: #9ea6b4;
+	font-size: 16px;
+}
+
+.article-cont p img {
+	display: inherit;
+	max-width: 660px;
+	height: auto !important;
+	margin: 0 auto;
+}

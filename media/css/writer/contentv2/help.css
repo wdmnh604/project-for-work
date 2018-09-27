@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.help-wrap h3 {
+    border-bottom: 1px solid #E6E6E6;
+    height: 40px;
+    padding-left: 18px;
+    font: 14px/40px "Microsoft YaHei";
+    background: #F9F9F9;
+}
+.help-text {
+    width: 830px;
+    margin: 0 auto;
+    padding: 30px 0 100px;
+}
+.help-text h4 {
+    margin-bottom: 10px;
+    font: 18px/1.8 "Microsoft YaHei";
+    text-align: center;
+    color: #575757;
+}
+.help-text p {
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.help-list-wrap {
+    width: 94.5%;
+    min-height: 700px;
+    padding: 20px 3%;
+}
+.help-list-wrap ul {
+    border: 1px solid #E6E6E6;
+    margin: 0 auto;
+}
+.help-list-wrap li {
+    border-bottom: 1px solid #E6E6E6;
+    font: 14px/41px "Microsoft YaHei";
+}
+.help-list-wrap li.act {
+    padding-bottom: 10px;
+    background: #E1F2FF;
+}
+.help-list-wrap li .link {
+    display: block;
+    padding: 0 18px;
+    color: #575757;
+}
+.help-list-wrap li .link:hover {
+    color: #575757;
+    background: #E1F2FF;
+}
+.detail-text {
+    position: relative;
+    border: 1px solid #D0E9FF;
+    width: 97.5%;
+    padding:15px 0;
+    margin: 0 auto;
+    background: #FFF;
+    display: none;
+}
+.help-list-wrap li.act .detail-text{
+    display: block;
+}
+.detail-text p {
+    padding: 0 30px 0 16px;
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.detail-text .close {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+}
+.detail-text .close em {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    margin-left: -5px;
+    border-top: 0 none;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #AAA;
+    border-left: 5px solid transparent;
+    width: 0;
+    height: 0;
+}
+.detail-text .close cite {
+    position: absolute;
+    top: 1px;
+    right: -5px;
+    border-top: 0 none;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #FFF;
+    border-left: 5px solid transparent;
+    width: 0;
+    height: 0;
+}

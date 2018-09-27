@@ -1,0 +1,175 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+/**
+ * 详情——课程
+ */
+.page-detail {
+	background: #fff;
+}
+
+.main-center {
+	width: 660px;
+	margin: 0 auto;
+}
+
+/**
+ * 文章标题
+ */
+.main-center .art-ttl {
+	margin-bottom: 2px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+/**
+ * 文字信息
+ */
+.main-center .art-info {
+	margin-bottom: 20px;
+	color: #9ea6b4;
+	line-height: 26px;
+}
+
+.main-center .art-info em {
+	margin: 0 10px;
+}
+
+/**
+ * 文章主体
+ */
+.article-cont {
+	line-height: 26px;
+}
+
+.article-cont .img img {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.article-cont p {
+	margin-bottom: 30px;
+}
+
+/**
+ * 收藏
+ */
+.bookmark {
+	height: 24px;
+	padding: 70px 0 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.bookmark .mark {
+	padding-left: 34px;
+	display: inline-block;
+	height: 24px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -462px;
+}
+
+.bookmark .mark.checked {
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -438px;
+}
+
+.bookmark .mark:hover {
+	color: #4ea8ff;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -438px;
+}
+
+/**
+ * 附件
+ */
+.attachment {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.attachment a {
+	color: #4ea8ff;
+}
+
+/**
+ * 评价
+ */
+.attitude ul {
+	float: left;
+	width: 186px;
+}
+
+.attitude .fr {
+	float: right;
+}
+
+.attitude ul li {
+	height: 24px;
+	margin-bottom: 4px;
+}
+
+.attitude ul li span {
+	float: left;
+	margin-right: 8px;
+}
+
+/**
+ * 五角星
+ */
+.attitude ul .star {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -414px;
+}
+
+.attitude ul .star.on {
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -390px;
+}
+
+.attitude ul .star.checked {
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -390px;
+}
+
+.attitude ul .star.checked.out {
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -414px;
+}
+
+.btn-attitude {
+	clear: both;
+	margin-top: 16px;
+	text-align: center;
+}
+
+/**
+ * 详情——栏目
+ */
+.follow-box {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.follow-box .pic {
+	float: left;
+	width: 64px;
+	height: 64px;
+	margin-right: 20px;
+}
+
+.follow-box .collect {
+	float: left;
+	margin: 5px 30px 0 0;
+}
+
+.follow-box .collect span {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.follow-box .btn-blue02 {
+	float: left;
+}

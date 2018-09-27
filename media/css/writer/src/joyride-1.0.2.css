@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+#joyRideTipContent {
+	display: none;
+}
+.joyride-tip-guide {
+	position: absolute;
+	background: #333;
+	background: rgba(0,0,0,.75);
+	padding: 20px;
+	width: 190px;
+	z-index: 1000;
+	border-radius: 4px;
+}
+.joyride-tip-guide span.joyride-nub {
+	display: block;
+	position: absolute;
+	left: 22px;
+	width: 0;
+	height: 0;
+	border: solid 14px;
+}
+.joyride-tip-guide span.joyride-nub.top {
+	border-top-color: transparent !important;
+	border-left-color: transparent !important;
+	border-right-color: transparent !important;
+	border-bottom-color: #333;
+	border-bottom-color: rgba(0,0,0,.75);
+	top: -28px;
+	bottom: none;
+}
+.joyride-tip-guide span.joyride-nub.bottom {
+	border-bottom-color: transparent !important;
+	border-left-color: transparent !important;
+	border-right-color: transparent !important;
+	border-top-color: #000;
+	border-top-color: rgba(0,0,0,0.8) !important;
+	bottom: -28px;
+	bottom: none;
+}
+.joyride-tip-guide h1, .joyride-tip-guide h3, .joyride-tip-guide h4, .joyride-tip-guide h5, .joyride-tip-guide h6 {
+	line-height: 1.25;
+	margin: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.joyride-tip-guide p {
+	margin: 0 0 10px;
+	font:14px/1.5 "Microsoft YaHei";
+	color:#FFF;
+}
+.joyride-tip-guide .joyride-next-tip:after {
+	clear: both;
+}
+.joyride-tip-guide .joyride-next-tip {
+	width: 100%;
+	display:block;
+	height:30px;
+	font:14px/28px "Microsoft YaHei";
+	color:#FFF;
+	border-radius: 3px;
+}
+.joyride-timer-indicator-wrap {
+	width: 50px;
+	height: 3px;
+	border: solid 1px rgba(255,255,255,0.1);
+	position: absolute;
+	right: 17px;
+	bottom: 16px;
+}
+.joyride-timer-indicator {
+	display: block;
+	width: 0;
+	height: inherit;
+	background: rgba(255,255,255,0.25);
+}
+.joyride-close-tip {
+	display:none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background:url(https://dev.img1.write.qq.com/writer/p1/src/sprite.png) no-repeat -68px -12px;
+	width:11px;
+	height:11px;
+	text-indent:-9999em;
+}
+.joyride-close-tip:hover {
+	color: rgba(255,255,255,0.9) !important;
+}

@@ -1,0 +1,225 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+/**
+ * 列表_课程
+ */
+.fliter-wrap {
+	position: relative;
+	margin: -20px 0 20px;
+	background: #fff;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+/**
+ * 课程筛选
+ */
+.fliter-wrap .fliter-cont {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/**
+ * 已选
+ */
+.fliter-wrap .selected {
+	overflow: hidden;
+	padding: 12px 0;
+	line-height: 32px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.fliter-wrap .ttl {
+	float: left;
+	width: 44px;
+}
+
+.fliter-wrap .selected {
+	margin-bottom: 20px;
+}
+
+.fliter-wrap .selected a {
+	position: relative;
+	float: left;
+	padding: 0 40px 0 12px;
+	margin-right: 10px;
+	height: 30px;
+	line-height: 30px;
+	background: #f3f4f6;
+	border: 1px solid #dfe0e6;
+	border-radius: 3px;
+}
+
+.fliter-wrap .selected .ico-close {
+	display: inline-block;
+	position: absolute;
+	right: 6px;
+	top: 4px;
+	width: 24px;
+	height: 24px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -560px;
+}
+
+/**
+ * 筛选项
+ */
+.fliter-wrap .filter-item {
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+
+.fliter-wrap .filter-item .filter {
+	float: left;
+	width: 955px;
+}
+
+.fliter-wrap .filter-item .filter li {
+	float: left;
+	margin: 0 20px 4px 0;
+}
+
+.fliter-wrap .filter-item li a:hover {
+	text-decoration: underline;
+}
+
+.fliter-wrap .filter-item li.checked a {
+	color: #4ea8ff;
+}
+
+/**
+ * 内容
+ */
+.course-list {
+	margin-bottom: 0;
+}
+
+.course-list .sec-ttl a {
+	display: block;
+	float: left;
+	margin-right: 43px;
+	color: #9ea6b4;
+}
+
+.course-list .sec-ttl a.selected {
+	color: #3d495f;
+}
+
+.course-list .article-box {
+	position: relative;
+	margin-bottom: -1px;
+}
+
+.course-list .article-box .item {
+	padding: 20px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.course-list .article-box .item.last {
+	border-bottom: 0;
+}
+
+.course-list .article-box .article-content {
+	overflow: hidden;
+	margin-bottom: 32px;
+}
+
+.course-list .article-box .article-content .intro {
+	overflow: hidden;
+	max-height: 72px;
+}
+
+.course-list .article-box .item h3 {
+	overflow: hidden;
+	height: 25px;
+	margin-bottom: 8px;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.course-list .article-box .item h3 a:hover {
+	text-decoration: underline;
+}
+
+.course-list .article-box .has-pic .intro-box {
+	float: left;
+	width: 742px;
+}
+
+.course-list .article-box .photo-box {
+	position: relative;
+	float: right;
+	width: 192px;
+}
+
+.course-list .article-box .videobg {
+	position: absolute;
+	z-index: 10;
+	left: 64px;
+	top: 22px;
+	width: 64px;
+	height: 64px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -780px;
+}
+
+.course-list .article-box .photo-box img {
+	display: block;
+	width: 192px;
+	height: 108px;
+}
+
+/**
+ * 评分、收藏、作者
+ */
+.course-list .article-bottom {
+	height: 32px;
+	line-height: 32px;
+}
+
+.course-list .article-bottom .author {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.course-list .article-bottom .author img {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+	border-radius: 50px;
+}
+
+.course-list .article-bottom .data {
+	float: right;
+	color: #9ea6b4;
+}
+
+.course-list .article-bottom .data em {
+	margin: 0 10px;
+}
+
+.course-list .article-bottom .separate {
+	position: relative;
+	top: -1px;
+	margin: 0 10px;
+}
+
+.fliter-wrap .selected .selected-tag {
+	float: left;
+	width: 956px;
+}
+.fliter-wrap .selected a {
+	position: relative;
+	float: left;
+	padding: 0 40px 0 12px;
+	margin: 0 10px 12px 0;
+	height: 30px;
+	line-height: 30px;
+	background: #f3f4f6;
+	border: 1px solid #dfe0e6;
+	border-radius: 3px;
+}

@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+body {
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/yellow_bg.jpg);
+    background-repeat: repeat;
+}
+body.blue {
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/blue_bg.jpg);
+}
+body.green {
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/green_bg.jpg);
+}
+body.pink {
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/pink_bg.jpg);
+}
+body.night {
+    color: #B0CAE0;
+    background: #060D1D url(http://dev.img1.write.qq.com/writer/p1/contentv2/darklight_bg.png) no-repeat center top;
+}
+.fullpage {
+    padding: 65px 0 40px;
+}
+.editWrap {
+    width: 800px;
+    margin: 0 auto;
+}
+.editHeader {
+    position: relative;
+    border-bottom: 1px solid #CCC3B3;
+    padding-bottom: 15px;
+}
+.editHeader h3 {
+    color: #575757;
+    font: 16px/1 "Microsoft YaHei";
+}
+body.night .editHeader h3, body.night .sectionClass em, body.night .editTextArea .editMain, body.night .countBox p, body.night .countBox p em, body.night .editTextArea textarea {
+    color: #B0CAE0;
+}
+body.night .editHeader {
+    border-bottom: 1px solid #396182;
+}
+body.night .countBox {
+    border-bottom: 1px solid #293747;
+}
+.sectionClass {
+    position: absolute;
+    right: -20px;
+    top: 8px;
+    font: 12px/1 "Microsoft YaHei";
+}
+.sectionClass em, .sectionClass label {
+    float: left;
+    margin-right: 20px;
+}
+.sectionClass em {
+    color: #858585;
+}
+.sectionClass .radio {
+    margin-top: 0;
+}
+.editTextArea {
+    position: relative;
+    padding: 60px 0 30px;
+}
+.editTextArea textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    color: #575757;
+}
+.editTextArea .editMain {
+    height: 725px;
+    font: 16px/1.8 "Microsoft YaHei";
+}
+.countBox {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC6BB;
+}
+.countBox p {
+    text-align: right;
+    font: 12px/1 "Microsoft YaHei";
+}
+.countBox p em {
+    margin-left: 20px;
+}
+.editSay {
+    margin-top: 16px;
+    font: 14px/1.8 "Microsoft YaHei";
+    overflow: hidden;
+}
+.editToolBox {
+    top: -5px;
+    right: -74px;
+    position: absolute;
+    width: 36px;
+}
+.editToolBox li {
+    margin-bottom: 10px;
+}
+.editToolBox li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/fullpage_tool.png);
+}
+.editToolBox li .save {
+    background-position: 0 0;
+}
+.editToolBox.nightMode .save {
+    background-position: -37px 0;
+}
+.editToolBox li .exit {
+    background-position: 0 -37px;
+}
+.editToolBox.nightMode .exit {
+    background-position: -37px -37px;
+}
+.editToolBox li .font {
+    margin-bottom: 0;
+    background-position: 0 -74px;
+}
+.editToolBox.nightMode .font {
+    background-position: -37px -74px;
+}
+.editToolBox .fontBox, .editToolBox .skinBox {
+    display: none;
+}
+.editToolBox .fontBox a {
+    background: #FAFAFA;
+}
+.editToolBox .fontBox a, .editToolBox .fontBox span, .editToolBox li .skinBox a {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #AAA;
+    text-align: center;
+    font: 14px/34px Arial;
+    margin: -1px 0 0;
+}
+.editToolBox.nightMode .fontBox a, .editToolBox.nightMode .fontBox span {
+    width: 36px;
+    height: 35px;
+    border: none;
+    border-top: 1px solid #DDD;
+    margin: 0;
+}
+.editToolBox .fontBox span {
+    color: #999;
+    display: block;
+    background: #FFF;
+}
+.editToolBox li #skin {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #AAA;
+    background-position: 0 -112px;
+    background-color: #FFF7D4;
+}
+.editToolBox li #skin.blueTheme {
+    background-color: #CFE7FF;
+}
+.editToolBox li #skin.greenTheme {
+    background-color: #DEF9BB;
+}
+.editToolBox li #skin.pinkTheme {
+    background-color: #FFDCED;
+}
+.editToolBox li #skin.nightTheme {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-position: -37px -148px;
+}
+.editToolBox li .skinBox .yellow {
+    background: #FFF7D4;
+}
+.editToolBox li .skinBox .blue {
+    background: #CFE7FF;
+}
+.editToolBox li .skinBox .green {
+    background: #DEF9BB;
+}
+.editToolBox li .skinBox .pink {
+    background: #FFDCED;
+}
+.editToolBox li .skinBox a.night {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-position: 0 -148px;
+}

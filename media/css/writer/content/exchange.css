@@ -1,0 +1,93 @@
+/* 积分兑换 */
+.curScore {
+	height: 44px;
+	padding-right: 34px;
+	border-bottom: 1px solid #E6E6E6;
+	font: 14px/44px "Microsoft YaHei";
+}
+.curScore span {
+	padding-left: 39px;
+}
+.exImg {
+	float: left;
+	width: 114px;
+	height: 145px;
+	background-image: url(http://dev.img1.write.qq.com/writer/p1/content/leave_sprite.png);
+	margin-right: 27px;
+}
+.exImg.ex1 {
+	background-position: 0 0;
+}
+.exImg.ex2 {
+	background-position: -115px 0;
+}
+.exImg.ex3 {
+	background-position: -230px 0;
+}
+.exchangeWrap ul {
+	padding-bottom:90px;
+}
+.exchangeWrap li {
+	padding: 27px 0 27px 35px;
+	border-bottom: 1px solid #E6E6E6;
+	overflow: hidden;
+ *zoom:1;
+	position: relative;
+	vertical-align: bottom;
+	transition: all .5s;
+}
+.exchangeWrap li.hover {
+	background: #F6FBFF;
+}
+.exchangeInfo {
+	float: left;
+	width: 640px;
+}
+.exchangeInfo h3 {
+	font: 18px/1 "Microsoft YaHei";
+	margin-bottom: 10px;
+}
+.exchangeInfo h4 {
+	color: #575757;
+	font: 14px/1 "Microsoft YaHei";
+	border-bottom: 1px solid #EEE;
+	padding-bottom: 16px;
+	margin-bottom: 12px;
+}
+.exchangeInfo h5 {
+	font: 14px/1 "Microsoft YaHei";
+	margin-bottom: 10px;
+}
+.exchangeInfo p {
+	color: #999;
+	font: 12px/1.5 "Microsoft YaHei";
+}
+.exBox {
+	position: absolute;
+	right:34px;
+	top:50%;
+	margin-top:-40px;
+	text-align:center;
+	font-size:14px;
+}
+.exBox a {
+	display:block;
+	width: 60px;
+	height: 60px;
+	border-radius: 3px;
+	background: #4EA8FF;
+	margin-bottom:10px;
+	position:relative;
+}
+.exBox a:hover{
+	background:#3D8CD9;
+}
+/* 积分记录 */
+.resultWrap{
+	padding:31px 0 0 35px;
+}
+
+/*分页样式*/
+.pageBox {
+    margin-top:7px;
+}

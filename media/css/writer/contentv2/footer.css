@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.footer {
+    border-top: 1px solid #DDD;
+    height: 55px;
+    font: 12px/55px "Microsoft YaHei";
+    text-align: center;
+    color: #999;
+    background: #F9F9F9;
+}
+.footer .pageCenter {
+    position: relative;
+    z-index: 2;
+}
+.footer a {
+    color: #999;
+}
+.footer a:hover {
+    color: #4EA8FF;
+}
+.footer span {
+    margin: 0 10px;
+    color: #A8A8A8;
+}
+.footer-bubble {
+    display: none;
+    position: absolute;
+    top: -115%;
+    left:295px;
+    border: 1px solid #E6E6E6;
+    border-bottom: none;
+    background: #FFF;
+}
+.w1000 .footer-bubble{
+    left:197px;
+}
+.footer-bubble li a {
+    display: block;
+    width: 98px;
+    height: 33px;
+    border-bottom: 1px solid #E6E6E6;
+    font: 12px/33px "Microsoft YaHei";
+    color: #575757;
+}
+.footer-bubble em {
+    position: absolute;
+    top:67px;
+    left: 50%;
+    border-top: 8px solid #E6E6E6;
+    border-bottom: 0 none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    width: 0;
+    height: 0;
+    margin-left: -7px;
+}
+.footer-bubble em i {
+    position: absolute;
+    top:-8px;
+    right: -7px;
+    border-top: 7px solid #FFF;
+    border-bottom: 0 none;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    width: 0;
+    height: 0;
+}
+

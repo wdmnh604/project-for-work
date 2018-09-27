@@ -1,0 +1,38 @@
+/**
+ * @author  chenbaixiang
+ */
+body {
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  font-family: 'Helvetica Neue', 'Roboto', "microsoft yahei";
+  line-height: 1; }
+
+p {
+  margin: 0; }
+
+.wrap {
+  min-width: 320px;
+  margin: 0 auto; }
+
+.article-delete {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%); }
+
+.ico-warning {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 30px auto;
+  background: url(http://dev.img1.write.qq.com/mp/p1/build/warning.png) no-repeat 0 0;
+  background-size: 100% 100%; }
+
+.delete-txt {
+  text-align: center;
+  color: #555; }

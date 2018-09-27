@@ -1,0 +1,114 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+/**
+ * 列表——课程
+ */
+.column-list {
+	position: relative;
+	margin-right: -20px;
+}
+
+.column-list .column-box {
+	float: left;
+	width: 488px;
+	height: 264px;
+	margin: 0 20px 20px 0;
+	border: 1px solid #e8e8e8;
+	background: #fff;
+} 
+
+.column-list .column-box .inner {
+	padding: 20px;
+}
+
+.column-list .intro-box {
+	overflow: hidden;
+	margin-bottom: 34px;
+}
+
+/**
+ * 头像
+ */
+.column-list .intro-box .pic {
+	float: left;
+	width: 64px;
+	margin-right: 14px;
+}
+
+.column-list .intro-box .right-box {
+	float: left;
+	width: 370px;
+}
+
+/**
+ * 栏目标题
+ */
+.column-list .intro-box .title {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.column-list .intro-box .title a:hover {
+	text-decoration: underline;
+}
+
+.column-list .intro-box .intro {
+	overflow: hidden;
+	height: 24px;
+	color: #9ea6b4;
+}
+
+.column-list .intro-box .data {
+	overflow: hidden;
+	height: 24px;
+	color: #9ea6b4;
+}
+
+/**
+ * 文章介绍
+ */
+.column-list .article-box {
+	padding: 0 20px;
+}
+
+.column-list .article-box .title {
+	overflow:hidden;
+	height: 24px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.column-list .article-box .title a:hover {
+	text-decoration: underline;
+}
+
+.column-list .article-box .desc {
+	overflow: hidden;
+	height: 44px;
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+.column-list .article-box .author {
+	font-size: 12px;
+	color: #9ea6b4;
+	letter-spacing: 0.25px;
+	line-height: 22px;
+}
+
+.nomore {
+	clear: both;
+	text-align: center;
+	color: #9ea6b4;
+}
+
+.more-bottom,
+.nomore-bottom {
+	border: 0;
+}

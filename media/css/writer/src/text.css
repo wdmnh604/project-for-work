@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.textPageBox {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 60px 0 150px;
+}
+.textPageBox h3 {
+	font: 18px/1.8 "Microsoft YaHei";
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+}
+.textPageBox h4{
+	font:700 14px/1 "Microsoft YaHei";
+	color:#575757;
+	margin-bottom:15px;
+}
+.textPageBox p {
+	font: 14px/1.8 "Microsoft YaHei";
+	margin-bottom:5px;
+}
+.textTable{
+	font-size:14px;
+	text-align:center;
+	border-top:1px solid #E6E6E6;
+	border-left:1px solid #E6E6E6;
+	margin-bottom:10px;
+}
+.textTable th, .textTable td{
+	border-bottom:1px solid #E6E6E6;
+	border-right:1px solid #E6E6E6;
+}
+.textTable th{
+	background:#F9F9F9;
+	height:45px;
+	font-weight:400;
+}
+.textTable td{
+	height:45px;
+	
+}

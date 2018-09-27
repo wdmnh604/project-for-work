@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/**
+ * @author  chenbaixiang
+ */
+.wrap {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.msg-textarea {
+  width: 100%;
+  padding: 15px;
+  height: 190px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-bottom: 1px solid #dedede;
+}
+.msg-textarea textarea {
+  width: 100%;
+  border: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.msg-input {
+  padding: 0 15px;
+}
+.msg-input input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  color: #222;
+  padding: 0 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.msg-btn-box {
+  padding: 24px 30px 0 30px;
+  text-align: center;
+}
+.msg-btn-box .btn {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+}
+.msg-btn-box .btn-disabled {
+  background: #b6d1ec;
+  color: #dfebf7;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+.msg-btn-box .btn-submit {
+  background: #6ca3d9;
+  color: #dfebf7;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+
+.tips {
+  position: fixed;
+  top: 124px;
+  left: 50%;
+  display: inline-block;
+  padding: 0 20px;
+  height: 48px;
+  line-height: 48px;
+  color: #9b9b9b;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/*留言*/
+.msg-list {
+  margin-bottom: 15px;
+  background: #fff;
+  border-bottom: 1px solid #dedede;
+}
+.msg-list .hd {
+  background: #fafafa;
+  height: 56px;
+  line-height: 56px;
+  padding: 0 15px;
+  border-bottom: 1px solid #dedede;
+}
+.msg-list .hd .title {
+  float: left;
+  font-size: 16px;
+  color: #555;
+}
+.msg-list .hd a.msg-link {
+  float: right;
+  color: #6ca3d9;
+  text-decoration: none;
+}
+.msg-list .bd {
+  padding-left: 15px;
+}
+.msg-list .bd .dataitem {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  padding: 15px 15px 0 0;
+  border-bottom: 1px solid #e4e5e5;
+}
+.msg-list .bd .dataitem .avatar {
+  overflow: hidden;
+  width: 49px;
+  height: 49px;
+  margin-right: 15px;
+}
+.msg-list .bd .dataitem .avatar img {
+  width: 49px;
+  height: 49px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+.msg-list .bd .dataitem .info {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+.msg-list .bd .dataitem .info .username {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+.msg-list .bd .dataitem .info .msg-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.msg-list .bd .dataitem .info .time {
+  color: #bbb;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.msg-list .bd .dataitem .info .reply-box {
+  margin-bottom: 15px;
+}
+.msg-list .bd .dataitem .info .reply-box .r-username {
+  overflow: hidden;
+  height: 14px;
+  line-height: 14px;
+  margin-bottom: 8px;
+  border: 4px solid #6ca3d9;
+  border-width: 0 0 0 4px;
+  font-size: 14px;
+  color: #888;
+  padding-left: 10px;
+}
+.msg-list .bd .dataitem .info .reply-box .r-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.msg-list .bd .dataitem .info .reply-box .r-time {
+  color: #bbb;
+  font-size: 12px;
+}
+.msg-list .bd .dataitem:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+/*# sourceMappingURL=msg.css.map */

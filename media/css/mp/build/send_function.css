@@ -1,0 +1,18 @@
+/**
+ * @author wangdongmei
+ * @design yangyifan;
+ */
+.icon-timer {
+  margin-left: 4px; }
+
+.article_table .title {
+  font-size: 15px; }
+
+.article_table .num {
+  margin-top: 2px; }
+
+.article_table .num > span {
+  display: inline-block;
+  margin-right: 16px;
+  font-size: 12px;
+  color: #9da9b3; }

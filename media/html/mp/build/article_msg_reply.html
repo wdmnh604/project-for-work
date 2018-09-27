@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>写留言</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../../../css/mp/build/article.css">
+</head>
+<body>
+<div class="article-wrap">
+	<!-- 精选留言start -->
+    <div class="article-msg-list">
+    	<div class="article-msg-bd">
+    		<div class="article-msg-item">
+    			<div class="avatar"><img src="http://wfqqreader.3g.qq.com/cover/topic/newad_0_150812164854.jpg"></div>
+    			<div id="infoBox" class="info">
+    				<h3 class="username">包子花</h3>
+    				<div class="msg-text"><p>几天没看，格斗比赛还没完，开头挺好，但是现在对武的情节太多，希望快点回到娱乐方面，主角的性格感觉也有点对不上习武之人，就算娱...</p></div>
+    				<p class="time">4月22日</p>
+
+    				<!--作者回复-->
+    				<div class="reply-box">
+    					<div class="r-username">作者回复:</div>
+    					<div class="r-text">你说的对！</div>
+    					<div class="r-time">4月22日</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	
+	<form id="artMsgReplyForm" action="./cgi/json/messageReply.html" method="post">
+	    <div class="msg-input">
+			<input id="artMsgInput" placeholder="请输入" autocomplete="off" name="content">
+		</div>
+	    <!-- 精选留言end -->
+		<div class="msg-btn-box">
+	        <input type="submit" id="artMsgSubmit" class="article-btn" disabled="">
+	        <label for="artMsgSubmit" class="article-btn disabled">提交</label>
+	    </div>
+	</form>
+</div>
+
+<script id="tempReply" type="text/template">
+<div class="reply-box">
+	<div class="r-username">作者回复:</div>
+	<div class="r-text">{{content}}</div>
+	<div class="r-time">{{time}}</div>
+</div>
+</script>
+
+<script src="../../../js/mp/build/article-es5.js"></script>
+<script>
+ARTICLE.disabled('artMsgInput');
+ARTICLE.init('artMsgReplyForm', function(json) {
+	var box = document.getElementById('infoBox'), temp = document.getElementById('tempReply');
+	if (box && temp && json && json.data) {
+		box.insertAdjacentHTML('beforeend', temp.innerHTML.miniTemp(json.data));
+	}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+/**
+  * 线上定时发布弹窗，遇到小屏笔记本，会有时间控件被遮挡的BUG
+  * 解决方法：用此ID向上偏移100px处理，勿删
+  */
+#publishPopup, #publishPopup .closePopup {
+    margin-top: -100px;
+}
+/* 弹窗容器 */
+.popupWrap {
+    /*position: fixed;*/
+    /*z-index: 1000;*/
+    /*top: 50px;*/
+    /*left: 40%;*/
+    padding-bottom: 30px;
+    background: #FAFAFA;
+}
+.popupWrap .closePopup {
+    position: absolute;
+    top: 15px;
+    right: 23px;
+    width: 11px;
+    height: 11px;
+    background-position: -68px -12px;
+}
+.popupWrap h3 {
+    border-bottom: 1px solid #E6E6E6;
+    font: 16px/42px 'Microsoft YaHei';
+    text-align: center;
+    background: #F3F3F3;
+}
+.p30 {
+    padding: 0 30px;
+}
+.p60 {
+    padding: 0 60px;
+}
+.stepBox {
+    border-bottom: 1px solid #D4EBD0;
+    height: 59px;
+    font: 16px/59px 'Microsoft YaHei';
+    text-align: center;
+    color: #BFDEAB;
+    background: #F4FFF2;
+}
+.stepBox span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+    font: 18px/32px Arial;
+    vertical-align: middle;
+    color: #BFDEAB;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/step_sprite.png) -33px 0;
+}
+.stepBox em {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.stepBox span.act {
+    color: #4BC46D;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/step_sprite.png) 0 0;
+}
+.stepBox i {
+    margin: 0 40px;
+}
+.stepBox .actText {
+    color: #4BC46D;
+}
+.stepBox i {
+    width: 17px;
+    height: 32px;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/step_sprite.png) 0 -72px;
+}
+.stepBox i.nogt {
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/step_sprite.png) -18px -72px;
+}
+.exStepBox i {
+    margin: 0 10px;
+}
+.popupContent {
+    margin: 0 auto 20px;
+    padding: 20px 0 0;
+    font-size: 14px;
+    color: #858585;
+}
+.popupContent p {
+    text-align: left;
+    color: #858585;
+}
+.centerTip p {
+    text-align: center;
+}
+.popupWrap input.longInput {
+    display: block;
+    border: 1px solid #DDD;
+    width: 99.5%;
+    height: 28px;
+    margin: 8px auto;
+    font: 14px/28px Arial;
+    text-indent: 5px;
+    color: #858585;
+    background: #FFF;
+}
+.popupWrap input.midInput {
+    float: left;
+    border: 1px solid #DDD;
+    width: 243px;
+    height: 28px;
+    font: 14px/28px Arial;
+    text-indent: 5px;
+    color: #858585;
+    background: #FFF;
+}
+.sfz {
+    visibility: visible;
+    float: left;
+    border: 1px solid #DDD;
+    height: 30px;
+    margin: 0 8px 0 0;
+    opacity: 100;
+
+    filter: alpha(opacity=100);
+}
+.popupContent .combo-select {
+    margin: 5px 0;
+}
+.popupContent p.select1 .combo-select {
+    z-index: 2;
+}
+.popupContent.select {
+    margin-bottom: 20px;
+}
+.popupContent.select textarea {
+    overflow-y: hidden;
+    border: 1px solid #DDD;
+    width: 311px;
+    height: 74px;
+    margin-top: 5px;
+    padding-left: 5px;
+    line-height: 1.8;
+}
+/* 兑换弹窗 */
+.exDetailBox .exCur {
+    border-right: 1px solid #E6E6E6;
+    width: 159px;
+    line-height: 1.8;
+}
+.exDetailBox .expend {
+    width: 144px;
+    padding-left: 26px;
+    color: #575757;
+}
+.exDetailBox .expend span {
+    display: block;
+    padding-top: 18px;
+    font: 40px/1 Arial;
+}
+/* 豁免权兑换 */
+.remit_exchange dd {
+    overflow: hidden;
+    line-height: 2;
+    cursor: pointer;
+    *zoom: 1;
+}
+.remit_exchange dd b {
+    display: inline-block;
+    width: 34px;
+    margin-right: 15px;
+    text-align: right;
+    color: #575757;
+}
+.remit_exchange dd em {
+    color: #575757;
+}
+.remit_exchange dd span.checkBox {
+    float: right;
+    margin-top: 8px;
+}
+.remitRecord {
+    position: relative;
+    padding-top: 10px;
+    *padding-top: 25px;
+}
+.remitRecord cite {
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    border-bottom: 1px solid #E6E6E6;
+    width: 450px;
+}
+.remitRecord dd {
+    overflow: hidden;
+    line-height: 2;
+    *zoom: 1;
+}
+.remitRecord dd span {
+    color: #575757;
+}
+.remitRecord dd span.red {
+    color: #E55555;
+}
+.centerTip {
+    margin-bottom: 0;
+    padding: 50px 0;
+    text-align: center;
+}
+.centerTip p {
+    color: #575757;
+}
+.confirmBtn {
+    font-size: 0;
+    text-align: center;
+
+    *word-spacing: -1px;
+}
+.confirmBtn a {
+    display: inline-block;
+    border-radius: 3px;
+    width: 148px;
+    height: 34px;
+    font: 14px/36px 'Microsoft YaHei';
+    vertical-align: middle;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+.confirmBtn a.white {
+    height: 34px;
+    margin-left: 20px;
+    color: #999;
+}
+/* 作品标签 */
+.popupTag {
+    width: 580px;
+}
+.popupTag h3 {
+    padding-left: 26px;
+    text-align: left;
+}
+.tagFilterList {
+    width: 530px;
+    margin: 0 auto;
+    padding: 18px 0 20px;
+}
+.tagFilterList ul {
+    padding-right: 20px;
+}
+.tagFilterList p {
+    margin-bottom: 15px;
+    font: 12px/1 'Microsoft YaHei';
+    color: #999;
+}
+.tagFilterList li {
+    overflow: hidden;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 15px;
+    padding: 0 0 10px;
+    *zoom: 1;
+}
+.tagFilterList li span {
+    float: left;
+    width: 40px;
+    font: 14px/22px 'Microsoft YaHei';
+}
+.tagFilter {
+    float: left;
+    width: 470px;
+}
+.tagFilter a {
+    display: inline-block;
+    border: 1px solid #DDD;
+    height: 20px;
+    margin: 0 5px 5px 0;
+    padding: 0 8px;
+    font: 12px/22px 'Microsoft YaHei';
+}
+.tagFilter a.act {
+    border: 1px solid #50A8FF;
+    color: #FFF;
+    background: #50A8FF;
+}
+/* 定时发布 */
+.send-time-list li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 110px;
+    *zoom: 1;
+}
+.send-time-list li em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    line-height: 30px;
+    text-align: right;
+    color: #999;
+}
+.send-time-list li p {
+    font: 14px/30px 'Microsoft YaHei';
+    color: #333;
+}
+.send-time-list li p .tag {
+    position: relative;
+    height: 16px;
+    padding-right: 5px;
+    margin-left: 10px;
+    border: 1px solid #CECECE;
+    font: 12px/16px "Microsoft YaHei";
+    background: #FFF;
+    color: #666;
+}
+.send-time-list li p .tag i {
+    position: absolute;
+    top: -1px;
+    *top: 2px;
+    left: -3px;
+    margin-left: -5px;
+    border-top: 9px solid transparent;
+    border-right: 7px solid #CCC;
+    border-bottom: 9px solid transparent;
+    border-left: 0 none;
+    width: 0;
+    height: 0;
+}
+.send-time-list li p .tag i b {
+    position: absolute;
+    top: -9px;
+    left: 1px;
+    border-top: 9px solid transparent;
+    border-right: 7px solid #FFF;
+    border-bottom: 9px solid transparent;
+    border-left: 0 none;
+    width: 0;
+    height: 0;
+}
+.setTimeBox span {
+    display: inline-block;
+    float: none;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.setTimeBox .radio {
+    margin-top: 2px;
+}
+.setTimeBox label {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    color: #575757;
+}
+.setTimeBox b {
+    display: block;
+    padding-left: 16px;
+    font: 12px/1.5 'Microsoft YaHei';
+}
+.dateBox {
+    position: relative;
+    display: block;
+    border: 1px solid #DDD;
+    width: 204px;
+    height: 28px;
+    margin: 7px 5px 0 0;
+    vertical-align: middle;
+    background: #FFF;
+}
+.dateBox .dateIco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 14px;
+    height: 13px;
+    margin: 7px 0 0 5px;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/datePicker.png);
+}
+.setTimeBox .dateInput {
+    float: left;
+    width: 178px;
+    height: 28px;
+    padding-left: 25px;
+    font: 14px/28px Arial;
+    color: #4EA8FF;
+}
+.w380 {
+    width: 380px;
+}
+.w415 {
+    width: 415px;
+}
+.w450 {
+    width: 450px;
+}
+.w680 {
+    width: 680px;
+}
+.popupWrap a:hover {
+    transition: none;
+}
+.popupBody-notice {
+    height: 500px;
+    overflow-y: scroll;
+}
+.popupBody-notice h2 {
+    padding: 10px 0;
+}
+.popupBody-notice .links a {
+    color: red;
+    font-weight: bold;
+}
+.new-dateBox {
+    position: relative;
+    display: block;
+    height: 28px;
+    margin: 7px 5px 0 0;
+    vertical-align: middle;
+}
+.setTimeBox .tips {
+    display: inline;
+}
+.setTimeBox .date-ymd,
+.setTimeBox .date-t {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.setTimeBox .date-ymd {
+    width: 120px;
+    margin-right: 10px;
+}
+.setTimeBox .date-t {
+    width: 89px;
+}
+.setTimeBox .tips-error {
+    color: #BA0404;
+    font-size: 12px;
+}
+.setTimeBox .icon-down {
+    width: 12px;
+    height: 6px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/icon_down.png) no-repeat;
+}
+#datePickerTrigger-set {
+    width: 108px;
+}
+#timePickerTrigger {
+    width: 77px;
+}

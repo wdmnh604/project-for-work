@@ -1,0 +1,163 @@
+@charset "UTF-8";
+.vote-create {
+  padding: 30px 56px; }
+
+/* 提示 */
+.vote-create .top-tip {
+  margin-bottom: 26px;
+  font-size: 12px;
+  color: #9da9b3;
+  line-height: 20px; }
+
+.top-tip .icon {
+  margin-right: 6px; }
+
+.new-vote .line {
+  margin-bottom: 28px; }
+
+.new-vote .ttl {
+  margin-bottom: 12px; }
+
+.new-vote .input-box {
+  position: relative;
+  width: 504px;
+  padding-left: 0; }
+
+.new-vote .input-box .number {
+  position: absolute;
+  right: 16px;
+  top: 11px;
+  font-size: 12px;
+  color: #9da9b3; }
+
+.new-vote .input-box .number em {
+  font-style: normal; }
+
+.new-vote .input-box .number em.red {
+  color: #db6b61; }
+
+.new-vote .input-text {
+  width: 510px;
+  height: 38px;
+  padding: 0 48px 0 0;
+  text-indent: 10px;
+  line-height: 38px;
+  border: 1px solid #e4e8eb;
+  border-radius: 2px; }
+
+.new-vote .tip {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #9da9b3; }
+
+/* 新建问题 */
+.question-box {
+  margin-bottom: 20px; }
+
+.answer-box {
+  padding-bottom: 10px; }
+
+.answer-box .answer {
+  margin-bottom: 20px; }
+
+.add-option {
+  margin-bottom: 30px; }
+
+.add-option-a {
+  color: #419ad9; }
+
+.new-vote .input-box .delete {
+  position: absolute;
+  right: -80px;
+  top: 10px;
+  color: #419ad9; }
+
+.ttl-box {
+  height: 46px;
+  margin-bottom: 20px;
+  line-height: 46px;
+  border-bottom: 1px solid #e4e8eb; }
+
+.ttl-box .ttl {
+  float: left; }
+
+.ttl-box .fold {
+  float: right;
+  font-size: 13px;
+  white-space: nowrap;
+  position: relative; }
+
+.ttl-box .checked-in {
+  right: 0; }
+
+.checked-in,
+.checked-out {
+  transition: visibility .25s, opacity .25s;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer; }
+
+.checked-out {
+  visibility: visible;
+  opacity: 1; }
+
+:checked ~ .ttl-box .checked-in {
+  visibility: visible;
+  opacity: 1; }
+
+:checked ~ .ttl-box .checked-out {
+  visibility: hidden;
+  opacity: 0; }
+
+:checked ~ .question-cont {
+  display: none; }
+
+/*IE7, IE8 使用图片作UI*/
+@media \0screen\,screen\9 {
+  [checked] ~ .ttl-box .checked-in {
+    visibility: visible; }
+
+  [defaultChecked] ~ .ttl-box .checked-in {
+    visibility: visible; }
+
+  [checked] ~ .ttl-box .checked-out {
+    visibility: hidden; }
+
+  [defaultChecked] ~ .ttl-box .checked-out {
+    visibility: hidden; }
+
+  [checked] ~ .question-cont {
+    display: none; }
+
+  [defaultChecked] ~ .question-cont {
+    display: none; } }
+.radio-box {
+  margin-bottom: 20px; }
+
+.radio-box .ui_radio {
+  width: calc(20px - 4px);
+  height: calc(20px - 4px); }
+
+.radio-box .ui_radio::before {
+  margin: 2px auto; }
+
+.radio-box .label-text {
+  margin: 0 32px 0 6px; }
+
+.add-question {
+  display: block;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid #e4e8eb;
+  border-radius: 6px;
+  background: #fff;
+  transition: background-color .15s; }
+
+.add-question:hover {
+  background-color: #f7fbff; }
+
+.add-question:active {
+  background-color: #f0f8ff; }
+
+.add-vote-placeholder {
+  height: 443px; }

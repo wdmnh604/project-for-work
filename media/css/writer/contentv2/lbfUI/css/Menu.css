@@ -1,0 +1,16 @@
+.lbf-menu { display:none; border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;outline: none; min-width:150px; margin:0; padding:6px 0; font-size: 13px; 
+    -webkit-transition: opacity 0.218s;
+    -moz-transition: opacity 0.218s;
+    -ms-transition: opacity 0.218s;
+    -o-transition: opacity 0.218s;
+    transition: opacity 0.218s;background:#fff; 
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);_width:150px; 
+}
+.lbf-menu .lbf-menu-panel {margin:0;  padding:0; list-style:none;}
+.lbf-menu .lbf-menu-label { display:block; height:20px; padding: 3px 12px; line-height: 20px; cursor:pointer; text-align:left;white-space:nowrap; color:#333; }
+.lbf-menu .lbf-menu-label:hover {border-color:#eee;text-decoration:none;color:#333;  background-color:#eee; }

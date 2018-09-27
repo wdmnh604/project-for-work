@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+/* 积分兑换 */
+.curScore {
+    border-bottom: 1px solid #E6E6E6;
+    height: 44px;
+    padding-right: 34px;
+    font: 14px/44px "Microsoft YaHei";
+}
+.curScore span {
+    padding-left: 39px;
+}
+.exImg {
+    float: left;
+    width: 114px;
+    height: 145px;
+    margin-right: 27px;
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/contentv2/leave_sprite.png);
+}
+.exImg.ex1 {
+    background-position: 0 0;
+}
+.exImg.ex2 {
+    background-position: -115px 0;
+}
+.exImg.ex3 {
+    background-position: -230px 0;
+}
+.exImg.ex4 {
+	background-repeat: no-repeat;
+    background-position: -347px 0;
+}
+.exchangeWrap ul {
+    padding-bottom: 90px;
+}
+.exchangeWrap li {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 27px 0 27px 35px;
+    transition: all .5s;
+    vertical-align: bottom;
+    *zoom: 1;
+}
+.exchangeWrap li.hover {
+    background: #F6FBFF;
+}
+.exchangeInfo {
+    float: left;
+    width: 640px;
+}
+.exchangeInfo h3 {
+    margin-bottom: 10px;
+    font: 18px/1 "Microsoft YaHei";
+}
+.exchangeInfo h4 {
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 12px;
+    padding-bottom: 16px;
+    font: 14px/1 "Microsoft YaHei";
+    color: #575757;
+}
+.exchangeInfo h5 {
+    margin-bottom: 10px;
+    font: 14px/1 "Microsoft YaHei";
+}
+.exchangeInfo p {
+    font: 12px/1.5 "Microsoft YaHei";
+    color: #999;
+}
+.exBox {
+    position: absolute;
+    top: 50%;
+    right: 34px;
+    margin-top: -40px;
+    font-size: 14px;
+    text-align: center;
+}
+.exBox a {
+    position: relative;
+    display: block;
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    background: #4EA8FF;
+}
+.exBox a:hover {
+    background: #3D8CD9;
+}
+/* 积分记录 */
+.resultWrap {
+    padding: 31px 0 0 35px;
+}
+.filter-box {
+    margin-bottom: 20px;
+    font: 14px/30px 'Microsoft YaHei';
+}
+.filter-box em {
+    float: left;
+    margin-right: 10px;
+}
+.filter-box .combo-select {
+    float: left;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.filter-box .option-item {
+    font-size: 12px;
+}
+.filter-box.income .combo-select {
+    width: 120px;
+}
+.filter-box input {
+    *padding-left: 10px;
+}
+.filter-box .button {
+    float: left;
+    width: 78px;
+    height: 28px;
+    font: 14px/28px 'Microsoft YaHei';
+}

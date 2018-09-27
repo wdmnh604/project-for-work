@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/**
+ * $author rainszhang
+ */
+
+@import "variables";
+@import "mixins";
+
+//
+// LightTip
+// --------------------------------------------------
+.lbf-light-tip {
+    position:absolute;
+
+    @include inline-block();
+
+    max-width: 200px;
+    padding: 10px 20px;
+    color: #ffffff;
+    outline: none;
+
+    @include border-radius($border-radius-base);
+    @include background-clip(padding-box);
+    @include box-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+
+    &-success {
+        border:1px solid $brand-success;
+        background: $brand-success;
+    }
+
+    &-error {
+        border:1px solid $brand-danger;
+        background: $brand-danger;
+    }
+}

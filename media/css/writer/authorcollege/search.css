@@ -1,0 +1,283 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+body {
+	background: #fff;
+}
+
+.header {
+	border: 0;
+	background: #fff;
+}
+
+.search-wrap {
+	width: 1000px;
+	margin: 0 auto 20px auto;
+}
+
+.search-wrap .input-search {
+	width: 1000px;
+	padding: 6px 0 14px;
+	font-size: 18px;
+	color: #3d495f;
+	background: #fff;
+	border: 0;
+	border-bottom: 1px solid #dfe0e6;
+	outline: 0;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #3d495f;  
+	font-family: "microsoft yahei";
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #3d495f;
+	font-family: "microsoft yahei";
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #3d495f;
+	font-family: "microsoft yahei";
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #3d495f;
+	font-family: "microsoft yahei";
+}
+
+/**
+ * 筛选标题
+ */
+.fliter-ttl {
+	height: 48px;
+	margin-bottom: 30px;
+	line-height: 48px;
+}
+
+.fliter-ttl li {
+	display: inline;
+	margin-right: 24px;
+}
+
+.fliter-ttl li a {
+	display: inline-block;
+	color: #9ea6b4;
+}
+
+.fliter-ttl li a:hover {
+	text-decoration: underline;
+}
+
+.fliter-ttl li a.active {
+	color: #3d495f;
+}
+
+.result-cont .main-left .sec-ttl {
+	margin-top: 30px;
+}
+
+/**
+ * 文章筛选
+ */
+.result-cont .article-box .item {
+	padding: 20px 20px 20px 0;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.result-cont .article-box .item.last {
+	border-bottom: 0;
+}
+
+.result-cont .article-content {
+	overflow: hidden;
+	margin-bottom: 32px;
+}
+
+.result-cont .article-box .intro {
+	overflow: hidden;
+	max-height: 72px;
+}
+
+.result-cont .article-box .item h3 {
+	overflow: hidden;
+	height: 25px;
+	margin-bottom: 8px;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.result-cont .article-box .item h3 a:hover {
+	text-decoration: underline;
+}
+
+
+.result-cont .has-pic .intro-box {
+	float: left;
+	width: 392px;
+}
+
+.result-cont .article-box .photo-box {
+	position: relative;
+	float: right;
+	width: 192px;
+}
+
+.result-cont .article-box .videobg {
+	position: absolute;
+	z-index: 10;
+	left: 64px;
+	top: 22px;
+	width: 64px;
+	height: 64px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -780px;
+}
+
+.result-cont .article-box .photo-box img {
+	display: block;
+	width: 192px;
+	height: 108px;
+}
+
+/**
+ * 评分、收藏、作者
+ */
+.result-cont .article-bottom {
+	height: 32px;
+	line-height: 32px;
+}
+
+.result-cont .article-bottom .author {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.result-cont .article-bottom .author img {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+	border-radius: 50px;
+}
+
+.result-cont .article-bottom .data {
+	float: right;
+	color: #9ea6b4;
+}
+
+.result-cont .article-bottom .data em {
+	margin: 0 10px;
+}
+
+/**
+ * 专栏搜索结果
+ */
+.result-cont .column-box .item {
+	padding: 20px 0;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.result-cont .column-box .intro-box {
+	overflow: hidden;
+}
+
+/**
+ * 专栏头像
+ */
+.result-cont .column-box .intro-box .pic {
+	float: left;
+	width: 64px;
+	margin-right: 14px;
+}
+
+.result-cont .column-box .intro-box .right-box {
+	float: left;
+	width: 370px;
+}
+
+/**
+ * 专栏标题
+ */
+.result-cont .column-box .intro-box .title {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.result-cont .column-box .intro-box .title a:hover {
+	text-decoration: underline;
+}
+
+.result-cont .column-box .intro-box .intro {
+	overflow: hidden;
+	height: 24px;
+	color: #9ea6b4;
+}
+
+.result-cont .column-box .intro-box .data {
+	overflow: hidden;
+	height: 24px;
+	color: #9ea6b4;
+}
+
+/**
+ * 专栏文章介绍
+ */
+.result-cont .column-box .article {
+	margin-top: 34px;
+}
+
+.result-cont .column-box .article .title {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.result-cont .column-box .article .title a:hover {
+	text-decoration: underline;
+}
+
+.result-cont .column-box .article .desc {
+	overflow: hidden;
+	height: 44px;
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+.result-cont .column-box .article .author {
+	font-size: 12px;
+	color: #9ea6b4;
+	letter-spacing: 0.25px;
+	line-height: 22px;
+}
+
+/**
+ * 资讯搜索结果
+ */
+.result-cont .news-box .item {
+	padding: 20px 20px 20px 0;
+	border-bottom: 1px solid #dfe0e6;
+}
+ 
+.result-cont .news-box h2 {
+	margin-bottom: 14px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.result-cont .news-box h2 a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * 右侧标签
+ */
+.result-cont .side-right .sec-ttl {
+	height: 48px;
+	padding-left: 20px;
+	line-height: 48px;
+}

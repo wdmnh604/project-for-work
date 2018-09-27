@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+/* 首页 */
+.authorInfoWrap {
+	height: 101px;
+	padding-top: 14px;
+	padding-left: 35px;
+	background: url(https://dev.img1.write.qq.com/writer/p1/src/hbg.png) no-repeat;
+	border-bottom: 1px solid #D0E9FF;
+}
+.headPhotoBox {
+	width: 86px;
+	height: 86px;
+	position: relative;
+	margin-right: 19px;
+}
+.headPhotoBox span {
+	position: absolute;
+	z-index: 2;
+	width: 86px;
+	height: 86px;
+	background: url(https://dev.img1.write.qq.com/writer/p1/src/photo_box.png) no-repeat;
+}
+.headPhotoBox img {
+	position: absolute;
+	z-index: 1;
+}
+.authorInfoBox h3 {
+	font: 700 16px/1 "Microsoft YaHei";
+	color: #376590;
+	margin: 10px 0 15px;
+}
+.authorInfoBox h3 span {
+	color: #8baece;
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+.authorInfoBox p {
+	font-size: 14px;
+	color: #8baece;
+	margin-bottom: 5px;
+}
+.authorInfoBox p .Num {
+	color: #4ea8ff;
+	font-weight: 700;
+}
+.authorInfoBox img {
+	margin-left: 12px;
+}
+/* 新闻列表 */
+.newsListWrap {
+	width: 898px;
+	border: 1px solid #E6E6E6;
+	border-bottom: none;
+	margin-bottom: 10px;
+}
+.newsListWrap li {
+	*vertical-align:bottom;
+	border-bottom: 1px solid #E6E6E6;
+}
+.newsListWrap li a.link {
+	color: #333;
+	font: 14px/41px "Microsoft YaHei";
+	display: block;
+	padding: 0 20px;
+	vertical-align:middle;
+}
+.newsListWrap li a.link.visited{
+	color:#999;
+}
+.newsListWrap li a.link span {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	margin: 0 18px 0 0;
+	background: url(https://dev.img1.write.qq.com/writer/p1/src/sprite.png) no-repeat -38px -7px;
+}
+.newsListWrap li a.link span.on {
+	margin: 3px 18px 0 0;
+	background: url(https://dev.img1.write.qq.com/writer/p1/src/sprite.png) no-repeat -38px 0;
+}
+.newsListWrap li a.link em {
+	float: right;
+	font-size: 12px;
+	cursor: pointer;
+}
+.newsListWrap li a.link img {
+	vertical-align: middle;
+	margin: 0 0 0 5px;
+}
+.newsListWrap li a.link i {
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	vertical-align: middle;
+	width: 640px;
+	cursor: pointer;
+}
+.newsListWrap li.act{
+	background: #F6FBFF;
+}
+.newsListWrap li.act a.link{
+	color:#3A6590;
+}
+.newsListWrap li a:hover {
+	color: #666;
+	background: #F6FBFF;
+}
+.newsListWrap li.act a:hover{
+	color:#3A6590;
+}
+.detailNews{
+	padding:15px 0 10px;
+	background:#FFF;
+	border:1px solid #D0E9FF;
+	width:878px;
+	margin:0 auto 10px;
+	position:relative;
+	overflow:hidden;
+	display:none;
+}
+.detailNews .close{
+	position:absolute;
+	width:11px;
+	height:11px;
+	background-position: -68px -12px;
+	cursor:pointer;
+	right:15px;
+	top:15px;
+}
+.detailNews h6{
+	margin-bottom:5px;
+}
+.detailNews p, .detailNews h6{
+	color:#575757;
+	padding-left:34px;
+	font:14px/1.8 "Microsoft YaHei";
+}
+.detailNews p{
+	margin:0.8em 0;
+}
+.newsListWrap li .detailNews p a{
+	margin:0 5px;
+	color:#4ea8ff;
+}
+.newsListWrap li .detailNews p a:hover{
+	text-decoration:underline;
+	background:none;
+	color:#4ea8ff;
+}
+.detailNews p{
+	padding-right:30px;
+}
+.detailNews p.sign{
+	color:#999;
+	padding:8px 40px 0 0;
+}
+.detailNews p.sign i{
+	margin:0 10px;
+	font-family:simsun;
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+#joyRideTipContent {
+    display: none;
+}
+.joyride-tip-guide {
+    position: absolute;
+    z-index: 1000;
+    border-radius: 4px;
+    width: 190px;
+    padding: 20px;
+    background: #333;
+    background: rgba(0, 0, 0, .75);
+}
+.joyride-tip-guide span.joyride-nub {
+    position: absolute;
+    left: 22px;
+    display: block;
+    border: solid 14px;
+    width: 0;
+    height: 0;
+}
+.joyride-tip-guide span.joyride-nub.top {
+    top: -28px;
+    bottom: none;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: #333;
+    border-bottom-color: rgba(0, 0, 0, .75);
+    border-left-color: transparent !important;
+}
+.joyride-tip-guide span.joyride-nub.bottom {
+    bottom: -28px;
+    bottom: none;
+    border-top-color: #000;
+    border-top-color: rgba(0, 0, 0, .8) !important;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+}
+.joyride-tip-guide h1,.joyride-tip-guide h3,.joyride-tip-guide h4,.joyride-tip-guide h5,.joyride-tip-guide h6 {
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #FFF;
+}
+.joyride-tip-guide p {
+    margin: 0 0 10px;
+    font: 14px/1.5 'Microsoft YaHei';
+    color: #FFF;
+}
+.joyride-tip-guide .joyride-next-tip:after {
+    clear: both;
+}
+.joyride-tip-guide .joyride-next-tip {
+    display: block;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    font: 14px/28px 'Microsoft YaHei';
+    color: #FFF;
+}
+.joyride-timer-indicator-wrap {
+    position: absolute;
+    right: 17px;
+    bottom: 16px;
+    border: solid 1px rgba(255, 255, 255, .1);
+    width: 50px;
+    height: 3px;
+}
+.joyride-timer-indicator {
+    display: block;
+    width: 0;
+    height: inherit;
+    background: rgba(255, 255, 255, .25);
+}
+.joyride-close-tip {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    width: 11px;
+    height: 11px;
+    text-indent: -9999em;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/sprite.png) no-repeat -68px -12px;
+}
+.joyride-close-tip:hover {
+    color: rgba(255, 255, 255, .9) !important;
+}

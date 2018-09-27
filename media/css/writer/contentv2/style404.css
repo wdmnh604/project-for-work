@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.box404 {
+    width: 1000px;
+    min-height: 640px;
+    margin: 0 auto;
+    padding: 220px 0 0;
+    text-align: center;
+}
+.box404 p {
+    margin-top: 20px;
+}
+.box404 p a {
+    color: #4EA8FF;
+}
+.footer.foot404 {
+    border: none;
+    background: none;
+}

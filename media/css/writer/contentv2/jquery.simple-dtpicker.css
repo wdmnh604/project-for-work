@@ -1,0 +1,249 @@
+/**
+ * Style-sheet for dtpicker
+ * https://github.com/mugifly/jquery-simple-datetimepicker
+ */
+
+.datepicker {
+    left: 0;
+    display: inline-block;
+    border: 1px solid #DFDFDF;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    width: 203px;
+    font: 12px/1.5 "Microsoft YaHei";
+    font-weight: 300;
+    -webkit-box-shadow: .5px .5px 3px #EEE;
+       -moz-box-shadow: .5px .5px 3px #EEE;
+            box-shadow: .5px .5px 0 #C8C8C8;
+}
+/*
+ * datepicker_header
+*/
+
+.datepicker .datepicker_header {
+    width: 203px;
+    height: 34px;
+    font: 700 12px/34px "Microsoft YaHei";
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    text-align: center;
+    color: #575757;
+    background-color: #EEE;
+}
+.setTimeBox i.dateBox .datepicker .datepicker_header a {
+    margin: -2px 0 0;
+    font-family: arial;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    color: #575757;
+
+    *margin: 1px 0 0;
+}
+.datepicker .datepicker_header a:hover {
+    color: #4EA8FF;
+}
+.setTimeBox i.dateBox .datepicker .datepicker_header span {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    vertical-align: top;
+}
+.setTimeBox i.dateBox .datepicker .datepicker_header a.icon-home {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 11pt;
+    height: 11pt;
+    margin: 3px 0 0 8px;
+    vertical-align: middle;
+}
+.datepicker .datepicker_header .icon-home svg g path {
+    fill: #4EA8FF;
+}
+/*
+ * datepicker_inner_container 
+*/
+
+.datepicker .datepicker_inner_container {
+    margin: -2px 0 -2px 0;
+    background: #FFF;
+}
+.datepicker .datepicker_inner_container:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+}
+/*
+ * datepicker_inner_container datepicker_calendar
+*/
+
+.datepicker .datepicker_inner_container .datepicker_calendar {
+    float: left;
+    border-top: none;
+    border-right: 1px solid #C8C8C8;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+            border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+            border-bottom-left-radius: 3px;
+    padding: 10px 10px 10px 5px;
+    background-color: #FFF;
+
+    *padding: 10px 0;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar table {
+}
+/* datepicker_inner_container datepicker_calendar datepicker_table tbody tr th (WDay-cell)
+*/
+
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr th {
+    width: 18px;
+    font-size: small;
+    font-weight: normal;
+    text-align: center;
+    color: #646464;
+}
+/*
+ * datepicker_inner_container datepicker_calendar datepicker_table tbody tr td (Day-cell)
+*/
+
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td {
+    font-size: small;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    text-align: center;
+    color: #333;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.today {
+    border-bottom: #4EA8FF solid 1px;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.wday_sat {
+    color: #04A;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.wday_sun {
+    color: #E13B00;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.day_another_month {
+    color: #CCC;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.day_in_past {
+    cursor: default;
+    color: #CCC;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.out_of_range {
+    cursor: default;
+    color: #CCC;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.active {
+    color: #FFF;
+    background-color: #4EA8FF;
+}
+.datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table tbody tr td.hover {
+    color: #333;
+    background-color: #E1F2FF;
+}
+/*
+ * datepicker_inner_container datepicker_timelist
+*/
+
+.datepicker .datepicker_inner_container .datepicker_timelist {
+    position: absolute;
+    top: 33px;
+    right: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+            border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+            border-bottom-right-radius: 3px;
+    width: 62px;
+    height: 118px;
+    padding: 4px 0 6px;
+    padding: 4px 5px 6px 0\0;
+    background-color: #FFF;
+
+    *width: 61px;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar {
+    overflow: hidden;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+            border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+            border-bottom-right-radius: 3px;
+    width: 6px;
+    background: #FAFAFA;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar:horizontal {
+    height: 1px;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar-button {
+    display: none;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar-piece {
+    background: #EEE;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar-piece:start {
+    background: #EEE;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: #CCC;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar-corner {
+    background: #333;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-top: 1px;
+    padding-right: 25px;
+    padding-bottom: 1px;
+    padding-left: 7px;
+    font-size: small;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item.time_in_past {
+    cursor: default;
+    color: #CCC;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item.out_of_range {
+    cursor: default;
+    color: #CCC;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item.active {
+    color: #FFF;
+    background-color: #808080;
+}
+.datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item.hover {
+    color: #333;
+    background-color: #E1F2FF;
+}

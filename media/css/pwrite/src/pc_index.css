@@ -1,0 +1,39 @@
+/*
+ * 作家呼吁pc重置css
+ * author   liuwentao
+ * create   2016/05/24
+*/
+/*body*/
+body{
+    max-width: 640px;
+    margin:0 auto;
+}
+/*作者介绍背景*/
+.author-appeal:before{
+    position: absolute;
+    content: "";
+    left:0;
+    top:0;
+    width: 100%;
+    padding-top:375px; 
+    background:url("http://dev.img1.write.qq.com/pwrite/p1/header-bg.png") center center no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 100% auto;
+    z-index:0;
+}
+/*我的最新力作*/
+.my-books .books-list-box{
+    height: 6.577rem;
+    text-align: center;
+}
+.my-books .books-list-box .books-list{
+    display: inline-block;
+    overflow:hidden;
+    white-space: normal;
+    width: auto;
+}
+.pc-center{
+    width: 640px;
+    margin:0 auto;
+}

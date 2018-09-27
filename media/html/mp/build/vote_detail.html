@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="robots" content="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" href="../../../css/mp/build/ui.css"/>
+<link rel="stylesheet" href="../../../css/mp/build/common.css"/>
+
+    <title>投票管理</title>
+    <link rel="stylesheet" href="../../../css/mp/build/vote_detail.css" rel="stylesheet" type="text/css"/>
+    <!-- @author author | @designer designer | @pm pm -->
+</head>
+<body>
+<div class="container">
+
+	<!-- 顶部header begin -->
+	<!-- 顶部header begin -->
+	<div class="header">
+		<div class="hd-wrap clearfix">
+			
+			<!-- logo -->
+			<h1 class="logo"><a href="./" class="logo-a">作家自媒体</a></h1>
+			
+			<!-- 右侧作家信息begin -->
+			<div class="header-right">
+				<a href="javascript:" id="hdAuthor" class="header-author-box">
+					<p class="header-author">
+						<!--<i class="icon icon-ring"></i>-->夕阳剑客<i class="icon icon-dropdown"></i>
+					</p>					
+				</a>
+			</div>
+			<!-- 右侧作家信息end -->
+		</div>
+	</div>
+
+	<!-- 作家信息下拉begin -->
+	<div id="hdDrop" class="header-drop">
+		<div class="header-drop-box">
+			<p class="header-drop-pic">
+				<i class="header-drop-circle"></i>
+				<img src="../../../img/mp/p1/temp/photo01.jpg" class="header-avatar" alt="夕阳剑客" />
+			</p>
+			<p class="header-drop-name">夕阳剑客</p>
+		</div>
+		<a href="" class="header-logout"><i class="icon icon-signout"></i>退出登录</a>
+	</div>
+	<!-- 作家信息下拉end -->	<!-- 顶部header end -->
+
+	<!-- 内容区 -->
+	<div class="main-wrap">
+		
+		<!-- 左侧导航区begin -->
+		<div class="sidebar">
+			<p class="sidebar-ttl">功能</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="send_function.html" class="sidebar-a"><i class="icon-nav icon-nav-posts"></i>群发功能</a></li>
+				<li class="sidebar-li "><a href="message_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-message"></i>留言管理</a></li>
+				<li class="sidebar-li active"><a href="vote_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-vote"></i>投票管理</a></li>
+				<li class="sidebar-li "><a href="user_manage.html" class="sidebar-a"><i class="icon-nav icon-nav-users"></i>用户管理</a></li>
+			</ul>
+			
+			<!-- 分隔线 -->
+			<div class="sidebar-line"></div>
+			<p class="sidebar-ttl">分析</p>
+			<ul class="sidebar-link">
+				<li class="sidebar-li "><a href="user_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-analysis"></i>用户分析</a></li>
+				<li class="sidebar-li "><a href="article_ana.html" class="sidebar-a"><i class="icon-nav icon-nav-charts"></i>文章分析</a></li>
+			</ul>
+		</div>		<!-- 左侧导航区end -->
+		
+		<!-- 右侧内容区begin -->
+		<div class="main-conts">
+			<div class="main-hd-fixed">
+				<div class="conts-hd">
+					<div class="page-ttl"><a class="return" href="vote_manage.html"><i class="icon icon-back"></i>投票管理</a><span class="ml5 mr5">|</span><span>投票详情</span></div>
+				</div>
+			</div>
+			<div class="vote-detail">
+			
+				<!-- 投票基本信息 -->
+				<dl class="vote-info clearfix">
+					<dt class="ttl">投票名称</dt>
+					<dd class="info">
+						<p class="">如果让你加入到我的作品中，你想当谁？</p>
+						<p class="tip">只用于投票管理后台，不显示在下发的投票内容中</p>
+					</dd>
+					<dt class="ttl">截止时间</dt>
+					<dd class="info">
+						<p class="">2016年7月7日 20:00</p>
+						<p class="tip">已过期</p>
+					</dd>
+					<dt class="ttl">投票人数</dt>
+					<dd class="info">
+						<p class="">12776 人</p>
+					</dd>
+				</dl>
+				
+				<!-- 一条投票 -->
+				<div class="vote-box">
+					<p class="vote-question">1. 你们喜不喜欢哥的新作？</p>
+					
+					<!-- 投票结果 票数最高的透明度是1 -->
+					<p class="answer">喜欢</p>
+					<div class="result">
+						<p class="vote-percent"><span class="percent" style="width:64.75%; opacity: 1;"></span></p>
+						<p class="ticket-num">8273 票</p>
+						<p class="ticket-percent">64.75%</p>
+					</div>
+					<p class="answer">不喜欢</p>
+					<div class="result">
+						<p class="vote-percent"><span class="percent" style="width:25.25%"></span></p>
+						<p class="ticket-num">8273 票</p>
+						<p class="ticket-percent">25.25%</p>
+					</div>
+				</div>
+				
+				<!-- 一条投票 -->
+				<div class="vote-box">
+					<p class="vote-question">2. 你最喜欢的角色是哪一位？</p>
+					
+					<!-- 投票结果 -->
+					<p class="answer">鼻孔帝尔康</p>
+					<div class="result">
+						<p class="vote-percent"><span class="percent" style="width: 47.14%; opacity: 1;"></span></p>
+						<p class="ticket-num">8273 票</p>
+						<p class="ticket-percent">64.75%</p>
+					</div>
+					<p class="answer">张益达</p>
+					<div class="result">
+						<p class="vote-percent"><span class="percent" style="width: 7.69%"></span></p>
+						<p class="ticket-num">8273 票</p>
+						<p class="ticket-percent">64.75%</p>
+					</div>
+					<p class="answer">303 老王</p>
+					<div class="result">
+						<p class="vote-percent"><span class="percent" style="width: 23.92%"></span></p>
+						<p class="ticket-num">8273 票</p>
+						<p class="ticket-percent">64.75%</p>
+					</div>				
+				</div>				
+			</div>
+		</div>
+		<!-- 右侧内容区end -->
+		
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer">
+	<div class="ft-box">
+		<!-- 联系客服弹出begin -->
+		<div id="contact-bubble" class="footer-bubble">
+			<em><i></i></em>
+			<ul>
+				<li><a target="_blank" href="http://kf.qidian.com/Default.aspx">联系起点客服</a></li>
+				<li><a target="_blank" href="http://kf.qq.com/product/chuangshi.html">联系创世客服</a></li>
+			</ul>
+		</div>
+		<!-- 联系客服弹出end -->
+		<!-- 链接 -->
+		<ul class="ft-link">
+			<li><a href="">帮助中心</a></li>
+			<li><a id="contact" href="">联系客服</a></li>
+			<li><a href="">诚聘英才</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">客服中心</a></li>
+			<li><a href="">版权声明</a></li>
+			<li>Copyright © 2015-2016 yuewen.com All Rights Reserved.</li>
+		</ul>
+	</div>
+</div>
+
+<script src="../../../js/mp/build/plugin/sea.js"></script>
+<script src="../../../js/mp/build/plugin/jquery.min.js"></script></div>
+</body>
+</html>

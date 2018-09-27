@@ -1,0 +1,150 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+/**
+ * 列表_课程
+ */
+.follow-wrap {
+	position: relative;
+	margin: -20px 0 20px;
+	padding: 30px 0;
+	background: #fff;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+/**
+ * 课程筛选
+ */
+.follow-wrap .follow-box {
+	position: relative;
+	width: 660px;
+	margin: 0 auto;
+}
+
+.follow-wrap .follow-box .pic {
+	float: left;
+	width: 64px;
+	margin-right: 20px;
+}
+
+.follow-wrap .follow-box .right-box {
+	float: left;
+	width: 576px;
+}
+
+.follow-wrap .follow-box .title {
+	margin-bottom: 4px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.follow-wrap .follow-box .title a:hover {
+	text-decoration: underline;
+}
+
+.follow-wrap .btn-follow {
+	margin-top: 10px;
+}
+
+.main-center {
+	width: 660px;
+	margin: 0 auto;
+}
+
+.article-box {
+	position: relative;
+	margin-bottom: -1px;
+}
+
+.article-box .item {
+	padding: 20px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.article-box .item.last {
+	border-bottom: 0;
+}
+
+.article-box .article-content {
+	overflow: hidden;
+	margin-bottom: 32px;
+}
+
+.article-box .article-content .intro {
+	overflow: hidden;
+	max-height: 72px;
+}
+
+.article-box .item h3 {
+	overflow: hidden;
+	height: 25px;
+	margin-bottom: 8px;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.article-box .item h3 a:hover {
+	text-decoration: underline;
+}
+
+
+.article-box .has-pic .intro-box {
+	float: left;
+	width: 392px;
+}
+
+.article-box .article-content .photo-box {
+	position: relative;
+	float: right;
+	width: 192px;
+}
+
+.article-box .article-content .photo-box .videobg {
+	position: absolute;
+	z-index: 10;
+	left: 64px;
+	top: 22px;
+	width: 64px;
+	height: 64px;
+	background: url(http://dev.img1.write.qq.com/writer/p1/authorcollege/bg_sprite.png) no-repeat 0 -780px;
+}
+
+.article-box .article-content .photo-box img {
+	display: block;
+	width: 192px;
+	height: 108px;
+}
+
+/**
+ * 评分、收藏、作者
+ */
+.article-bottom {
+	height: 32px;
+	line-height: 32px;
+}
+
+.article-bottom .author {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.article-bottom .author img {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+	border-radius: 50px;
+}
+
+.article-bottom .data {
+	float: right;
+	color: #9ea6b4;
+}
+
+.article-bottom .data em {
+	margin: 0 10px;
+}

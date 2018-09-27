@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, a, blockquote, th, textarea {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+}
+ol, ul, li {
+    list-style: none outside none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0 none;
+}
+body {
+    color: #333;
+    font-family:"Microsoft YaHei";
+    text-align: left;
+    background: #F9F9F9;
+    -webkit-font-smoothing: antialiased;
+}
+input::-moz-focus-inner {
+    border: none;
+    padding: 0;
+}
+a img {
+    border: none;
+}
+a {
+    outline: none;
+    color: #333;
+    text-decoration: none;
+}
+textarea {
+    resize: none;
+    outline: none;
+    font: 14px/1.8 "Microsoft YaHei";
+}
+select {
+    font-family: "Microsoft YaHei";
+}
+input, button {
+    outline: none;
+    border: none;
+    font-family: "Microsoft YaHei";
+}
+label {
+    cursor: pointer;
+}
+i, em, cite {
+    font-style: normal;
+}
+
+/* clear fix */
+.cf {
+    zoom: 1;
+}
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cfboth {
+    clear: both;
+}

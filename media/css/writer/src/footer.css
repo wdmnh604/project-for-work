@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+.footer {
+	height: 55px;
+	border-top: 1px solid #DDD;
+	text-align: center;
+	background: #F9F9F9;
+	font: 12px/55px "Microsoft YaHei";
+	color: #999;
+}
+.footer a {
+	color: #999;
+}
+.footer a:hover{
+	color:#4EA8FF;
+}
+.footer span {
+	color: #A8A8A8;
+	margin: 0 10px;
+}

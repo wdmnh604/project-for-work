@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/**
+ * @author yangye
+ * @design xurui,zhugang;
+ */
+
+body,.wrap.login {
+    background: #FFF;
+}
+.footer.loginFooter {
+    border: none;
+    background: #FFF;
+}
+.loginWrap {
+    position: relative;
+    padding: 186px 0 130px;
+}
+.loginWrap img {
+    margin-top: 40px;
+}
+.login-box {
+    position: absolute;
+    top: 215px;
+    right: 0;
+    border: 1px solid #DDD;
+    width: 418px;
+    height: 318px;
+}
+.login-mode {
+    width: 256px;
+    margin: 0 auto;
+}
+.login-mode h3 {
+    position: relative;
+    border-bottom: 1px solid #999;
+    margin: 83px 0 41px;
+    font-weight: 400;
+    text-align: center;
+}
+.login-mode h3 p {
+    position: absolute;
+    top: -10px;
+    left: 55px;
+    padding: 0 10px;
+    text-align: center;
+    background: #FFF;
+}
+.login-mode a {
+    display: block;
+    border: 1px solid #DDD;
+    width: 254px;
+    height: 50px;
+    margin-bottom: 18px;
+    font: 18px/50px "Microsoft YaHei";
+    text-align: center;
+}
+.login-mode a:hover {
+    border: 1px solid #4EA8FF;
+}
+.qd-pop-close {
+    position: absolute;
+    z-index: 1000001;
+    top: -12px;
+    right: -12px;
+    width: 36px;
+    height: 36px;
+    background: url(http://dev.img1.write.qq.com/writer/p1/contentv2/step_sprite.png) -74px 0;
+}

@@ -1,0 +1,7 @@
+.lbf-drag-proxy { position:absolute; z-index:1000; border:1px dashed #cccccc; background:#ffffff;}
+.lbf-drag-unselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; /* IE10+ */
+    user-select: none;
+}

@@ -1,0 +1,1258 @@
+.null {
+    text-align: center;
+    width: 380px;
+    margin: 140px auto;
+    font-size: 18px;
+}
+.null img {
+    margin-bottom: 50px;
+}
+.null .button {
+    display: inline-block;
+    width: 180px;
+    height: 35px;
+    font: 14px/35px "Microsoft YaHei";
+}
+.msgBoxTitle .create.button {
+    width: 104px;
+}
+.create .icon {
+    width: 12px;
+    height: 12px;
+    background-position: -21px 0;
+    margin-right: 10px;
+}
+/* 作品列表 */
+
+.worksListWrap li {
+    overflow: hidden;
+    *zoom: 1;
+    padding: 30px 34px;
+    border-bottom: 1px solid #E6E6E6;
+    position: relative;
+}
+.worksListWrap li.hover {
+    background: #F6FBFF;
+}
+.coverBox {
+    float: left;
+    border: 1px solid #E6E6E6;
+    margin-right: 26px;
+    position: relative;
+}
+.coverBox span {
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    bottom: 4px;
+    width: 75px;
+    height: 28px;
+    background: #000;
+    background: rgba(0, 0, 0, .7);
+    filter: alpha(opacity=70);
+    left: 4px;
+    font: 14px/30px "Microsoft YaHei";
+}
+.coverBox img {
+    padding: 4px;
+}
+.worksBaseInfo {
+    float: left;
+    margin-top: 10px;
+}
+.worksBaseInfo h3 {
+    font: 18px/1 "Microsoft YaHei";
+    margin-bottom: 20px;
+}
+.worksBaseInfo p {
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.worksBaseInfo p span {
+    color: #858585;
+}
+.worksBaseInfo p em {
+    font: 12px/1 Arial;
+    color: #999;
+    margin-left: 14px;
+}
+.worksBtn {
+    position: absolute;
+    right: 34px;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 14px;
+}
+.worksBtn a em.newBtn {
+    float: left;
+    background-position: -195px -108px;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+.worksBtn i {
+    border-left: 1px solid #DDD;
+    float: left;
+    margin: 3px 11px 0;
+    height: 14px;
+}
+.worksBtn a {
+    float: left;
+}
+/* 创建步骤序列 */
+
+.workStepList {
+    font: 14px/1.8 "Microsoft YaHei";
+    width: 500px;
+    margin: 80px auto 0;
+}
+.workStepList li {
+    padding-left: 78px;
+    position: relative;
+    *zoom: 1;
+    line-height: 32px;
+}
+.workStepList li span.radio {
+    margin-top: 11px;
+}
+.workStepList li select {
+    visibility: visible;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: alpha(opacity=100);
+}
+select.bigClass {
+    width: 100px;
+}
+select.subClass {
+    width: 266px;
+}
+.step1 li {
+    margin-bottom: 20px;
+}
+.step2 li {
+    margin-bottom: 15px;
+}
+.step2 li label {
+    line-height: 32px;
+}
+.step2 li label.mr20 {
+    margin-right: 20px;
+}
+.step2 li .readme {
+    line-height: 32px;
+    font-size: 12px;
+}
+.step2 li .accredit {
+    font-size: 12px;
+    line-height: 34px;
+    margin-left: 10px;
+}
+.workStepList li em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 32px;
+}
+.workStepList li .tip {
+    clear: both;
+    color: #999;
+    font-size: 12px;
+    width: 350px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.step1 p {
+    line-height: 28px;
+}
+.step1 .tip {
+    padding-left: 18px;
+}
+.selectBox {
+    margin-bottom: 10px;
+}
+.workStepList .selectBox select {
+    height: 30px;
+    border: 1px solid #DDD;
+}
+.workStepList li .error {
+    font-size: 12px;
+    color: #E55555;
+}
+.workStepList li input[type="text"].long {
+    width: 378px;
+    height: 28px;
+    border: 1px solid #DDD;
+    text-indent: 5px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+.filterTagBox {
+    border: 1px solid #DDD;
+    width: 378px;
+    height: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+.filterTagBox a {
+    display: inline-block;
+    background: #50A8FF;
+    height: 22px;
+    font: 12px/22px "Microsoft YaHei";
+    color: #FFF;
+    vertical-align: middle;
+    margin: 3px 0 0 5px;
+    *margin: -4px 0 0 5px;
+    padding: 0 24px 0 7px;
+    position: relative;
+    z-index: 2;
+}
+.filterTagBox a i {
+    width: 7px;
+    height: 7px;
+    background: url(http://dev.img1.write.qq.com/writer/p1/content/sprite.png) no-repeat -21px -13px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+.filterTagBox a:hover {
+    color: #FFF;
+}
+.stepBtn {
+    padding: 10px 0 0 78px;
+}
+.stepBtn .button {
+    width: 180px;
+    font: 14px/35px "Microsoft YaHei";
+    height: 35px;
+    display: inline-block;
+}
+.step2 textarea {
+    width: 373px;
+    height: 94px;
+    border: 1px solid #DDD;
+    margin: 5px 0;
+    overflow-y: hidden;
+    padding-left: 5px;
+}
+.step2 .stepBtn .button {
+    margin-right: 20px;
+}
+.accreditTip {
+    position: absolute;
+    background: #FAFAFA;
+    border: 1px solid #DDD;
+    width: 268px;
+    padding: 4px 0;
+    top: 40px;
+    left: 151px;
+    font: 12px/1.8 "Microsoft YaHei";
+}
+.workStepList li.z1 .accreditTip {
+    left: 106px;
+}
+.accreditTip p {
+    width: 228px;
+    margin: 0 auto;
+}
+.accreditTip cite {
+    background-position: -80px -20px;
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -5px;
+}
+.step3 {
+    width: 450px;
+    margin: 100px auto 0;
+    padding-left: 0;
+}
+.step3 h3 {
+    color: #4BC46D;
+    font: 24px/1 "Microsoft YaHei";
+    text-align: center;
+    margin-bottom: 50px;
+}
+.step3Btn a {
+    display: inline-block;
+    width: 180px;
+    height: 36px;
+    font: 14px/36px "Microsoft YaHei";
+    margin: 0 10px;
+}
+.step3 .qrZone {
+    border-top: 1px solid #E6E6E6;
+    padding-top: 12px;
+    margin-top: 126px;
+}
+.step3 .qrZone h4 {
+    color: #575757;
+    font-weight: 400;
+}
+.step3 .qrZone dd {
+    padding: 19px 0 0;
+    overflow: hidden;
+    *zoom: 1;
+}
+.step3 .qrZone dl img {
+    float: left;
+    margin-right: 18px;
+}
+.step3 .qrZone dl .qrZoneInfo {
+    float: left;
+    width: 360px;
+}
+.step3 .qrZone dl .qrZoneInfo h5 {
+    font: 16px/1 "Microsoft YaHei";
+    margin-bottom: 10px;
+}
+.step3 .qrZone dl .qrZoneInfo p {
+    color: #999;
+    font-size: 12px;
+}
+/* 作品详情 */
+
+.worksInfoWrap {
+    height: 96px;
+    background: url(http://dev.img1.write.qq.com/writer/p1/content/works_bg.png) no-repeat;
+    border-bottom: 1px solid #E6E6E6;
+    position: relative;
+    padding-bottom: 150px;
+}
+.worksImgBox {
+    position: absolute;
+    background: #FFF;
+    border: 1px solid #E0E0E0;
+    left: 34px;
+    top: 25px;
+    box-shadow: 0 0 1px #CCC;
+}
+.worksImgBox span {
+    position: absolute;
+    background: #444;
+    background: rgba(0, 0, 0, .6);
+    width: 134px;
+    height: 32px;
+    font: 14px/30px "Microsoft YaHei";
+    text-align: center;
+    color: #FFF;
+    left: 4px;
+    bottom: 4px;
+}
+.worksImgBox img {
+    padding: 4px;
+}
+.worksInfoText {
+    position: absolute;
+    top: 55px;
+    left: 198px;
+}
+.worksInfoText h3 {
+    font: 24px/1 "Microsoft YaHei";
+    color: #376590;
+    margin-bottom: 40px;
+    width: 740px;
+}
+.worksInfoText h3 .vip {
+    display: inline-block;
+    border: 1px solid #FFB250;
+    background: #FBECD8;
+    font: 12px/16px "Microsoft YaHei";
+    height: 16px;
+    padding: 0 5px;
+    color: #FFB24E;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.worksInfoText h3 .number {
+    float: right;
+    color: #8BAECE;
+    font: 12px/30px "Microsoft YaHei";
+}
+.worksInfoText p {
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #858585;
+}
+.worksInfoText p .Num, .worksInfoText p i {
+    color: #333;
+    margin: 0;
+}
+.worksInfoText p span {
+    margin-right: 28px;
+}
+.worksInfoText p cite {
+    font: 12px/1.8 Arial;
+    color: #999;
+    margin-left: 20px;
+}
+.worksFunction {
+    padding: 30px 0 0 35px;
+}
+.worksFunction li {
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 26px;
+}
+.worksFunction li a {
+    display: block;
+    border: 1px solid #E6E6E6;
+    width: 188px;
+    height: 62px;
+    font: 16px/62px "Microsoft YaHei";
+    background: #F9F9F9;
+    padding-left: 20px;
+}
+.worksFunction li a:hover {
+    background: #50A8FF;
+    color: #FFF;
+    border: 1px solid #50A8FF;
+}
+.worksFunction li a span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    margin: -2px 10px 0 0;
+    background-image: url(http://dev.img1.write.qq.com/writer/p1/content/detailicon.png);
+}
+.worksFunction li a span.setup {
+    background-position: 0 0;
+}
+.worksFunction li a:hover span {
+    background-position: -28px 0;
+}
+.worksFunction li a span.manager {
+    background-position: 0 -28px;
+}
+.worksFunction li a:hover span.manager {
+    background-position: -28px -28px;
+}
+.worksFunction li a span.VIP {
+    background-position: 0 -57px;
+    height: 26px;
+}
+.worksFunction li a:hover span.VIP {
+    background-position: -28px -57px;
+}
+.worksFunction li a span.dy_refer {
+    background-position: 0 -84px;
+}
+.worksFunction li a:hover span.dy_refer {
+    background-position: 28px -84px;
+}
+.worksFunction li a span.apply_sign {
+    height: 26px;
+    background-position: 0 -114px;
+}
+.worksFunction li a:hover span.apply_sign {
+    background-position: -28px -114px;
+}
+.worksFunction li a span.apply_whb {
+    background-position: 0 -140px;
+}
+.worksFunction li a:hover span.apply_whb {
+    background-position: -28px -140px;
+}
+.worksFunction li a span.apply_wyzd {
+    height: 26px;
+    background-position: 0 -170px;
+}
+.worksFunction li a:hover span.apply_wyzd {
+    background-position: -28px -170px;
+}
+.worksFunction li a span.apply_rec {
+    background-position: 0 -197px;
+}
+.worksFunction li a:hover span.apply_rec {
+    background-position: -28px -197px;
+}
+.worksFunction li a span.security {
+    background-position: 0 -224px;
+}
+.worksFunction li a:hover span.security {
+    background-position: -28px -224px;
+}
+.tabSwitch.worksTab span {
+    font: 14px/36px "Microsoft YaHei";
+}
+/* 章节管理 */
+
+.mLeftList {
+    width: 230px;
+    height: 788px;
+    background: #F6F6F6;
+    border-right: 1px solid #E6E6E6;
+}
+.leftListWrap {
+    padding: 17px 12px 0 12px;
+}
+.mLeftList .titleBox h3 {
+    font: 16px/1 "Microsoft YaHei";
+    margin-bottom: 13px;
+    position: relative;
+    z-index: 2;
+}
+.mLeftList .titleBox h3 a.icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 10px;
+    top: 0px;
+    background-position: -195px -108px;
+    transition: none;
+}
+.mLeftList .titleBox h3 a.icon:hover {
+    background-position: -195px -127px;
+}
+.minTipBox {
+    position: absolute;
+    z-index: 100;
+    left: 101px;
+    top: 30px;
+    background: #50A8FF;
+    width: 167px;
+    height: 31px;
+    color: #FFF;
+    font: 12px/31px "Microsoft YaHei";
+    text-indent: 15px;
+}
+.minTipBox .close {
+    width: 11px;
+    height: 11px;
+    background-position: -194px -96px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.slimScrollDiv {
+    z-index: 1;
+}
+.slimScrollBar {
+    cursor: move;
+}
+.minTipBox b {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -5px;
+    width: 13px;
+    height: 7px;
+    background-position: -65px -113px;
+}
+.mLeftList .titleBox p {
+    font: 12px/1 "Microsoft YaHei";
+    color: #999;
+    margin-bottom: 10px;
+}
+.sectionManage {
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    position: relative;
+    height: 698px;
+}
+.sectionManage a.newSection {
+    position: absolute;
+    width: 188px;
+    height: 32px;
+    border-radius: 3px;
+    text-align: center;
+    font: 14px/32px "Microsoft YaHei";
+    color: #575757;
+    bottom: 10px;
+    left: 7px;
+    border: 1px solid #DDD;
+    z-index: 2;
+}
+.sectionManage .minTipBox {
+    position: absolute;
+    top: 608px;
+    left: 18px;
+}
+.sectionManage .minTipBox b.down {
+    _overflow: hidden;
+    top: -10px;
+    left: 50%;
+    margin-left: -7px;
+    width: 0;
+    height: 0;
+    border: 7px solid;
+    border-style: solid dashed dashed dashed;
+    border-color: #50A8FF transparent transparent transparent;
+    top: 100%;
+}
+.sectionList li {
+    cursor: pointer;
+    overflow: hidden;
+    *zoom: 1;
+}
+.sectionList li.act, .volume.act {
+    background: #E1F2FF;
+}
+.sectionList li.act .sectionBox p {
+    color: #376590;
+}
+.sectionList li.act .sectionBox p.f12 {
+    color: #8BAECE;
+}
+.sectionBox {
+    margin: 0 0 0 30px;
+    width: 150px;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 15px 0 10px;
+}
+.volumeBox {
+    border-bottom: 1px solid #E6E6E6;
+    cursor: pointer;
+    padding: 15px 18px 10px;
+}
+.sectionWrap {
+    display: none;
+}
+.sectionBox p {
+    color: #333;
+    font: 14px/1.8 "Microsoft YaHei";
+    overflow: hidden;
+    *zoom: 1;
+}
+.sectionWrap li {
+    background: #FAFAFA;
+}
+.volumeBox p {
+    color: #333;
+    line-height: 1.8;
+}
+.volumeBox p.f12 {
+    color: #999;
+}
+.volumeBox p.f12 em.icon {
+    float: right;
+    width: 18px;
+    height: 17px;
+    margin-top: 1px;
+    background-position: -170px -195px;
+}
+.sectionBox p.f12 {
+    font-size: 12px;
+    color: #999;
+}
+.sectionBox p.f12 i {
+    float: right;
+}
+.sectionBox p em {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 130px;
+}
+.sectionWrap .sectionBox p em {
+    width: 150px;
+}
+.sectionBox p .time {
+    float: right;
+    background-position: -24px -138px;
+    width: 17px;
+    height: 18px;
+    margin-top: 5px;
+}
+.mRightContent {
+    width: 738px;
+    height: 788px;
+}
+.mRightContent .midWrap, .editWrap .titleHead {
+    padding: 0 28px;
+}
+.mRightContent .midWrap.editWrap {
+    border: 9px solid #E1F2FF;
+    height: 770px;
+    padding: 0;
+}
+.mRightContent .midWrap .titleHead {
+    margin-top: 24px;
+}
+.mRightContent .midWrap .titleHead h3 {
+    font: 18px/35px "Microsoft YaHei";
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 16px;
+}
+.mRightContent .midWrap .titleHead h3 input {
+    font-family: "Microsoft YaHei";
+    padding: 8px 0;
+    color: #BBB;
+    width: 400px;
+}
+.mRightContent .midWrap.editWrap .titleHead h3 {
+    border-bottom: none;
+    margin-top: -10px;
+}
+.titleBtn {
+    padding: 5px 0 0;
+}
+.titleBtn a {
+    float: left;
+    font: 14px/30px "Microsoft YaHei";
+    margin-right: 10px;
+}
+.titleBtn .button.send, .titleBtn .button.save, .titleBtn .button.modify {
+    width: 80px;
+    height: 30px;
+}
+.titleBtn .button.send .icon {
+    width: 17px;
+    height: 16px;
+    background-position: -38px -121px;
+    margin: -3px 6px 0 0;
+}
+.titleBtn .button.save .icon {
+    width: 16px;
+    height: 16px;
+    background-position: -18px -23px;
+    margin: -3px 8px 0 0;
+}
+.titleBtn .button.modify .icon {
+    width: 16px;
+    height: 16px;
+    background-position: -171px -39px;
+    margin: -3px 8px 0 0;
+}
+.titleBtn .button.white {
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    color: #4C4C4C;
+}
+.sectionViewWrap {
+    height: 650px;
+    position: relative;
+}
+.sectionViewWrap h4 {
+    font: 12px/1 "Microsoft YaHei";
+    margin-top: 9px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    *zoom: 1;
+}
+.sectionBtnBox {
+    font: 12px/42px "Microsoft YaHei";
+}
+.sectionBtnBox.fixed {
+    top: 0;
+    width: 692px;
+}
+.editWrap .sectionBtnBox {
+    background: #FAFAFA;
+    height: 40px;
+    margin-top: 0;
+    border-top: 1px solid #E6E6E6;
+    line-height: 40px;
+    padding-left: 28px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 5px;
+}
+.sectionBtnBox em {
+    float: left;
+}
+.sectionBtnBox i {
+    float: left;
+    padding-left: 20px;
+}
+.sectionBtnBox .radio {
+    margin: 14px 5px 0 0;
+}
+.sectionBtnBox label {
+    float: left;
+    color: #858585;
+    margin-right: 15px;
+}
+.sectionViewWrap .zwText {
+    padding: 0 15px 0 0;
+    word-break: break-all;
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.sectionViewWrap .zwText .authorSay {
+    border-top: 1px solid #E6E6E6;
+}
+.sectionViewWrap .zwText p {
+    margin: 0.8em 0;
+}
+.editWrap .sectionViewWrap .zwText {
+    padding: 0 28px;
+}
+.zwText textarea {
+    border: none;
+    overflow: hidden;
+    width: 670px;
+    height: 500px;
+    overflow-y: auto;
+    color: #BBB;
+    word-break: break-all;
+}
+.ps {
+    width: 682px;
+    margin-top: 8px;
+    padding: 8px 0 0;
+    height: 105px;
+    border-top: 1px solid #E6E6E6;
+    font: 14px/1.8 "Microsoft YaHei";
+}
+.midWrap.editWrap .ps {
+    margin-left: 28px;
+}
+.ps .say {
+    overflow-y: auto;
+    word-break: break-all;
+}
+.ps textarea {
+    border: none;
+    width: 670px;
+    height: 130px;
+    font: 14px/1.8 "Microsoft YaHei";
+    color: #BBB;
+    overflow-y: auto;
+}
+.editWrap .sectionViewWrap .ps {
+    left: 28px;
+}
+/* 新增分卷 */
+
+.newVolume {
+    width: 680px;
+    padding: 24px 0 0;
+    margin: 0 auto;
+}
+.newVolume h3 {
+    padding-bottom: 20px;
+    font: 16px/1 "Microsoft YaHei";
+    border-bottom: 1px solid #E6E6E6;
+}
+.newVolume h3 span {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #999;
+}
+.volumeForm {
+    padding: 30px 0 0;
+}
+.volumeForm li {
+    position: relative;
+    line-height: 30px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+.volumeForm li em {
+    color: #858585;
+    font: 14px/30px "Microsoft YaHei";
+    position: absolute;
+    width: 80px;
+    left: 0;
+    text-align: right;
+}
+.volumeForm li input.midInput {
+    border: 1px solid #DDD;
+    height: 28px;
+    padding-left: 5px;
+    width: 373px;
+}
+.volumeForm li textarea {
+    width: 373px;
+    height: 88px;
+    border: 1px solid #DDD;
+    padding-left: 5px;
+}
+.volumeForm p.confirm {
+    padding-left: 100px;
+}
+.volumeForm p.confirm a {
+    font: 14px/36px "Microsoft YaHei";
+    display: inline-block;
+}
+.volumeForm p.confirm a.button {
+    width: 180px;
+    height: 36px;
+    margin-right: 20px;
+}
+/* 作品设置 */
+.workStateWrap {
+    padding: 0 35px 0 80px;
+}
+.workStateWrap .bookState {
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 18px 0 18px 5px;
+    font-size: 0;
+    *word-spacing: -1px;
+    white-space: nowrap;
+}
+.workStateWrap .bookState em {
+    display: inline-block;
+    text-align: right;
+    width: 56px;
+    color: #858585;
+    margin-right: 20px;
+    font: 14px/35px "Microsoft YaHei";
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+.workStateWrap .bookState i {
+    margin-right: 25px;
+    min-width: 100px;
+    _width: 128px;
+    display: inline-block;
+    font: 14px/35px "Microsoft YaHei";
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+.workSetList {
+    padding: 28px 0 0;
+}
+.workSetList li {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+.workSetList li em {
+    color: #858585;
+    font: 14px/30px "Microsoft YaHei";
+    position: absolute;
+    width: 60px;
+    text-align: right;
+    left: 0;
+}
+.workSetList li p.error {
+    line-height: 30px;
+}
+.workSetList li .fmBox {
+    border: 1px solid #E6E6E6;
+    padding: 3px;
+    margin-right: 16px;
+}
+.workSetList li .fmBox img {
+    display: block;
+}
+.workSetList li .uploadBox {
+    position: relative;
+}
+.workSetList li .uploadBox .button {
+    display: block;
+    width: 120px;
+    height: 30px;
+    font: 14px/30px "Microsoft YaHei";
+    margin-bottom: 20px;
+}
+.workSetList li .uploadBox .uploadBtn {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    font-size: 26px \9;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 2;
+    cursor: pointer;
+}
+.workSetList li .uploadBox p {
+    color: #999;
+    font: 12px/1.8 "Microsoft YaHei";
+}
+.workSetList li .midInput {
+    height: 28px;
+    padding-left: 5px;
+    width: 373px;
+    border: 1px solid #DDD;
+    line-height: 28px;
+}
+.workSetList li span.radio {
+    margin: 10px 5px 0 0;
+}
+.workSetList li p.saved, .workSetList li p.modify {
+    font: 14px/30px "Microsoft YaHei";
+    float: left;
+}
+.workSetList li p.modify label {
+    margin-right: 20px;
+}
+.workSetList li p.f12 {
+    margin-top: 5px;
+}
+.workSetList li textarea {
+    border: 1px solid #DDD;
+    width: 373px;
+    padding-left: 5px;
+    height: 88px;
+    overflow-y: auto;
+}
+.workSetList li .button.green {
+    position: absolute;
+    left: 472px;
+    top: 0;
+    width: 60px;
+    height: 30px;
+    font: 14px/28px "Microsoft YaHei";
+    text-decoration: none;
+}
+.workSetList .confirm {
+    padding: 10px 0 0 80px;
+}
+.workSetList .confirm .button {
+    display: block;
+    width: 180px;
+    height: 36px;
+    font: 14px/34px "Microsoft YaHei";
+}
+.recTagBox {
+    padding: 10px 0 0;
+}
+.recTagBox a {
+    display: inline-block;
+    border: 1px solid #DDD;
+    background: #F9F9F9;
+    font: 12px/20px "Microsoft YaHei";
+    color: #575757;
+    padding: 0 20px 0 5px;
+    text-align: left;
+    position: relative;
+    margin-right: 5px;
+}
+.recTagBox a cite {
+    background-position: -29px -13px;
+    width: 7px;
+    height: 7px;
+    top: 6px;
+    right: 5px;
+    position: absolute;
+}
+.lenovoBox {
+    display: none;
+    width: 378px;
+    height: 200px;
+    overflow-y: auto;
+    top: 29px;
+    position: absolute;
+    background: #FFF;
+    border: 1px solid #DDD;
+    font: 14px/1.8 "Microsoft YaHei";
+    z-index: 1;
+}
+.lenovoBox dd a {
+    display: block;
+    padding-left: 5px;
+}
+.lenovoBox dd a:hover {
+    color: #376590;
+    background: #E1F1FE;
+}
+.applyTextWrap {
+    padding: 40px 80px 0;
+}
+.applyTextWrap h3 {
+    color: #575757;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.applyTextWrap p {
+    font: 14px/2 "Microsoft YaHei";
+}
+.applyTextWrap input.message {
+    display: block;
+    margin-bottom: 10px;
+    height: 28px;
+    border: 1px solid #DDD;
+    width: 800px;
+    padding-left: 10px;
+    color: #999;
+    font: 14px/30px "Microsoft YaHei";
+    margin-top: 20px;
+}
+.applyTextWrap .applyBtn {
+    display: block;
+    width: 180px;
+    height: 36px;
+    font: 14px/36px "Microsoft YaHei";
+}
+/* 申请模板 */
+
+.applyTemplate {
+    padding: 20px 139px 50px;
+}
+.applyTemplate h3 {
+    text-align: center;
+    font: 18px/2 "Microsoft YaHei";
+    margin-bottom: 8px;
+}
+.applyTable {
+    border-top: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+}
+.applyTable td {
+    height: 31px;
+    padding: 4px 0;
+    font: 14px/1.8 "Microsoft YaHei";
+    text-align: center;
+    border-bottom: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+}
+.applyTable .fa {
+    background: #FAFAFA;
+}
+.applyTable .top {
+    vertical-align: top;
+    padding: 30px 0;
+}
+.applyTable td p {
+    color: #333;
+    padding: 0 10px;
+    text-align: justify;
+}
+.applyTable td em.Num {
+    display: inline-block;
+    width: 50px;
+    line-height: 1;
+    text-align: center;
+    border-bottom: 1px solid #575757;
+}
+/* 出版自荐申请 */
+
+.myRecWrap {
+    padding: 30px 35px 0;
+}
+.myRecWrap h3 {
+    margin: 10px 0;
+}
+.myRecWrap p {
+    font: 14px/2 "Microsoft YaHei";
+}
+.recFormWrap {
+    padding: 20px 0 40px;
+}
+.goTemplate {
+    text-align: right;
+    border-top: 1px solid #E6E6E6;
+}
+.goTemplate a {
+    font: 12px/30px "Microsoft YaHei";
+    text-decoration: none;
+}
+.recFormList {
+    padding: 0 52px 0 45px;
+}
+.recFormList em {
+    color: #858585
+}
+.recFormList p {
+    margin-bottom: 20px;
+}
+.recFormList p label {
+    margin-right: 20px;
+    line-height: 30px;
+}
+.recFormList p em {
+    margin-right: 20px;
+}
+.recFormList p i {
+    color: #333;
+    margin-right: 40px;
+}
+.recFormList p input.words {
+    width: 78px;
+    height: 28px;
+    border: 1px solid #DDD;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 28px;
+    vertical-align: middle;
+}
+.recFormList li {
+    position: relative;
+    padding-left: 78px;
+    overflow: hidden;
+    *zoom: 1;
+    vertical-align: bottom;
+}
+.recFormList li em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: 14px/30px "Microsoft YaHei";
+}
+.recFormList li textarea {
+    border: 1px solid #DDD;
+    padding-left: 5px;
+    width: 717px;
+    height: 214px;
+    overflow-y: hidden;
+}
+.recFormList li .tip {
+    font: 12px/20px "Microsoft YaHei";
+    color: #999;
+    margin: 5px 0 15px;
+}
+.recFormList li input.midInput {
+    border: 1px solid #DDD;
+    vertical-align: middle;
+    width: 373px;
+    padding-left: 5px;
+    height: 30px;
+    line-height: 28px;
+}
+.recFormList .confirm {
+    padding: 10px 0 0 80px;
+}
+.recFormList .confirm .button {
+    display: inline-block;
+    width: 180px;
+    height: 36px;
+    font: 14px/34px "Microsoft YaHei";
+}
+.recFormList li.line {
+    margin: 20px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+.recFormList .grade li {
+    margin-bottom: 15px;
+}
+.recFormList li.gradeTit {
+    padding: 10px 0;
+}
+.gradeTit a {
+    text-decoration: none;
+    font-size: 12px;
+}
+.recForm.grade textarea {
+    color: #BBB;
+    height: 138px;
+    width: 633px;
+}
+.recForm.grade .scoreInput {
+    border: 1px solid #DDD;
+    border-left: none;
+    vertical-align: top;
+    width: 78px;
+    height: 20px;
+    font: 24px/20px Arial;
+    text-align: center;
+    color: #FFBE4E;
+    padding: 59px 0;
+}
+.recForm.grade .tip {
+    margin-bottom: 0;
+}
+.recForm.grade .scoreInput.on {
+    background: url(http://dev.img1.write.qq.com/writer/p1/content/score_bg.png) no-repeat center;
+}
+.recForm.grade .scoreInput.off {
+    background: none;
+}
+.recForm.grade .filterTagBox {
+    min-height: 28px;
+    height: auto;
+}
+.recForm.grade .filterTagBox a {
+    margin-bottom: 3px;
+}

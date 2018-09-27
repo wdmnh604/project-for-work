@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/**
+ * @author  wangdongmei
+ */
+.primary {
+	padding-bottom: 20px;
+}
+ 
+.user-info {
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.audio-box .audio {
+	display: none;
+}
+
+.audio-show {
+	position: relative;
+	overflow: hidden;
+	height: 48px;
+	line-height: 48px;
+	margin-bottom: 24px;
+	border: 1px solid #dedede;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	background: #fff;
+}
+
+.control {
+	float: left;
+	width: 48px;
+	height: 48px;
+}
+
+.btn-control {
+	display: block;
+	width: 48px;
+	height: 48px;
+	background: url(http://dev.img1.write.qq.com/w/p1/cmmtcollege/start.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+
+.pause {
+	background: url(http://dev.img1.write.qq.com/w/p1/cmmtcollege/pause.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+
+.audio-ttl {
+	position: relative;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.audio-ttl .ttl {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	width: 80%;
+	text-indent: 10px;
+}
+
+.progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #e5f3fd;
+}
+
+.time-left {
+	position: absolute;
+	right: 16px;
+	top: 0;
+}
+
+.btn-share {
+	display: block; 
+    width: 80%;
+	margin: 0 auto;
+	height: 40px;
+    line-height: 40px;
+	color:#008bec;
+	text-align:center;
+	border: 1px solid #008bec;
+	border-radius: 100px;
+}
+
+
+/**
+ * app下载跟随样式
+ */
+.app_download_ad {
+    overflow: hidden;
+    z-index: 900;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 52px;
+	background: #fff;
+	box-shadow:0px -2px 4px 0px rgba(0,0,0,0.08);
+}
+
+/**
+ * app文字样式
+ */
+.app_download_ad .app_download_text {
+    display: block;
+    position: absolute;
+    padding-top: 10px;
+    left: 52px;
+    text-align: left;
+}
+
+.app_download_ad .app_download_text dt {
+	font-size: 14px;
+    color: #222;
+}
+
+.app_download_ad .app_download_text dd {
+	font-size: 12px;
+    color: #8592a6;
+}
+
+/**
+ * app叉叉样式
+ */
+.app_download_ad .close_download {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    background: url(http://dev.img1.write.qq.com/w/p1/cmmtcollege/app_down_close.png) no-repeat;
+    background-size: 12px 12px;
+}
+
+/**
+ * app图片样式
+ */
+.app_download_ad .phone_pic {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    background: url(http://dev.img1.write.qq.com/w/p1/cmmtcollege/app_img.png) no-repeat;
+    background-size: cover;
+}
+
+/**
+ * app下载按钮样式
+ */
+.app_download_ad .app_btn_down {
+    display: block;
+    position: absolute;
+    right: 38px;
+    top: 10px;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+	color: #008bec;
+    border: 1px solid #008bec;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.app_download_ad .app_btn_down span {
+    display: block;
+    font-size: 0.4rem;
+}

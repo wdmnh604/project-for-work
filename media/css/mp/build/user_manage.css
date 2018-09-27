@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/**
+ * @author wangdongmei
+ * @design yangyifan;
+ */
+.conts-bd {
+  font-size: 13px; }
+
+/**
+ * 用户搜索
+ */
+.user-search {
+  position: relative;
+  float: right;
+  width: 280px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 16px; }
+
+.user-search div.ui_search_input, .user-search span.ui_search_input {
+  box-sizing: border-box; }
+
+.user-search div.ui_search_input {
+  width: 280px; }
+
+.user-search .ui_search_input > input {
+  height: 36px;
+  border-radius: 100px; }
+
+.user-search .ui_icon_search {
+  border: 0;
+  left: 14px;
+  top: 8px; }
+
+.input-remark {
+  margin-top: 10px; }

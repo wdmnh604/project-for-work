@@ -1,0 +1,306 @@
+/**
+ * @author wangdongmei
+ * @design xumengmeng;
+ */
+
+/**
+ * 图片轮播
+ */
+.index-slider {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.index-slider ul {
+	overflow: hidden;
+	height: 280px;
+}
+
+.index-slider li {
+	position: relative;
+	width: 660px;
+	height: 280px;
+	float: left;
+	cursor: pointer;
+}
+
+.index-slider li img {
+	display: block;
+	width: 680px;
+	height: 280px;
+}
+
+/**
+ * 文字描述
+ */
+.index-slider .desc {
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 66px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/mask.png) repeat 0 0;
+}
+
+.index-slider .desc {
+	padding: 14px 20px 0 20px;
+	color: #fff;
+}
+
+.index-slider .desc a {
+	color: #fff;
+}
+
+.index-slider .desc .ttl {
+	display: block;
+	font-size: 18px;
+}
+
+/**
+ * 左右箭头
+ */
+.index-slider .prev {
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 95px;
+	width: 38px;
+	height: 64px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -70px;
+}
+
+.index-slider .next {
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+	top: 95px;
+	width: 38px;
+	height: 64px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat -62px -70px;
+}
+
+.index-slider.hover .prev,
+.index-slider.hover .next {
+	visibility: visible;
+}
+
+.index-slider.hover .desc {
+	display: block;
+}
+
+/**
+ * 小圆圈
+ */
+.index-slider .pager {
+	position: absolute;
+	z-index: 101;
+	bottom: 10px;
+	width: 100%;
+	height: 8px;
+	text-align: center;
+}
+
+.index-slider .pager a {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -48px;
+}
+
+.index-slider .pager a.selected {
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat -16px -48px;
+}
+
+.com-section {
+	margin-bottom: 20px;
+	border: 1px solid #dfe0e6;
+	background: #fff;
+}
+
+.com-section .sec-ttl {
+	overflow: hidden;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 20px;
+	border-bottom: 1px solid #dfe0e6;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.article-box .item {
+	padding: 20px;
+	border-bottom: 1px solid #dfe0e6;
+}
+
+.article-box .item.last {
+	border-bottom: 0;
+}
+
+.article-box .article-content {
+	overflow: hidden;
+	margin-bottom: 32px;
+}
+
+.article-box .article-content .intro {
+	overflow: hidden;
+	max-height: 72px;
+}
+
+.article-box .item h3 {
+	overflow: hidden;
+	height: 25px;
+	margin-bottom: 8px;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.article-box .item h3 a:hover {
+	color: #4ea8ff;
+}
+
+
+.article-box .has-pic .intro-box {
+	float: left;
+	width: 392px;
+}
+
+.article-box .article-content .photo-box {
+	position: relative;
+	float: right;
+	width: 192px;
+}
+
+.article-box .article-content .photo-box .videobg {
+	position: absolute;
+	z-index: 10;
+	left: 64px;
+	top: 22px;
+	width: 64px;
+	height: 64px;
+	background: url(http://dev.img1.write.qq.com/mp/p1/src/bg_sprite.png) no-repeat 0 -780px;
+}
+
+.article-box .article-content .photo-box img {
+	display: block;
+	width: 192px;
+	height: 108px;
+}
+
+/**
+ * 评分、收藏、作者
+ */
+.article-bottom {
+	height: 32px;
+	line-height: 32px;
+}
+
+.article-bottom .author {
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.article-bottom .author img {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+	border-radius: 50px;
+}
+
+.article-bottom .data {
+	float: right;
+	color: #9ea6b4;
+}
+
+.article-bottom .data em {
+	margin: 0 10px;
+}
+
+.more-bottom {
+	overflow: hidden;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	color: #4ea8ff;
+	border-top: 1px solid #dfe0e6;
+}
+
+.more-bottom a {
+	display: block;
+	color: #4ea8ff;
+}
+
+/**
+ * 专栏
+ */
+.recommend-column .column-box {
+}
+
+.recommend-column .column-box .item {
+	float: left;
+	padding: 20px 0;
+	margin-left: 20px;
+	*display: inline-block;
+}
+
+.page-home .recommend-column .item  {
+	width: 309px;
+}
+
+.recommend-column .pic {
+	float: left;
+	position: relative;
+	width: 64px;
+	height: 64px;
+	margin-right: 16px;
+}
+
+.recommend-column .pic img {
+	display: block;
+	width: 64px;
+	height: 64px;
+	border-radius: 50px;
+}
+
+.recommend-column .right-box {
+	float: left;
+	width: 210px;
+}
+
+.recommend-column .right-box h3 {
+	overflow: hidden;
+	height: 25px;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.recommend-column .right-box h3 a:hover {
+	color: #4ea8ff;
+}
+
+.recommend-column .right-box .intro-box {
+	height: 96px;
+}
+
+.recommend-column .right-box .intro {
+	overflow: hidden;
+	max-height: 48px;
+	color: #9ea6b4;
+}
+
+.recommend-column .right-box .intro a,
+.recommend-column .right-box .data a {
+	color: #9ea6b4;
+}
+
+.recommend-column .right-box .data {
+	overflow: hidden;
+	height: 24px;
+	color: #9ea6b4;
+}
